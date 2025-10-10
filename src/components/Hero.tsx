@@ -8,23 +8,20 @@ const Hero = () => {
   };
 
   return (
-    <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
-      <div 
-        className="absolute inset-0 z-0"
-        style={{
-          backgroundImage: `url(${heroBg})`,
-          backgroundSize: 'cover',
-          backgroundPosition: 'center',
-          filter: 'brightness(0.3)',
-        }}
-      />
-      <div className="absolute inset-0 bg-gradient-hero opacity-80 z-0" />
-      
+    <section className="relative min-h-screen flex items-center justify-center overflow-hidden bg-gradient-hero">
       <div className="container mx-auto px-4 z-10 text-center animate-fade-in">
+        <div className="mb-8">
+          <div className="w-40 h-40 mx-auto rounded-full bg-gradient-primary p-1 shadow-glow">
+            <div className="w-full h-full rounded-full bg-muted flex items-center justify-center text-6xl font-bold text-primary">
+              ME
+            </div>
+          </div>
+        </div>
+        
         <h1 className="text-5xl md:text-7xl font-bold mb-6 bg-gradient-primary bg-clip-text text-transparent">
           Frontend Engineer
         </h1>
-        <p className="text-xl md:text-2xl text-muted-foreground mb-4 max-w-2xl mx-auto">
+        <p className="text-xl md:text-2xl text-foreground/80 mb-4 max-w-2xl mx-auto">
           Building exceptional web experiences with Angular & Next.js
         </p>
         <p className="text-lg text-muted-foreground mb-8">

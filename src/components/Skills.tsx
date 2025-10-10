@@ -11,35 +11,22 @@ const skills = [
 
 const Skills = () => {
   return (
-    <section id="skills" className="py-20 bg-card">
+    <section id="skills" className="py-20 bg-background">
       <div className="container mx-auto px-4">
-        <h2 className="text-4xl md:text-5xl font-bold text-center mb-12">
+        <h2 className="text-4xl md:text-5xl font-bold text-center mb-12 text-foreground">
           Skills & Technologies
         </h2>
         
-        <div className="max-w-4xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-6">
+        <div className="max-w-4xl mx-auto flex flex-wrap gap-3 justify-center">
           {skills.map((skill, index) => (
             <div 
               key={index}
-              className="bg-background rounded-lg p-6 border border-border hover:border-primary transition-all animate-fade-in"
-              style={{ animationDelay: `${index * 0.1}s` }}
+              className="px-6 py-3 bg-card rounded-full border border-border hover:border-primary hover:shadow-glow transition-all animate-fade-in group cursor-default"
+              style={{ animationDelay: `${index * 0.05}s` }}
             >
-              <div className="flex justify-between items-center mb-2">
-                <span className="text-lg font-semibold text-foreground">{skill.name}</span>
-                <span className="text-sm text-muted-foreground">{skill.category}</span>
-              </div>
-              <div className="relative h-2 bg-muted rounded-full overflow-hidden">
-                <div 
-                  className="absolute top-0 left-0 h-full bg-gradient-primary rounded-full transition-all duration-1000"
-                  style={{ 
-                    width: `${skill.level}%`,
-                    animationDelay: `${index * 0.1}s`
-                  }}
-                />
-              </div>
-              <div className="mt-2 text-right text-sm text-primary font-medium">
-                {skill.level}%
-              </div>
+              <span className="text-sm font-medium text-foreground group-hover:text-primary transition-colors">
+                {skill.name}
+              </span>
             </div>
           ))}
         </div>
