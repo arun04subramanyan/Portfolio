@@ -1,65 +1,143 @@
 import { Button } from "@/components/ui/button";
-import { ArrowDown } from "lucide-react";
-import heroBg from "@/assets/hero-bg.jpg";
+import { ArrowRight, Github, Linkedin, Twitter, Mail, Code2, Palette, Smartphone } from "lucide-react";
 
 const Hero = () => {
   const scrollToProjects = () => {
     document.getElementById('projects')?.scrollIntoView({ behavior: 'smooth' });
   };
 
+  const stats = [
+    { value: "650+", label: "Projects Done" },
+    { value: "99%", label: "Happy Client" },
+    { value: "240+", label: "Fine Artworks" }
+  ];
+
+  const floatingIcons = [
+    { Icon: Code2, className: "top-12 right-20" },
+    { Icon: Palette, className: "top-32 left-16" },
+    { Icon: Smartphone, className: "bottom-24 right-12" }
+  ];
+
   return (
-    <section id="hero" className="relative min-h-screen flex items-center justify-center overflow-hidden bg-gradient-hero">
-      <div className="container mx-auto px-4 z-10 text-center animate-fade-in">
-        <div className="mb-8">
-          <div className="w-40 h-40 mx-auto relative">
-            <svg className="absolute inset-0 w-full h-full" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
-              <defs>
-                <clipPath id="blobClip">
-                  <path fill="currentColor" d="M42.7,-62.9C54.4,-54.5,62.5,-41.5,68.1,-27.3C73.7,-13.1,76.8,2.3,73.8,16.1C70.8,29.9,61.7,42.1,50.1,51.4C38.5,60.7,24.4,67.1,9.3,70.8C-5.8,74.5,-22,75.5,-36.2,69.8C-50.4,64.1,-62.6,51.7,-68.9,37C-75.2,22.3,-75.6,5.3,-72.1,-10.5C-68.6,-26.3,-61.2,-40.9,-50.2,-49.6C-39.2,-58.3,-24.6,-61.1,-10.3,-63.5C4,-65.9,31,-67.3,42.7,-62.9Z" transform="translate(100 100)" />
-                </clipPath>
-              </defs>
-            </svg>
-            <div className="w-full h-full rounded-full bg-gradient-primary p-1 shadow-glow" style={{ clipPath: 'url(#blobClip)' }}>
-              <img 
-                src="/placeholder.svg" 
-                alt="Profile" 
-                className="w-full h-full object-cover"
-                style={{ clipPath: 'url(#blobClip)' }}
-              />
+    <section id="hero" className="relative min-h-screen overflow-hidden bg-gradient-hero">
+      {/* Navigation Header */}
+      <nav className="container mx-auto px-4 py-6 flex items-center justify-between">
+        <div className="flex items-center gap-2">
+          <div className="w-10 h-10 rounded-full bg-gradient-primary flex items-center justify-center text-primary-foreground font-bold">
+            T
+          </div>
+          <span className="text-xl font-bold text-foreground">Travis</span>
+        </div>
+        
+        <div className="hidden md:flex items-center gap-8">
+          <a href="#about" className="text-foreground/70 hover:text-foreground transition-colors">About</a>
+          <a href="#experience" className="text-foreground/70 hover:text-foreground transition-colors">Service</a>
+          <a href="#projects" className="text-foreground/70 hover:text-foreground transition-colors">Portfolio</a>
+          <a href="#projects" className="text-foreground/70 hover:text-foreground transition-colors">Projects</a>
+          <a href="#contact" className="text-foreground/70 hover:text-foreground transition-colors">Contact</a>
+        </div>
+
+        <div className="hidden md:flex items-center gap-4">
+          <a href="#" className="text-foreground/70 hover:text-foreground transition-colors">
+            <Github className="w-5 h-5" />
+          </a>
+          <a href="#" className="text-foreground/70 hover:text-foreground transition-colors">
+            <Twitter className="w-5 h-5" />
+          </a>
+          <a href="#" className="text-foreground/70 hover:text-foreground transition-colors">
+            <Linkedin className="w-5 h-5" />
+          </a>
+          <a href="#" className="text-foreground/70 hover:text-foreground transition-colors">
+            <Mail className="w-5 h-5" />
+          </a>
+        </div>
+      </nav>
+
+      {/* Hero Content */}
+      <div className="container mx-auto px-4 py-12 md:py-20">
+        <div className="grid md:grid-cols-2 gap-12 items-center">
+          {/* Left Column - Text Content */}
+          <div className="space-y-8 animate-fade-in">
+            <div className="space-y-4">
+              <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold text-foreground leading-tight">
+                Make <span className="bg-gradient-primary bg-clip-text text-transparent">Designs</span> That<br />
+                Engage, Delight,<br />
+                and Connect
+              </h1>
+              <p className="text-lg text-foreground/70 max-w-md">
+                Hi, I'm Travis! With more than 10 years of experience, I'm ready to be a part of your wonderful project!
+              </p>
+            </div>
+
+            <div className="flex gap-4 flex-wrap">
+              <Button 
+                size="lg" 
+                className="bg-gradient-primary text-primary-foreground hover:opacity-90 shadow-glow"
+                onClick={() => document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' })}
+              >
+                Hire Me
+              </Button>
+              <Button 
+                size="lg" 
+                variant="outline"
+                className="border-foreground/20 text-foreground hover:bg-foreground/5 group"
+                onClick={scrollToProjects}
+              >
+                Previous Works
+                <ArrowRight className="ml-2 w-4 h-4 group-hover:translate-x-1 transition-transform" />
+              </Button>
+            </div>
+
+            {/* Stats */}
+            <div className="grid grid-cols-3 gap-8 pt-8">
+              {stats.map((stat, index) => (
+                <div key={index} className="space-y-1">
+                  <div className="text-3xl md:text-4xl font-bold text-foreground">{stat.value}</div>
+                  <div className="text-sm text-foreground/60">{stat.label}</div>
+                </div>
+              ))}
             </div>
           </div>
-        </div>
-        
-        <h1 className="text-5xl md:text-7xl font-bold mb-6 bg-gradient-primary bg-clip-text text-transparent">
-          Frontend Engineer
-        </h1>
-        <p className="text-xl md:text-2xl text-foreground/80 mb-4 max-w-2xl mx-auto">
-          Building exceptional web experiences with Angular & Next.js
-        </p>
-        <p className="text-lg text-muted-foreground mb-8">
-          2.5 years of crafting modern, scalable applications
-        </p>
-        
-        <div className="flex gap-4 justify-center flex-wrap">
-          <Button 
-            size="lg" 
-            className="bg-primary hover:bg-primary/90 text-primary-foreground shadow-glow"
-            onClick={scrollToProjects}
-          >
-            View My Work
-          </Button>
-          <Button 
-            size="lg" 
-            variant="outline"
-            className="border-primary text-primary hover:bg-primary/10"
-            onClick={() => document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' })}
-          >
-            Get In Touch
-          </Button>
-        </div>
-        
-        <div className="absolute bottom-8 left-1/2 -translate-x-1/2 animate-bounce">
-          <ArrowDown className="text-primary w-6 h-6" />
+
+          {/* Right Column - Profile Image */}
+          <div className="relative flex items-center justify-center">
+            <div className="relative w-full max-w-md aspect-square">
+              {/* Decorative Circle Background */}
+              <div className="absolute inset-0 bg-gradient-to-br from-primary/10 to-primary/5 rounded-full blur-3xl"></div>
+              
+              {/* Main Profile Circle with Gradient Border */}
+              <div className="relative w-full h-full">
+                <svg className="absolute inset-0 w-full h-full -rotate-12" viewBox="0 0 500 500">
+                  <defs>
+                    <linearGradient id="borderGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+                      <stop offset="0%" style={{ stopColor: "hsl(271 91% 65%)", stopOpacity: 1 }} />
+                      <stop offset="100%" style={{ stopColor: "hsl(217 91% 60%)", stopOpacity: 1 }} />
+                    </linearGradient>
+                  </defs>
+                  <circle cx="250" cy="250" r="240" fill="none" stroke="url(#borderGradient)" strokeWidth="8" />
+                </svg>
+
+                <div className="absolute inset-4 rounded-full overflow-hidden bg-background shadow-2xl">
+                  <img 
+                    src="/placeholder.svg" 
+                    alt="Profile" 
+                    className="w-full h-full object-cover"
+                  />
+                </div>
+              </div>
+
+              {/* Floating Icon Decorations */}
+              {floatingIcons.map(({ Icon, className }, index) => (
+                <div 
+                  key={index}
+                  className={`absolute ${className} w-16 h-16 bg-background rounded-2xl shadow-lg flex items-center justify-center animate-fade-in`}
+                  style={{ animationDelay: `${index * 0.2}s` }}
+                >
+                  <Icon className="w-8 h-8 text-primary" />
+                </div>
+              ))}
+            </div>
+          </div>
         </div>
       </div>
     </section>
