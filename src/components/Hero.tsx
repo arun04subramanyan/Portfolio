@@ -1,5 +1,5 @@
 import { Button } from "@/components/ui/button";
-import { ArrowRight, Github, Linkedin, Twitter, Mail, Code2, Palette, Smartphone } from "lucide-react";
+import { ArrowRight, Code2, Palette, Smartphone } from "lucide-react";
 
 const Hero = () => {
   const scrollToProjects = () => {
@@ -19,42 +19,9 @@ const Hero = () => {
   ];
 
   return (
-    <section id="hero" className="relative min-h-screen overflow-hidden bg-gradient-hero">
-      {/* Navigation Header */}
-      <nav className="container mx-auto px-4 py-6 flex items-center justify-between">
-        <div className="flex items-center gap-2">
-          <div className="w-10 h-10 rounded-full bg-gradient-primary flex items-center justify-center text-primary-foreground font-bold">
-            T
-          </div>
-          <span className="text-xl font-bold text-foreground">Travis</span>
-        </div>
-        
-        <div className="hidden md:flex items-center gap-8">
-          <a href="#about" className="text-foreground/70 hover:text-foreground transition-colors">About</a>
-          <a href="#experience" className="text-foreground/70 hover:text-foreground transition-colors">Service</a>
-          <a href="#projects" className="text-foreground/70 hover:text-foreground transition-colors">Portfolio</a>
-          <a href="#projects" className="text-foreground/70 hover:text-foreground transition-colors">Projects</a>
-          <a href="#contact" className="text-foreground/70 hover:text-foreground transition-colors">Contact</a>
-        </div>
-
-        <div className="hidden md:flex items-center gap-4">
-          <a href="#" className="text-foreground/70 hover:text-foreground transition-colors">
-            <Github className="w-5 h-5" />
-          </a>
-          <a href="#" className="text-foreground/70 hover:text-foreground transition-colors">
-            <Twitter className="w-5 h-5" />
-          </a>
-          <a href="#" className="text-foreground/70 hover:text-foreground transition-colors">
-            <Linkedin className="w-5 h-5" />
-          </a>
-          <a href="#" className="text-foreground/70 hover:text-foreground transition-colors">
-            <Mail className="w-5 h-5" />
-          </a>
-        </div>
-      </nav>
-
+    <section id="hero" className="relative min-h-screen overflow-hidden bg-gradient-hero px-4 md:px-8 py-12">
       {/* Hero Content */}
-      <div className="container mx-auto px-4 py-12 md:py-20">
+      <div className="container mx-auto py-12 md:py-20">
         <div className="grid md:grid-cols-2 gap-12 items-center">
           {/* Left Column - Text Content */}
           <div className="space-y-8 animate-fade-in">
