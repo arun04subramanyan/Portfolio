@@ -35,7 +35,7 @@ const Contact = () => {
           <Button 
             size="lg"
             className="bg-primary hover:bg-primary/90 text-primary-foreground shadow-glow"
-            onClick={() => window.open('https://linkedin.com', '_blank')}
+            onClick={() => window.open('https://www.linkedin.com/in/bijin-vijayan/', '_blank')}
           >
             <Linkedin className="w-5 h-5 mr-2" />
             Connect on LinkedIn
@@ -44,7 +44,7 @@ const Contact = () => {
             size="lg"
             variant="outline"
             className="border-primary text-primary hover:bg-primary/10"
-            onClick={() => window.location.href = 'mailto:your.email@example.com'}
+            onClick={() => window.location.href = 'mailto:ybijinev55@gmail.com'}
           >
             <Mail className="w-5 h-5 mr-2" />
             Send Email
@@ -53,18 +53,18 @@ const Contact = () => {
             size="lg"
             variant="outline"
             className="border-primary text-primary hover:bg-primary/10"
-            onClick={() => window.open('https://github.com', '_blank')}
+            onClick={() => window.open('https://github.com/BijinVijayan', '_blank')}
           >
             <Github className="w-5 h-5 mr-2" />
             View GitHub
           </Button>
         </motion.div>
         
-        <div className="mt-16 pt-8 border-t border-border">
+        {/* <div className="mt-16 pt-8 border-t border-border">
           <p className="text-muted-foreground">
             © 2024 Frontend Engineer Portfolio. Built with React & Tailwind CSS.
           </p>
-        </div>
+        </div> */}
       </div>
     </section>
   );

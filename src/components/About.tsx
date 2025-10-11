@@ -7,20 +7,55 @@ const About = () => {
       <div className="absolute inset-0 opacity-[0.03]">
         <svg className="w-full h-full" xmlns="http://www.w3.org/2000/svg">
           <defs>
-            <pattern id="grid" width="60" height="60" patternUnits="userSpaceOnUse">
-              <circle cx="30" cy="30" r="1.5" fill="currentColor" className="text-primary"/>
-              <circle cx="0" cy="0" r="1.5" fill="currentColor" className="text-primary"/>
-              <circle cx="60" cy="0" r="1.5" fill="currentColor" className="text-primary"/>
-              <circle cx="0" cy="60" r="1.5" fill="currentColor" className="text-primary"/>
-              <circle cx="60" cy="60" r="1.5" fill="currentColor" className="text-primary"/>
+            <pattern
+              id="grid"
+              width="60"
+              height="60"
+              patternUnits="userSpaceOnUse"
+            >
+              <circle
+                cx="30"
+                cy="30"
+                r="1.5"
+                fill="currentColor"
+                className="text-primary"
+              />
+              <circle
+                cx="0"
+                cy="0"
+                r="1.5"
+                fill="currentColor"
+                className="text-primary"
+              />
+              <circle
+                cx="60"
+                cy="0"
+                r="1.5"
+                fill="currentColor"
+                className="text-primary"
+              />
+              <circle
+                cx="0"
+                cy="60"
+                r="1.5"
+                fill="currentColor"
+                className="text-primary"
+              />
+              <circle
+                cx="60"
+                cy="60"
+                r="1.5"
+                fill="currentColor"
+                className="text-primary"
+              />
             </pattern>
           </defs>
           <rect width="100%" height="100%" fill="url(#grid)" />
         </svg>
       </div>
-      
+
       <div className="container mx-auto px-4 relative z-10">
-        <motion.h2 
+        <motion.h2
           className="text-4xl md:text-5xl font-bold text-center mb-16 text-foreground"
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -29,14 +64,14 @@ const About = () => {
         >
           About Me
         </motion.h2>
-        
+
         <div className="max-w-4xl mx-auto">
           <div className="relative">
             {/* Decorative gradient blur */}
             <div className="absolute -top-20 -left-20 w-72 h-72 bg-primary/10 rounded-full blur-3xl"></div>
             <div className="absolute -bottom-20 -right-20 w-72 h-72 bg-primary/10 rounded-full blur-3xl"></div>
-            
-            <motion.div 
+
+            <motion.div
               className="relative backdrop-blur-sm bg-background/50 rounded-2xl p-10 md:p-12"
               initial={{ opacity: 0, y: 30 }}
               whileInView={{ opacity: 1, y: 0 }}
@@ -45,18 +80,31 @@ const About = () => {
             >
               <div className="space-y-6">
                 <p className="text-lg text-foreground/90 leading-relaxed">
-                  I'm a passionate frontend engineer with <span className="font-semibold text-primary">2.5 years of experience</span> building modern, scalable web applications. 
-                  My journey in web development has been driven by a love for creating intuitive user experiences and solving 
-                  complex problems with elegant code.
+                  I’m a passionate{" "}
+                  <span className="font-semibold text-primary">
+                    Frontend Developer
+                  </span>{" "}
+                  with over 2 years of experience building dynamic and scalable
+                  web applications. My focus lies in creating intuitive,
+                  high-performing user interfaces that combine clean design with
+                  efficient code.
                 </p>
                 <p className="text-lg text-foreground/90 leading-relaxed">
-                  With expertise in <span className="font-semibold text-primary">Angular</span> and <span className="font-semibold text-primary">Next.js</span>, I specialize in developing high-performance applications that 
-                  deliver exceptional user experiences. I'm constantly learning and exploring new technologies to stay 
-                  at the forefront of frontend development.
+                  I’ve worked with technologies like{" "}
+                  <span className="font-semibold text-primary">
+                    Angular, Next.js, and React { " "}
+                  </span>
+                  to develop e-commerce platforms, ERP dashboards, and admin
+                  panels. I specialize in responsive design, performance
+                  optimization, and SEO — ensuring every project not only looks
+                  great but performs exceptionally well.
                 </p>
                 <p className="text-lg text-foreground/90 leading-relaxed">
-                  When I'm not coding, you can find me contributing to open-source projects, reading about the latest 
-                  web technologies, or sharing knowledge with the developer community.
+                  Beyond coding, I enjoy exploring new frameworks, enhancing UX
+                  strategies, and contributing to projects that merge creativity
+                  with technology. My goal is to keep learning, improving, and
+                  delivering meaningful digital experiences that leave an
+                  impact.
                 </p>
               </div>
             </motion.div>

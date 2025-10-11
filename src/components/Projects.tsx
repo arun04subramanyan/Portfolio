@@ -11,7 +11,7 @@ export const projects = [
     description: "A full-featured e-commerce application built with Next.js and TypeScript. Implemented product catalog, cart functionality, and payment integration.",
     tech: ["Next.js", "TypeScript", "Tailwind CSS", "Stripe"],
     thumbnail: "https://images.unsplash.com/photo-1557821552-17105176677c?w=800&h=600&fit=crop",
-    demoLink: "#",
+    demoLink: "www.billmykart.com",
     fullDescription: "A comprehensive e-commerce solution featuring advanced product search, real-time inventory management, secure checkout process with Stripe integration, and responsive design for seamless shopping across all devices.",
     screenshots: [
       "https://images.unsplash.com/photo-1557821552-17105176677c?w=1200&h=800&fit=crop",
@@ -73,7 +73,7 @@ const Projects = () => {
           Featured Projects
         </motion.h2>
         
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-6xl mx-auto">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3  gap-6 max-w-6xl mx-auto">
           {projects.map((project, index) => (
             <Link 
               key={index}
@@ -85,6 +85,7 @@ const Projects = () => {
                 viewport={{ once: true }}
                 transition={{ duration: 0.5, delay: index * 0.1 }}
                 whileHover={{ y: -8 }}
+                className="h-full"
               >
               <Card 
                 className="bg-card border-border hover:border-primary transition-all shadow-card hover:shadow-glow group cursor-pointer h-full overflow-hidden"
