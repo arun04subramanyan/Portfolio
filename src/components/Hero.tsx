@@ -8,12 +8,24 @@ const Hero = () => {
   };
 
   return (
-    <section className="relative min-h-screen flex items-center justify-center overflow-hidden bg-gradient-hero">
+    <section id="hero" className="relative min-h-screen flex items-center justify-center overflow-hidden bg-gradient-hero">
       <div className="container mx-auto px-4 z-10 text-center animate-fade-in">
         <div className="mb-8">
-          <div className="w-40 h-40 mx-auto rounded-full bg-gradient-primary p-1 shadow-glow">
-            <div className="w-full h-full rounded-full bg-muted flex items-center justify-center text-6xl font-bold text-primary">
-              ME
+          <div className="w-40 h-40 mx-auto relative">
+            <svg className="absolute inset-0 w-full h-full" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+              <defs>
+                <clipPath id="blobClip">
+                  <path fill="currentColor" d="M42.7,-62.9C54.4,-54.5,62.5,-41.5,68.1,-27.3C73.7,-13.1,76.8,2.3,73.8,16.1C70.8,29.9,61.7,42.1,50.1,51.4C38.5,60.7,24.4,67.1,9.3,70.8C-5.8,74.5,-22,75.5,-36.2,69.8C-50.4,64.1,-62.6,51.7,-68.9,37C-75.2,22.3,-75.6,5.3,-72.1,-10.5C-68.6,-26.3,-61.2,-40.9,-50.2,-49.6C-39.2,-58.3,-24.6,-61.1,-10.3,-63.5C4,-65.9,31,-67.3,42.7,-62.9Z" transform="translate(100 100)" />
+                </clipPath>
+              </defs>
+            </svg>
+            <div className="w-full h-full rounded-full bg-gradient-primary p-1 shadow-glow" style={{ clipPath: 'url(#blobClip)' }}>
+              <img 
+                src="/placeholder.svg" 
+                alt="Profile" 
+                className="w-full h-full object-cover"
+                style={{ clipPath: 'url(#blobClip)' }}
+              />
             </div>
           </div>
         </div>

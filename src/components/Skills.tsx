@@ -2,16 +2,16 @@ import { Award } from "lucide-react";
 import { Badge } from "@/components/ui/badge";
 
 const skills = [
-  { name: "Angular", category: "Framework", color: "bg-gradient-to-br from-red-50 to-red-100" },
-  { name: "Next.js", category: "Framework", color: "bg-gradient-to-br from-slate-50 to-slate-100" },
-  { name: "React", category: "Framework", color: "bg-gradient-to-br from-cyan-50 to-cyan-100" },
-  { name: "TypeScript", category: "Language", color: "bg-gradient-to-br from-blue-50 to-blue-100" },
-  { name: "JavaScript", category: "Language", color: "bg-gradient-to-br from-yellow-50 to-yellow-100" },
-  { name: "HTML/CSS", category: "Core", color: "bg-gradient-to-br from-orange-50 to-orange-100" },
-  { name: "Tailwind CSS", category: "Styling", color: "bg-gradient-to-br from-teal-50 to-teal-100" },
-  { name: "Git", category: "Tools", color: "bg-gradient-to-br from-purple-50 to-purple-100" },
-  { name: "REST APIs", category: "Tools", color: "bg-gradient-to-br from-green-50 to-green-100" },
-  { name: "Responsive Design", category: "Core", color: "bg-gradient-to-br from-pink-50 to-pink-100" },
+  { name: "Angular", category: "Framework" },
+  { name: "Next.js", category: "Framework" },
+  { name: "React", category: "Framework" },
+  { name: "TypeScript", category: "Language" },
+  { name: "JavaScript", category: "Language" },
+  { name: "HTML/CSS", category: "Core" },
+  { name: "Tailwind CSS", category: "Styling" },
+  { name: "Git", category: "Tools" },
+  { name: "REST APIs", category: "Tools" },
+  { name: "Responsive Design", category: "Core" },
 ];
 
 const certifications = [
@@ -36,20 +36,17 @@ const Skills = () => {
         </div>
         
         <div className="max-w-5xl mx-auto mb-20">
-          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-4">
+          <div className="flex flex-wrap gap-3 justify-center">
             {skills.map((skill, index) => (
               <div 
                 key={index}
-                className="group relative animate-fade-in"
+                className="animate-fade-in"
                 style={{ animationDelay: `${index * 0.05}s` }}
               >
-                <div className={`${skill.color} rounded-xl p-6 h-full flex flex-col items-center justify-center text-center transition-all duration-300 hover:scale-105 hover:shadow-glow border border-border/50`}>
-                  <span className="text-sm font-semibold text-foreground mb-1">
+                <div className="bg-card border border-border rounded-full px-6 py-3 transition-all duration-300 hover:border-primary hover:shadow-glow group">
+                  <span className="text-sm font-medium text-foreground group-hover:text-primary transition-colors">
                     {skill.name}
                   </span>
-                  <Badge variant="secondary" className="text-xs mt-2">
-                    {skill.category}
-                  </Badge>
                 </div>
               </div>
             ))}
