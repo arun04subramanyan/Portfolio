@@ -1,5 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { ArrowRight, Code2, Palette, Smartphone } from "lucide-react";
+import { motion } from "framer-motion";
 
 const Hero = () => {
   const scrollToProjects = () => {
@@ -24,7 +25,12 @@ const Hero = () => {
       <div className="container mx-auto py-12 md:py-20">
         <div className="grid md:grid-cols-2 gap-12 items-center">
           {/* Left Column - Text Content */}
-          <div className="space-y-8 animate-fade-in">
+          <motion.div 
+            className="space-y-8"
+            initial={{ opacity: 0, x: -50 }}
+            animate={{ opacity: 1, x: 0 }}
+            transition={{ duration: 0.6 }}
+          >
             <div className="space-y-4">
               <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold text-foreground leading-tight">
                 Make <span className="bg-gradient-primary bg-clip-text text-transparent">Designs</span> That<br />
@@ -64,10 +70,15 @@ const Hero = () => {
                 </div>
               ))}
             </div>
-          </div>
+          </motion.div>
 
           {/* Right Column - Profile Image */}
-          <div className="relative flex items-center justify-center">
+          <motion.div 
+            className="relative flex items-center justify-center"
+            initial={{ opacity: 0, scale: 0.8 }}
+            animate={{ opacity: 1, scale: 1 }}
+            transition={{ duration: 0.6, delay: 0.2 }}
+          >
             <div className="relative w-full max-w-md aspect-square">
               {/* Decorative Circle Background */}
               <div className="absolute inset-0 bg-gradient-to-br from-primary/10 to-primary/5 rounded-full blur-3xl"></div>
@@ -95,16 +106,19 @@ const Hero = () => {
 
               {/* Floating Icon Decorations */}
               {floatingIcons.map(({ Icon, className }, index) => (
-                <div 
+                <motion.div 
                   key={index}
-                  className={`absolute ${className} w-16 h-16 bg-background rounded-2xl shadow-lg flex items-center justify-center animate-fade-in`}
-                  style={{ animationDelay: `${index * 0.2}s` }}
+                  className={`absolute ${className} w-16 h-16 bg-background rounded-2xl shadow-lg flex items-center justify-center`}
+                  initial={{ opacity: 0, y: 20 }}
+                  animate={{ opacity: 1, y: 0 }}
+                  transition={{ duration: 0.5, delay: 0.4 + index * 0.1 }}
+                  whileHover={{ scale: 1.1, rotate: 5 }}
                 >
                   <Icon className="w-8 h-8 text-primary" />
-                </div>
+                </motion.div>
               ))}
             </div>
-          </div>
+          </motion.div>
         </div>
       </div>
     </section>

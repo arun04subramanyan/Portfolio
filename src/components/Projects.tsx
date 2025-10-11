@@ -2,6 +2,7 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/com
 import { Badge } from "@/components/ui/badge";
 import { ExternalLink } from "lucide-react";
 import { Link } from "react-router-dom";
+import { motion } from "framer-motion";
 
 export const projects = [
   {
@@ -62,9 +63,15 @@ const Projects = () => {
   return (
     <section id="projects" className="py-20 bg-background">
       <div className="container mx-auto px-4">
-        <h2 className="text-4xl md:text-5xl font-bold text-center mb-12">
+        <motion.h2 
+          className="text-4xl md:text-5xl font-bold text-center mb-12"
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.5 }}
+        >
           Featured Projects
-        </h2>
+        </motion.h2>
         
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-6xl mx-auto">
           {projects.map((project, index) => (
@@ -72,9 +79,15 @@ const Projects = () => {
               key={index}
               to={`/project/${project.id}`}
             >
+              <motion.div
+                initial={{ opacity: 0, y: 30 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.5, delay: index * 0.1 }}
+                whileHover={{ y: -8 }}
+              >
               <Card 
-                className="bg-card border-border hover:border-primary transition-all shadow-card hover:shadow-glow animate-fade-in group cursor-pointer h-full overflow-hidden"
-                style={{ animationDelay: `${index * 0.15}s` }}
+                className="bg-card border-border hover:border-primary transition-all shadow-card hover:shadow-glow group cursor-pointer h-full overflow-hidden"
               >
                 <div className="aspect-video overflow-hidden">
                   <img 
@@ -105,6 +118,7 @@ const Projects = () => {
                   </div>
                 </CardContent>
               </Card>
+              </motion.div>
             </Link>
           ))}
         </div>

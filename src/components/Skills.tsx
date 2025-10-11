@@ -1,4 +1,5 @@
 import { Award } from "lucide-react";
+import { motion } from "framer-motion";
 import { Badge } from "@/components/ui/badge";
 
 const skills = [
@@ -29,46 +30,65 @@ const Skills = () => {
       
       <div className="container mx-auto px-4 relative z-10">
         <div className="text-center mb-16">
-          <h2 className="text-4xl md:text-5xl font-bold mb-4 text-foreground">
+          <motion.h2 
+            className="text-4xl md:text-5xl font-bold mb-4 text-foreground"
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.5 }}
+          >
             Skills & Technologies
-          </h2>
+          </motion.h2>
           <p className="text-muted-foreground text-lg">Technologies I work with</p>
         </div>
         
         <div className="max-w-5xl mx-auto mb-20">
           <div className="flex flex-wrap gap-3 justify-center">
             {skills.map((skill, index) => (
-              <div 
+              <motion.div 
                 key={index}
-                className="animate-fade-in"
-                style={{ animationDelay: `${index * 0.05}s` }}
+                initial={{ opacity: 0, scale: 0.8 }}
+                whileInView={{ opacity: 1, scale: 1 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.3, delay: index * 0.05 }}
+                whileHover={{ scale: 1.05 }}
               >
                 <div className="bg-card border border-border rounded-full px-6 py-3 transition-all duration-300 hover:border-primary hover:shadow-glow group">
                   <span className="text-sm font-medium text-foreground group-hover:text-primary transition-colors">
                     {skill.name}
                   </span>
                 </div>
-              </div>
+              </motion.div>
             ))}
           </div>
         </div>
 
         {/* Certifications Section */}
         <div className="max-w-4xl mx-auto">
-          <div className="text-center mb-10">
+          <motion.div 
+            className="text-center mb-10"
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.5 }}
+          >
             <div className="inline-flex items-center gap-2 mb-4">
               <Award className="w-6 h-6 text-primary" />
               <h3 className="text-3xl font-bold text-foreground">Certifications</h3>
             </div>
             <p className="text-muted-foreground">Professional certifications and achievements</p>
-          </div>
+          </motion.div>
           
           <div className="grid md:grid-cols-3 gap-6">
             {certifications.map((cert, index) => (
-              <div 
+              <motion.div 
                 key={index}
-                className="bg-card rounded-xl p-6 border border-border hover:border-primary transition-all duration-300 hover:shadow-glow animate-fade-in group"
-                style={{ animationDelay: `${(skills.length + index) * 0.05}s` }}
+                className="bg-card rounded-xl p-6 border border-border hover:border-primary transition-all duration-300 hover:shadow-glow group"
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.5, delay: index * 0.1 }}
+                whileHover={{ scale: 1.03 }}
               >
                 <div className="flex items-start gap-3">
                   <div className="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center flex-shrink-0 group-hover:bg-primary/20 transition-colors">
@@ -82,7 +102,7 @@ const Skills = () => {
                     <p className="text-xs text-muted-foreground/70 mt-1">{cert.year}</p>
                   </div>
                 </div>
-              </div>
+              </motion.div>
             ))}
           </div>
         </div>

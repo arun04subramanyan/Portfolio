@@ -1,3 +1,5 @@
+import { motion } from "framer-motion";
+
 const About = () => {
   return (
     <section id="about" className="py-20 bg-card relative overflow-hidden">
@@ -18,9 +20,15 @@ const About = () => {
       </div>
       
       <div className="container mx-auto px-4 relative z-10">
-        <h2 className="text-4xl md:text-5xl font-bold text-center mb-16 text-foreground">
+        <motion.h2 
+          className="text-4xl md:text-5xl font-bold text-center mb-16 text-foreground"
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.5 }}
+        >
           About Me
-        </h2>
+        </motion.h2>
         
         <div className="max-w-4xl mx-auto">
           <div className="relative">
@@ -28,7 +36,13 @@ const About = () => {
             <div className="absolute -top-20 -left-20 w-72 h-72 bg-primary/10 rounded-full blur-3xl"></div>
             <div className="absolute -bottom-20 -right-20 w-72 h-72 bg-primary/10 rounded-full blur-3xl"></div>
             
-            <div className="relative backdrop-blur-sm bg-background/50 rounded-2xl p-10 md:p-12">
+            <motion.div 
+              className="relative backdrop-blur-sm bg-background/50 rounded-2xl p-10 md:p-12"
+              initial={{ opacity: 0, y: 30 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.6, delay: 0.2 }}
+            >
               <div className="space-y-6">
                 <p className="text-lg text-foreground/90 leading-relaxed">
                   I'm a passionate frontend engineer with <span className="font-semibold text-primary">2.5 years of experience</span> building modern, scalable web applications. 
@@ -45,7 +59,7 @@ const About = () => {
                   web technologies, or sharing knowledge with the developer community.
                 </p>
               </div>
-            </div>
+            </motion.div>
           </div>
         </div>
       </div>

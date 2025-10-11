@@ -1,4 +1,5 @@
 import { Briefcase } from "lucide-react";
+import { motion } from "framer-motion";
 
 const experiences = [
   {
@@ -21,16 +22,26 @@ const Experience = () => {
   return (
     <section id="experience" className="py-20 bg-background">
       <div className="container mx-auto px-4">
-        <h2 className="text-4xl md:text-5xl font-bold text-center mb-12">
+        <motion.h2 
+          className="text-4xl md:text-5xl font-bold text-center mb-12"
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.5 }}
+        >
           Experience
-        </h2>
+        </motion.h2>
         
         <div className="max-w-3xl mx-auto space-y-8">
           {experiences.map((exp, index) => (
-            <div 
+            <motion.div 
               key={index}
-              className="bg-card rounded-lg p-6 border border-border hover:border-primary transition-all shadow-card hover:shadow-glow animate-fade-in"
-              style={{ animationDelay: `${index * 0.2}s` }}
+              className="bg-card rounded-lg p-6 border border-border hover:border-primary transition-all shadow-card hover:shadow-glow"
+              initial={{ opacity: 0, x: -30 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.5, delay: index * 0.15 }}
+              whileHover={{ scale: 1.02 }}
             >
               <div className="flex items-start gap-4">
                 <div className="bg-primary/10 p-3 rounded-lg">
@@ -55,7 +66,7 @@ const Experience = () => {
                   </div>
                 </div>
               </div>
-            </div>
+            </motion.div>
           ))}
         </div>
       </div>
