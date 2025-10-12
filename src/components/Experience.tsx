@@ -30,7 +30,7 @@ const experiences = [
 
 const Experience = () => {
   return (
-    <section id="experience" className="py-20 bg-background">
+    <section id="experience" className="py-10 sm:py-20 bg-background">
       <div className="container mx-auto px-4">
         <motion.h2
           className="text-4xl md:text-5xl font-bold text-center mb-12"
@@ -51,10 +51,10 @@ const Experience = () => {
               whileInView={{ opacity: 1, x: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.5, delay: index * 0.15 }}
-              whileHover={{ scale: 1.02 }}
+              whileHover={{ scale: 1 }}
             >
               <div className="flex items-start gap-4">
-                <div className="bg-primary/10 p-3 rounded-lg">
+                <div className="bg-primary/10 p-3 rounded-lg hidden sm:block">
                   <Briefcase className="w-6 h-6 text-primary" />
                 </div>
                 <div className="flex-1">

@@ -2,7 +2,7 @@ import { motion } from "framer-motion";
 
 const About = () => {
   return (
-    <section id="about" className="py-20 bg-card relative overflow-hidden">
+    <section id="about" className="py-10 sm:py-20 bg-card relative overflow-hidden">
       {/* Elegant SVG Background Pattern */}
       <div className="absolute inset-0 opacity-[0.03]">
         <svg className="w-full h-full" xmlns="http://www.w3.org/2000/svg">
@@ -56,7 +56,7 @@ const About = () => {
 
       <div className="container mx-auto px-4 relative z-10">
         <motion.h2
-          className="text-4xl md:text-5xl font-bold text-center mb-16 text-foreground"
+          className="text-4xl md:text-5xl font-bold text-center mb-8 sm:mb-16 text-foreground"
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
@@ -65,21 +65,21 @@ const About = () => {
           About Me
         </motion.h2>
 
-        <div className="max-w-4xl mx-auto">
+        <div className="max-w-5xl mx-auto">
           <div className="relative">
             {/* Decorative gradient blur */}
             <div className="absolute -top-20 -left-20 w-72 h-72 bg-primary/10 rounded-full blur-3xl"></div>
             <div className="absolute -bottom-20 -right-20 w-72 h-72 bg-primary/10 rounded-full blur-3xl"></div>
 
             <motion.div
-              className="relative backdrop-blur-sm bg-background/50 rounded-2xl p-10 md:p-12"
+              className="relative backdrop-blur-sm bg-background/50 rounded-2xl p-5 sm:p-10 md:p-12"
               initial={{ opacity: 0, y: 30 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.6, delay: 0.2 }}
             >
               <div className="space-y-6">
-                <p className="text-lg text-foreground/90 leading-relaxed">
+                <p className="text-base sm:text-lg text-foreground/90 leading-relaxed">
                   I’m a passionate{" "}
                   <span className="font-semibold text-primary">
                     Frontend Developer
@@ -89,7 +89,7 @@ const About = () => {
                   high-performing user interfaces that combine clean design with
                   efficient code.
                 </p>
-                <p className="text-lg text-foreground/90 leading-relaxed">
+                <p className="text-base sm:text-lg text-foreground/90 leading-relaxed">
                   I’ve worked with technologies like{" "}
                   <span className="font-semibold text-primary">
                     Angular, Next.js, and React { " "}
@@ -99,7 +99,7 @@ const About = () => {
                   optimization, and SEO — ensuring every project not only looks
                   great but performs exceptionally well.
                 </p>
-                <p className="text-lg text-foreground/90 leading-relaxed">
+                <p className="text-base sm:text-lg text-foreground/90 leading-relaxed">
                   Beyond coding, I enjoy exploring new frameworks, enhancing UX
                   strategies, and contributing to projects that merge creativity
                   with technology. My goal is to keep learning, improving, and

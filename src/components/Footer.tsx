@@ -3,11 +3,11 @@ import { Button } from "@/components/ui/button";
 import { useEffect, useState } from "react";
 
 const Footer = () => {
-  const [theme, setTheme] = useState<"light" | "dark">("dark");
+  const [theme, setTheme] = useState<"light" | "dark">("light");
 
   useEffect(() => {
     const savedTheme = localStorage.getItem("theme") as "light" | "dark" | null;
-    const initialTheme = savedTheme || "dark";
+    const initialTheme = savedTheme || "light";
     setTheme(initialTheme);
     document.documentElement.classList.toggle("dark", initialTheme === "dark");
   }, []);
@@ -24,7 +24,7 @@ const Footer = () => {
       <div className="container mx-auto px-4 sm:px-8">
         <div className="flex flex-col md:flex-row items-center justify-between gap-4">
           <p className="text-sm text-muted-foreground">
-            © {new Date().getFullYear()} Frontend Engineer. All rights reserved.
+            © {new Date().getFullYear()} Bijin Ev - Frontend Engineer. All rights reserved.
           </p>
           
           <Button

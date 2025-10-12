@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 
 const Contact = () => {
   return (
-    <section id="contact" className="py-20 bg-card">
+    <section id="contact" className="py-10 sm:py-20 bg-card">
       <div className="container mx-auto px-4 text-center">
         <motion.h2 
           className="text-4xl md:text-5xl font-bold mb-6"
@@ -16,7 +16,7 @@ const Contact = () => {
           Let's Connect
         </motion.h2>
         <motion.p 
-          className="text-xl text-muted-foreground mb-12 max-w-2xl mx-auto"
+          className="text-base sm:text-xl text-muted-foreground mb-12 max-w-2xl mx-auto"
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
           viewport={{ once: true }}

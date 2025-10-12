@@ -14,9 +14,9 @@ const Hero = () => {
   ];
 
   const floatingIcons = [
-    { Icon: Code2, className: "top-6 right-20" },
-    { Icon: Palette, className: "top-32 left-2" },
-    { Icon: Smartphone, className: "bottom-14 right-12" },
+    { Icon: Code2, className: "top-0 sm:top-6 right-20" },
+    { Icon: Palette, className: "top-32 left-0 sm:left-2" },
+    { Icon: Smartphone, className: "bottom-0 sm:bottom-14 right-12" },
   ];
 
   return (
@@ -35,7 +35,7 @@ const Hero = () => {
             transition={{ duration: 0.6 }}
           >
             <div className="space-y-4">
-              <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold text-foreground leading-tight">
+              <h1 className="text-[34px] smtext-4xl md:text-6xl lg:text-7xl font-bold text-foreground leading-tight">
                 Crafting{" "}
                 <span className="bg-gradient-primary bg-clip-text text-transparent">
                   Modern
@@ -43,7 +43,7 @@ const Hero = () => {
                 Scalable Web Apps
               </h1>
                
-              <p className="text-lg text-foreground/70 max-w-md">
+              <p className="text-base sm:text-lg text-foreground/70 max-w-md">
                 Hi, I'm <span className="font-semibold">Bijin EV</span>, a
                 Frontend Developer with 2+ years of experience crafting
                 high-performance, responsive web applications using Angular,
@@ -53,10 +53,10 @@ const Hero = () => {
               </p>
             </div>
 
-            <div className="flex gap-4 flex-wrap">
+            <div className="flex gap-3 sm:gap-4 ">
               <Button
                 size="lg"
-                className="bg-gradient-primary text-primary-foreground hover:opacity-90 shadow-glow"
+                className="bg-gradient-primary px-6 sm:px-auto text-primary-foreground hover:opacity-90 shadow-glow"
                 onClick={() =>
                   document
                     .getElementById("contact")
