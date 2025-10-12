@@ -1,5 +1,5 @@
 import { Button } from "@/components/ui/button";
-import { ArrowRight, Code2, Palette, Smartphone } from "lucide-react";
+import { ArrowRight, Code2, Palette, Smartphone, Download } from "lucide-react";
 import { motion } from "framer-motion";
 
 const Hero = () => {
@@ -53,7 +53,7 @@ const Hero = () => {
               </p>
             </div>
 
-            <div className="flex gap-3 sm:gap-4 ">
+            <div className="flex flex-wrap gap-3 sm:gap-4 ">
               <Button
                 size="lg"
                 className="bg-gradient-primary px-6 sm:px-auto text-primary-foreground hover:opacity-90 shadow-glow"
@@ -64,6 +64,17 @@ const Hero = () => {
                 }
               >
                 Hire Me
+              </Button>
+              <Button
+                size="lg"
+                variant="outline"
+                className="border-foreground/20 text-foreground hover:bg-foreground/5 group"
+                asChild
+              >
+                <a href="/cv image.png" download="Bijin_EV_CV.png">
+                  Download CV
+                  <Download className="ml-2 w-4 h-4 group-hover:translate-y-1 transition-transform" />
+                </a>
               </Button>
               <Button
                 size="lg"
