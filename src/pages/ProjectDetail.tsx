@@ -38,7 +38,7 @@ const ProjectDetail = () => {
         </Link>
 
         <div className="max-w-5xl mx-auto">
-          <h1 className="text-4xl md:text-5xl font-bold text-foreground mb-6">
+          <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold text-foreground mb-6">
             {project.title}
           </h1>
 
@@ -72,7 +72,7 @@ const ProjectDetail = () => {
             <h2 className="text-2xl font-bold text-foreground mb-4">
               About This Project
             </h2>
-            <p className="text-lg text-foreground/80 leading-relaxed">
+            <p className="text-base sm:text-lg text-foreground/80 leading-relaxed">
               {project.fullDescription}
             </p>
           </Card>
