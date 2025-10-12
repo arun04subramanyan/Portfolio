@@ -53,10 +53,10 @@ const Hero = () => {
               </p>
             </div>
 
-            <div className="flex flex-wrap gap-3 sm:gap-4 ">
+            <div className="flex gap-3 sm:gap-4 ">
               <Button
                 size="lg"
-                className="bg-gradient-primary px-6 sm:px-auto text-primary-foreground hover:opacity-90 shadow-glow"
+                className="bg-gradient-primary px-5 sm:px-auto text-primary-foreground hover:opacity-90 shadow-glow"
                 onClick={() =>
                   document
                     .getElementById("contact")
@@ -75,6 +75,23 @@ const Hero = () => {
                 <ArrowRight className="ml-2 w-4 h-4 group-hover:translate-x-1 transition-transform" />
               </Button>
             </div>
+            <motion.div
+              className="flex sm:hidden"
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.5, delay: 0.8 }}
+            >
+              <Button
+                size="lg"
+                className="bg-gradient-primary w-full text-primary-foreground hover:opacity-90 shadow-glow group"
+                asChild
+              >
+                <a href="/Bijin Resume.pdf" download="Bijin_EV_Resume.pdf">
+                  Download CV
+                  <Download className="ml-2 w-4 h-4 " />
+                </a>
+              </Button>
+            </motion.div>
 
             {/* Stats */}
             {/* <div className="grid grid-cols-3 gap-8 pt-8">
@@ -162,20 +179,21 @@ const Hero = () => {
               ))}
 
               {/* Download CV Button */}
+              {/* Download CV Button */}
               <motion.div
-                className="absolute -bottom-6 left-1/2 -translate-x-1/2 w-full max-w-xs px-4"
+                className="absolute hidden  -bottom-16 left-1/2 -translate-x-1/2 sm:flex justify-center"
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.5, delay: 0.8 }}
               >
                 <Button
                   size="lg"
-                  className="w-full bg-gradient-primary text-primary-foreground hover:opacity-90 shadow-glow group"
+                  className="bg-gradient-primary text-primary-foreground hover:opacity-90 shadow-glow group"
                   asChild
                 >
-                  <a href="/cv image.png" download="Bijin_EV_CV.png">
+                  <a href="/Bijin Resume.pdf" download="Bijin_EV_Resume.pdf">
                     Download CV
-                    <Download className="ml-2 w-4 h-4 group-hover:translate-y-1 transition-transform" />
+                    <Download className="ml-2 w-4 h-4 " />
                   </a>
                 </Button>
               </motion.div>

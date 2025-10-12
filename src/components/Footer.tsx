@@ -23,7 +23,7 @@ const Footer = () => {
     <footer className="py-8 bg-card border-t border-border max-sm:pb-20">
       <div className="container mx-auto px-4 sm:px-8">
         <div className="flex flex-col md:flex-row items-center justify-between gap-4">
-          <p className="text-sm text-muted-foreground">
+          <p className="text-xs sm:text-sm text-muted-foreground max-sm:text-center">
             © {new Date().getFullYear()} Bijin Ev - Frontend Engineer. All rights reserved.
           </p>
           
