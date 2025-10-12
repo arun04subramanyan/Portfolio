@@ -69,17 +69,6 @@ const Hero = () => {
                 size="lg"
                 variant="outline"
                 className="border-foreground/20 text-foreground hover:bg-foreground/5 group"
-                asChild
-              >
-                <a href="/cv image.png" download="Bijin_EV_CV.png">
-                  Download CV
-                  <Download className="ml-2 w-4 h-4 group-hover:translate-y-1 transition-transform" />
-                </a>
-              </Button>
-              <Button
-                size="lg"
-                variant="outline"
-                className="border-foreground/20 text-foreground hover:bg-foreground/5 group"
                 onClick={scrollToProjects}
               >
                 Previous Works
@@ -171,6 +160,25 @@ const Hero = () => {
                   <Icon className="w-8 h-8 text-primary" />
                 </motion.div>
               ))}
+
+              {/* Download CV Button */}
+              <motion.div
+                className="absolute -bottom-6 left-1/2 -translate-x-1/2 w-full max-w-xs px-4"
+                initial={{ opacity: 0, y: 20 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.5, delay: 0.8 }}
+              >
+                <Button
+                  size="lg"
+                  className="w-full bg-gradient-primary text-primary-foreground hover:opacity-90 shadow-glow group"
+                  asChild
+                >
+                  <a href="/cv image.png" download="Bijin_EV_CV.png">
+                    Download CV
+                    <Download className="ml-2 w-4 h-4 group-hover:translate-y-1 transition-transform" />
+                  </a>
+                </Button>
+              </motion.div>
             </div>
           </motion.div>
         </div>
