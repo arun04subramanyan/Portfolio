@@ -15,6 +15,7 @@ const skills = [
   { name: "Git", category: "Tools" },
   { name: "REST APIs", category: "Tools" },
   { name: "Responsive Design", category: "Core" },
+  { name: "Wordpress", category: "Tools" },
 ];
 
 const certifications = [
