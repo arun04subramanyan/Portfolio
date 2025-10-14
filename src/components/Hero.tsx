@@ -1,8 +1,13 @@
 import { Button } from "@/components/ui/button";
-import { ArrowRight, Code2, Palette, Smartphone, Download } from "lucide-react";
+import { Card, CardContent } from "@/components/ui/card";
+import { Collapsible, CollapsibleContent, CollapsibleTrigger } from "@/components/ui/collapsible";
+import { ArrowRight, Code2, Palette, Smartphone, Download, ChevronDown, User, Mail, MapPin, Phone, Linkedin, Github } from "lucide-react";
 import { motion } from "framer-motion";
+import { useState } from "react";
 
 const Hero = () => {
+  const [isOpen, setIsOpen] = useState(false);
+  
   const scrollToProjects = () => {
     document.getElementById("projects")?.scrollIntoView({ behavior: "smooth" });
   };
@@ -26,6 +31,64 @@ const Hero = () => {
     >
       {/* Hero Content */}
       <div className="container px-4 sm:px-auto mx-auto py-8 sm:py-12 md:py-20">
+        {/* Mobile Profile Card */}
+        <motion.div
+          className="md:hidden mb-8"
+          initial={{ opacity: 0, y: -20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.5 }}
+        >
+          <Collapsible open={isOpen} onOpenChange={setIsOpen}>
+            <Card className="border-foreground/10">
+              <CardContent className="p-4">
+                <CollapsibleTrigger className="w-full">
+                  <div className="flex items-center gap-4">
+                    <div className="w-12 h-12 rounded-full bg-gradient-primary flex items-center justify-center flex-shrink-0">
+                      <User className="w-6 h-6 text-primary-foreground" />
+                    </div>
+                    <div className="flex-1 text-left">
+                      <h3 className="font-semibold text-foreground">Bijin EV</h3>
+                      <p className="text-sm text-muted-foreground">bijinev@gmail.com</p>
+                    </div>
+                    <ChevronDown 
+                      className={`w-5 h-5 text-foreground/60 transition-transform ${isOpen ? 'rotate-180' : ''}`} 
+                    />
+                  </div>
+                </CollapsibleTrigger>
+                
+                <CollapsibleContent>
+                  <div className="mt-4 pt-4 border-t border-foreground/10 space-y-3">
+                    <div className="flex items-center gap-3 text-sm">
+                      <Mail className="w-4 h-4 text-primary flex-shrink-0" />
+                      <span className="text-foreground/70">bijinev@gmail.com</span>
+                    </div>
+                    <div className="flex items-center gap-3 text-sm">
+                      <Phone className="w-4 h-4 text-primary flex-shrink-0" />
+                      <span className="text-foreground/70">+91 9876543210</span>
+                    </div>
+                    <div className="flex items-center gap-3 text-sm">
+                      <MapPin className="w-4 h-4 text-primary flex-shrink-0" />
+                      <span className="text-foreground/70">Kerala, India</span>
+                    </div>
+                    <div className="flex items-center gap-3 text-sm">
+                      <Linkedin className="w-4 h-4 text-primary flex-shrink-0" />
+                      <a href="https://linkedin.com/in/bijinev" className="text-foreground/70 hover:text-primary transition-colors">
+                        linkedin.com/in/bijinev
+                      </a>
+                    </div>
+                    <div className="flex items-center gap-3 text-sm">
+                      <Github className="w-4 h-4 text-primary flex-shrink-0" />
+                      <a href="https://github.com/bijinev" className="text-foreground/70 hover:text-primary transition-colors">
+                        github.com/bijinev
+                      </a>
+                    </div>
+                  </div>
+                </CollapsibleContent>
+              </CardContent>
+            </Card>
+          </Collapsible>
+        </motion.div>
+
         <div className="grid md:grid-cols-2 gap-12 items-center">
           {/* Left Column - Text Content */}
           <motion.div
@@ -104,9 +167,9 @@ const Hero = () => {
             </div> */}
           </motion.div>
 
-          {/* Right Column - Profile Image */}
+          {/* Right Column - Profile Image (Hidden on Mobile) */}
           <motion.div
-            className="relative flex items-center justify-center"
+            className="hidden md:flex relative items-center justify-center"
             initial={{ opacity: 0, scale: 0.8 }}
             animate={{ opacity: 1, scale: 1 }}
             transition={{ duration: 0.6, delay: 0.2 }}
