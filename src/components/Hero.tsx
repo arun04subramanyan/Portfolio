@@ -27,7 +27,7 @@ const Hero = () => {
   return (
     <section
       id="hero"
-      className="relative min-h-screen overflow-hidden bg-gradient-hero px-4 md:px-12 lg:px-20 py-8 sm:py-12"
+      className="relative sm:min-h-screen overflow-hidden bg-gradient-hero px-4 md:px-12 lg:px-20 py-8 sm:py-12"
     >
       {/* Hero Content */}
       <div className="container px-3 sm:px-auto mx-auto  py-8 max-sm:pt-3 sm:py-12 md:py-20">
