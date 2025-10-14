@@ -30,7 +30,7 @@ const Hero = () => {
       className="relative min-h-screen overflow-hidden bg-gradient-hero px-4 md:px-12 lg:px-20 py-8 sm:py-12"
     >
       {/* Hero Content */}
-      <div className="container px-4 sm:px-auto mx-auto py-8 sm:py-12 md:py-20">
+      <div className="container px-3 sm:px-auto mx-auto  py-8 max-sm:pt-3 sm:py-12 md:py-20">
         {/* Mobile Profile Card */}
         <motion.div
           className="md:hidden mb-8"
@@ -44,7 +44,13 @@ const Hero = () => {
                 <CollapsibleTrigger className="w-full">
                   <div className="flex items-center gap-4">
                     <div className="w-12 h-12 rounded-full bg-gradient-primary flex items-center justify-center flex-shrink-0">
-                      <User className="w-6 h-6 text-primary-foreground" />
+                      {/* <User className="w-6 h-6 text-primary-foreground" /> */}
+                      <img
+                        src="cv image.png"
+                        alt="Profile"
+                        className="w-full h-full object-cover rounded-full"
+                      />
+
                     </div>
                     <div className="flex-1 text-left">
                       <h3 className="font-semibold text-foreground">Bijin EV</h3>
@@ -72,13 +78,13 @@ const Hero = () => {
                     </div>
                     <div className="flex items-center gap-3 text-sm">
                       <Linkedin className="w-4 h-4 text-primary flex-shrink-0" />
-                      <a href="https://linkedin.com/in/bijinev" className="text-foreground/70 hover:text-primary transition-colors">
+                      <a href="https://www.linkedin.com/in/bijin-vijayan/" className="text-foreground/70 hover:text-primary transition-colors">
                         linkedin.com/in/bijinev
                       </a>
                     </div>
                     <div className="flex items-center gap-3 text-sm">
                       <Github className="w-4 h-4 text-primary flex-shrink-0" />
-                      <a href="https://github.com/bijinev" className="text-foreground/70 hover:text-primary transition-colors">
+                      <a href="https://github.com/BijinVijayan" className="text-foreground/70 hover:text-primary transition-colors">
                         github.com/bijinev
                       </a>
                     </div>

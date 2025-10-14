@@ -46,7 +46,7 @@ const Experience = () => {
           {experiences.map((exp, index) => (
             <motion.div
               key={index}
-              className="bg-card rounded-lg p-6 border border-border hover:border-primary transition-all shadow-card hover:shadow-glow"
+              className="bg-card rounded-lg p-5 sm:p-6 border border-border hover:border-primary transition-all shadow-card hover:shadow-glow"
               initial={{ opacity: 0, x: -30 }}
               whileInView={{ opacity: 1, x: 0 }}
               viewport={{ once: true }}

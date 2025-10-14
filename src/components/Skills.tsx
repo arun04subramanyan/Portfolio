@@ -98,7 +98,7 @@ const Skills = () => {
             {certifications.map((cert, index) => (
               <motion.div
                 key={index}
-                className="bg-card rounded-xl p-6 border border-border hover:border-primary transition-all duration-300 hover:shadow-glow group"
+                className="bg-card rounded-xl p-5 sm:p-6 border border-border hover:border-primary transition-all duration-300 hover:shadow-glow group"
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
