@@ -69,23 +69,107 @@ export const projects = [
     ],
   },
   {
-  id: "singularity",
-  title: "Singularity – Web & App Development Company",
-  description:
-    "Singularity is a web and mobile application development service company specializing in Webflow-based website solutions, UI/UX design, branding, SEO, and digital marketing services.",
-  tech: ["Next.js", "TypeScript", "Tailwind CSS", "Framer Motion"],
-  thumbnail: "/assets/projects/sin 1.png",
-  demoLink: "https://singularity-three-lovat.vercel.app",
-  fullDescription:
-    "Singularity is a web and mobile application development service company that primarily focuses on building high-performance websites using Webflow. The company also provides creative and technical services including UI/UX design, branding, SEO optimization, and digital marketing solutions. This project is an ongoing development for a startup that is currently in its planning and early-stage growth phase. The entire website was developed solely by me using Next.js, TypeScript, Tailwind CSS, and Framer Motion. It serves as a digital presence to showcase the company’s vision, service offerings, and brand identity through a modern and responsive interface.",
-  screenshots: [
-    "/assets/projects/sin 1.png",
-    "/assets/projects/sin 2.png",
-    "/assets/projects/sin 3.png",
-    "/assets/projects/sin 4.png",
-    "/assets/projects/sin 5.png",
-  ],
-},
+    id: "singularity",
+    title: "Singularity – Web & App Development Company",
+    description:
+      "Singularity is a web and mobile application development service company specializing in Webflow-based website solutions, UI/UX design, branding, SEO, and digital marketing services.",
+    tech: ["Next.js", "TypeScript", "Tailwind CSS", "Framer Motion"],
+    thumbnail: "/assets/projects/sin 1.png",
+    demoLink: "https://singularity-three-lovat.vercel.app",
+    fullDescription:
+      "Singularity is a web and mobile application development service company that primarily focuses on building high-performance websites using Webflow. The company also provides creative and technical services including UI/UX design, branding, SEO optimization, and digital marketing solutions. This project is an ongoing development for a startup that is currently in its planning and early-stage growth phase. The entire website was developed solely by me using Next.js, TypeScript, Tailwind CSS, and Framer Motion. It serves as a digital presence to showcase the company’s vision, service offerings, and brand identity through a modern and responsive interface.",
+    screenshots: [
+      "/assets/projects/sin 1.png",
+      "/assets/projects/sin 2.png",
+      "/assets/projects/sin 3.png",
+      "/assets/projects/sin 4.png",
+      "/assets/projects/sin 5.png",
+    ],
+  },
+  {
+    id: "pos-billmykart",
+    title: "POS System - Billmykart",
+    description:
+      "A unified POS and eCommerce platform designed for retailers and businesses of all sizes to seamlessly manage both online and in-store sales in one system. ",
+    tech: ["TypeScript", "Angular", "Bootstrap", "Npm packages"],
+    thumbnail: "/assets/projects/pos 1.png",
+    demoLink: "#",
+    fullDescription:
+      "The POS software facilitates end-to-end retail management, including inventory control, real-time sales tracking, customer data synchronization, multi-channel integration, and centralized reporting.",
+    screenshots: [
+      "/assets/projects/pos 1.png",
+      "/assets/projects/pos 2.png",
+      "/assets/projects/pos 3.png",
+      "/assets/projects/pos 4.png",
+    ],
+  },
+  {
+    id: "pwa-billmykart",
+    title: "Billmykart Customer App",
+    description:
+      "E-commerce website that created with billmykart platform. It offers a seamless shopping experience with features like product browsing, cart management, secure checkout, and order tracking.",
+    tech: ["TypeScript", "Angular", "Bootstrap", "Npm packages"],
+    thumbnail: "/assets/projects/classix pwa.png",
+    demoLink: "https://dizfresh.com/",
+    fullDescription:
+      "E-commerce website that created with billmykart platform. It offers a seamless shopping experience with features like product browsing, cart management, secure checkout, and order tracking.",
+    screenshots: [
+      "/assets/projects/new pwa 1.png",
+      "/assets/projects/new pwa 2.png",
+      "/assets/projects/new pwa 3.png",
+      "/assets/projects/new pwa 4.png",
+    ],
+  },
+  {
+    id: "admin-billmykart-",
+    title: "Billmykart Admin App",
+    description:
+      "Billmykart's admin website and tools are designed for ease-of-use and scalability, making it suitable for entrepreneurs from startups to enterprises aiming for professional e-commerce operations.",
+    tech: ["TypeScript", "Angular", "Bootstrap", "Npm packages"],
+    thumbnail: "/assets/projects/admin 1.png",
+    demoLink: "https://app.billmykart.com/account/login",
+    fullDescription:
+      "The Billmykart admin app offers a powerful suite of features designed to streamline e-commerce management and maximize business growth. With its intuitive dashboard, administrators can centrally manage users, products, orders, and inventory, ensuring seamless operations even for large-scale stores. The app provides customizable templates and premium themes, enabling tailored storefronts without technical expertise. Advanced marketing tools—including SEO optimization, automated refunds, coupons, and special offers—help attract and retain customers, while integrated analytics deliver actionable insights for performance improvement. Multi-currency support and fast checkout options enhance the shopping experience and expand global reach. ",
+    screenshots: [
+      "/assets/projects/admin 1.png",
+      "/assets/projects/admin 2.png",
+      "/assets/projects/admin 3.png",
+      "/assets/projects/admin 4.png",
+      "/assets/projects/admin 5.png",
+    ],
+  },
+  {
+    id: "bmk-docs",
+    title: "Billmykart Documentation Website",
+    description:
+      "Comprehensive documentation website for Billmykart, providing detailed guides, tutorials, and references to help users effectively utilize the Billmykart platform and its features.",
+    tech: ["Next.js", "TypeScript", "Tailwind CSS", "Framer Motion"],
+    thumbnail: "/assets/projects/bmk docs.png",
+    demoLink: "https://docs.billmykart.com/",
+    fullDescription:
+      "The Billmykart documentation website serves as an essential resource for users of the Billmykart e-commerce platform. It offers a wide range of materials, including step-by-step guides, video tutorials, API references, and FAQs to assist users in navigating and maximizing the platform's capabilities. The documentation is organized into clear sections covering topics such as account setup, product management, order processing, payment integration, and marketing tools. This website was built entirely as a solo project using Next.js, Tailwind CSS, and TypeScript, with Framer Motion integrated for smooth animations and enhanced user experience.",
+    screenshots: [
+      "/assets/projects/bmk docs.png",
+      "/assets/projects/bmk docs 2.png",
+    ],
+  },
+  {
+    id: "edutica",
+    title: "Edutica - Landing Page",
+    description:
+      "This project is a landing page for Edutica, a cutting-edge digital campus software ",
+    tech: ["Next.js", "TypeScript", "Tailwind CSS", "Framer Motion"],
+    thumbnail: "/assets/projects/edutica 1.png",
+    demoLink: "https://edutica.in/",
+    fullDescription:
+      "This project is a landing page for Edutica, a cutting-edge digital campus software designed to streamline and enhance the management of educational institutions. The landing page serves as an informative platform that highlights the features, benefits, and overall functionality of the Edutica system. It was built entirely as a solo project using Next.js, Tailwind CSS, and TypeScript, with Framer Motion integrated for smooth animations and an engaging user experience.",
+    screenshots: [
+      "/assets/projects/edutica 1.png",
+      "/assets/projects/edutica 2.png",
+      "/assets/projects/edutica 3.png",
+      "/assets/projects/edutica 4.png",
+    ],
+  },
 ];
 
 const Projects = () => {
