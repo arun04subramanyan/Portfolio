@@ -2,7 +2,10 @@ import { motion } from "framer-motion";
 
 const About = () => {
   return (
-    <section id="about" className="py-10 sm:py-20 bg-card relative overflow-hidden">
+    <section
+      id="about"
+      className="py-10 sm:py-20 bg-card relative overflow-hidden"
+    >
       {/* Elegant SVG Background Pattern */}
       <div className="absolute inset-0 opacity-[0.03]">
         <svg className="w-full h-full" xmlns="http://www.w3.org/2000/svg">
@@ -92,12 +95,22 @@ const About = () => {
                 <p className="text-base sm:text-lg text-foreground/90 leading-relaxed">
                   I’ve worked with technologies like{" "}
                   <span className="font-semibold text-primary">
-                    Angular, Next.js, and React { " "}
+                    Angular, Next.js, and React{" "}
                   </span>
                   to develop e-commerce platforms, ERP dashboards, and admin
                   panels. I specialize in responsive design, performance
                   optimization, and SEO — ensuring every project not only looks
                   great but performs exceptionally well.
+                </p>
+                <p className="text-base sm:text-lg text-foreground/90 leading-relaxed">
+                  I’m currently learning{" "}
+                  <span className="font-semibold text-primary">
+                    React Native using Expo
+                  </span>
+                  , and have already built a few mobile apps. I’m excited about
+                  pursuing a future in React Native development — aiming to
+                  create cross-platform experiences and continue expanding my
+                  skills in mobile development.
                 </p>
                 <p className="text-base sm:text-lg text-foreground/90 leading-relaxed">
                   Beyond coding, I enjoy exploring new frameworks, enhancing UX

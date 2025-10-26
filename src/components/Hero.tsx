@@ -1,13 +1,30 @@
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
-import { Collapsible, CollapsibleContent, CollapsibleTrigger } from "@/components/ui/collapsible";
-import { ArrowRight, Code2, Palette, Smartphone, Download, ChevronDown, User, Mail, MapPin, Phone, Linkedin, Github } from "lucide-react";
+import {
+  Collapsible,
+  CollapsibleContent,
+  CollapsibleTrigger,
+} from "@/components/ui/collapsible";
+import {
+  ArrowRight,
+  Code2,
+  Palette,
+  Smartphone,
+  Download,
+  ChevronDown,
+  User,
+  Mail,
+  MapPin,
+  Phone,
+  Linkedin,
+  Github,
+} from "lucide-react";
 import { motion } from "framer-motion";
 import { useState } from "react";
 
 const Hero = () => {
   const [isOpen, setIsOpen] = useState(false);
-  
+
   const scrollToProjects = () => {
     document.getElementById("projects")?.scrollIntoView({ behavior: "smooth" });
   };
@@ -50,23 +67,30 @@ const Hero = () => {
                         alt="Profile"
                         className="w-full h-full object-cover rounded-full"
                       />
-
                     </div>
                     <div className="flex-1 text-left">
-                      <h3 className="font-semibold text-foreground">Bijin EV</h3>
-                      <p className="text-sm text-muted-foreground">bijinev55@gmail.com</p>
+                      <h3 className="font-semibold text-foreground">
+                        Bijin EV
+                      </h3>
+                      <p className="text-sm text-muted-foreground">
+                        bijinev55@gmail.com
+                      </p>
                     </div>
-                    <ChevronDown 
-                      className={`w-5 h-5 text-foreground/60 transition-transform ${isOpen ? 'rotate-180' : ''}`} 
+                    <ChevronDown
+                      className={`w-5 h-5 text-foreground/60 transition-transform ${
+                        isOpen ? "rotate-180" : ""
+                      }`}
                     />
                   </div>
                 </CollapsibleTrigger>
-                
+
                 <CollapsibleContent>
                   <div className="mt-4 pt-4 border-t border-foreground/10 space-y-3">
                     <div className="flex items-center gap-3 text-sm">
                       <Mail className="w-4 h-4 text-primary flex-shrink-0" />
-                      <span className="text-foreground/70">bijinev55@gmail.com</span>
+                      <span className="text-foreground/70">
+                        bijinev55@gmail.com
+                      </span>
                     </div>
                     <div className="flex items-center gap-3 text-sm">
                       <Phone className="w-4 h-4 text-primary flex-shrink-0" />
@@ -74,17 +98,25 @@ const Hero = () => {
                     </div>
                     <div className="flex items-center gap-3 text-sm">
                       <MapPin className="w-4 h-4 text-primary flex-shrink-0" />
-                      <span className="text-foreground/70">Nilambur, Kerala, India</span>
+                      <span className="text-foreground/70">
+                        Nilambur, Kerala, India
+                      </span>
                     </div>
                     <div className="flex items-center gap-3 text-sm">
                       <Linkedin className="w-4 h-4 text-primary flex-shrink-0" />
-                      <a href="https://www.linkedin.com/in/bijin-vijayan/" className="text-foreground/70 hover:text-primary transition-colors">
+                      <a
+                        href="https://www.linkedin.com/in/bijin-vijayan/"
+                        className="text-foreground/70 hover:text-primary transition-colors"
+                      >
                         linkedin.com/in/bijin-vijayan
                       </a>
                     </div>
                     <div className="flex items-center gap-3 text-sm">
                       <Github className="w-4 h-4 text-primary flex-shrink-0" />
-                      <a href="https://github.com/BijinVijayan" className="text-foreground/70 hover:text-primary transition-colors">
+                      <a
+                        href="https://github.com/BijinVijayan"
+                        className="text-foreground/70 hover:text-primary transition-colors"
+                      >
                         github.com/BijinVijayan
                       </a>
                     </div>
@@ -119,6 +151,11 @@ const Hero = () => {
                 Next.js, and React. I focus on creating fast, accessible, and
                 visually engaging interfaces that deliver great user
                 experiences.
+                <br />
+                I'm also currently learning{" "}
+                <span className="font-semibold">React Native</span> to build
+                cross-platform mobile applications, and excited to expand my
+                skills in mobile development.
               </p>
             </div>
 
@@ -155,7 +192,7 @@ const Hero = () => {
                 className="bg-gradient-primary w-full text-primary-foreground hover:opacity-90 shadow-glow group"
                 asChild
               >
-                <a href="/Bijin Resume.pdf" download="Bijin_EV_Resume.pdf">
+                <a href="/Bijin EV Resume.pdf" download="Bijin_EV_Resume.pdf">
                   Download CV
                   <Download className="ml-2 w-4 h-4 " />
                 </a>
@@ -260,7 +297,7 @@ const Hero = () => {
                   className="bg-gradient-primary text-primary-foreground hover:opacity-90 shadow-glow group"
                   asChild
                 >
-                  <a href="/Bijin Resume.pdf" download="Bijin_EV_Resume.pdf">
+                  <a href="/Bijin EV Resume.pdf" download="Bijin_EV_Resume.pdf">
                     Download CV
                     <Download className="ml-2 w-4 h-4 " />
                   </a>
