@@ -1,30 +1,31 @@
-import { Award } from "lucide-react";
+import { Award, Code2, Smartphone, Box, FileCode, Layout, Palette, Wrench, GitBranch, Database, Blocks, Zap, CreditCard, Shield, Flame, Cloud } from "lucide-react";
 import { motion } from "framer-motion";
 import { Badge } from "@/components/ui/badge";
+import type { LucideIcon } from "lucide-react";
 
-const skills = [
-  { name: "Angular", category: "Framework" },
-  { name: "Next.js", category: "Framework" },
-  { name: "React", category: "Framework" },
-  { name: "React Native", category: "Framework" },
-  { name: "TypeScript", category: "Language" },
-  { name: "JavaScript", category: "Language" },
-  { name: "HTML/CSS", category: "Core" },
-  { name: "Responsive Design", category: "Core" },
-  { name: "Tailwind CSS", category: "Styling" },
-  { name: "NativeWind", category: "Styling" },
-  { name: "Bootstrap", category: "Styling" },
-  { name: "Postman", category: "Tools" },
-  { name: "Git", category: "Tools" },
-  { name: "REST APIs", category: "Tools" },
-  { name: "WordPress", category: "Tools" },
-  { name: "Zustand", category: "Tools" },
-  { name: "Context API", category: "Tools" },
-  { name: "Redux", category: "Tools" },
-  { name: "Firebase", category: "Tools" },
-  { name: "Appwrite", category: "Tools" },
-  { name: "Sentry", category: "Tools" },
-  { name: "Stripe", category: "Tools" },
+const skills: { name: string; category: string; icon: LucideIcon }[] = [
+  { name: "Angular", category: "Framework", icon: Code2 },
+  { name: "Next.js", category: "Framework", icon: Box },
+  { name: "React", category: "Framework", icon: Code2 },
+  { name: "React Native", category: "Framework", icon: Smartphone },
+  { name: "TypeScript", category: "Language", icon: FileCode },
+  { name: "JavaScript", category: "Language", icon: FileCode },
+  { name: "HTML/CSS", category: "Core", icon: Layout },
+  { name: "Responsive Design", category: "Core", icon: Smartphone },
+  { name: "Tailwind CSS", category: "Styling", icon: Palette },
+  { name: "NativeWind", category: "Styling", icon: Palette },
+  { name: "Bootstrap", category: "Styling", icon: Palette },
+  { name: "Postman", category: "Tools", icon: Wrench },
+  { name: "Git", category: "Tools", icon: GitBranch },
+  { name: "REST APIs", category: "Tools", icon: Database },
+  { name: "WordPress", category: "Tools", icon: Blocks },
+  { name: "Zustand", category: "Tools", icon: Zap },
+  { name: "Context API", category: "Tools", icon: Blocks },
+  { name: "Redux", category: "Tools", icon: Database },
+  { name: "Firebase", category: "Tools", icon: Flame },
+  { name: "Appwrite", category: "Tools", icon: Cloud },
+  { name: "Sentry", category: "Tools", icon: Shield },
+  { name: "Stripe", category: "Tools", icon: CreditCard },
 ];
 
 const certifications = [
@@ -74,9 +75,12 @@ const Skills = () => {
                 whileHover={{ scale: 1.05 }}
               >
                 <div className="bg-card border border-border rounded-full px-6 py-3 transition-all duration-300 hover:border-primary hover:shadow-glow group">
-                  <span className="text-sm font-medium text-foreground group-hover:text-primary transition-colors">
-                    {skill.name}
-                  </span>
+                  <div className="flex items-center gap-2">
+                    <skill.icon className="w-4 h-4 text-primary group-hover:scale-110 transition-transform" />
+                    <span className="text-sm font-medium text-foreground group-hover:text-primary transition-colors">
+                      {skill.name}
+                    </span>
+                  </div>
                 </div>
               </motion.div>
             ))}
