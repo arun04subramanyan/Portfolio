@@ -14,6 +14,7 @@ export const projects = [
   {
     id: "billmykart",
     title: "Billmykart – Product Website",
+      isMobile:false,
     description:
       "Billmykart is an e-commerce platform that allows businesses and individuals to launch a professional online store quickly and easily.",
     tech: ["Next.js", "TypeScript", "Tailwind CSS", "Framer Motion"],
@@ -30,6 +31,7 @@ export const projects = [
   {
     id: "rasma-decor",
     title: "Rasma Decor – Company Website",
+      isMobile:false,
     description:
       "Rasma Decor is a company specializing in bespoke, order-based furniture and interior fittings, focusing on personalized, luxury solutions for both homes and businesses. ",
     tech: ["Next.js", "TypeScript", "Tailwind CSS", "Framer Motion"],
@@ -46,6 +48,7 @@ export const projects = [
   {
     id: "gayathri-portfolio",
     title: "Portfolio Website- Gayathri S",
+      isMobile:false,
     description:
       "Gayathri Sreekumar is a personal stylist and nutritionist based in Bangalore, India, offering a wide range of personalized styling and image consulting services. This website showcases her expertise and services her works and achievements.",
     tech: [
@@ -71,6 +74,7 @@ export const projects = [
   {
     id: "singularity",
     title: "Singularity – Web & App Development Company",
+      isMobile:false,
     description:
       "Singularity is a web and mobile application development service company specializing in Webflow-based website solutions, UI/UX design, branding, SEO, and digital marketing services.",
     tech: ["Next.js", "TypeScript", "Tailwind CSS", "Framer Motion"],
@@ -89,6 +93,7 @@ export const projects = [
   {
     id: "pos-billmykart",
     title: "POS System - Billmykart",
+      isMobile:false,
     description:
       "A unified POS and eCommerce platform designed for retailers and businesses of all sizes to seamlessly manage both online and in-store sales in one system. ",
     tech: ["TypeScript", "Angular", "Bootstrap", "Npm packages"],
@@ -106,6 +111,7 @@ export const projects = [
   {
     id: "pwa-billmykart",
     title: "Billmykart Customer App",
+      isMobile:false,
     description:
       "E-commerce website that created with billmykart platform. It offers a seamless shopping experience with features like product browsing, cart management, secure checkout, and order tracking.",
     tech: ["TypeScript", "Angular", "Bootstrap", "Npm packages"],
@@ -123,6 +129,7 @@ export const projects = [
   {
     id: "admin-billmykart-",
     title: "Billmykart Admin App",
+      isMobile:false,
     description:
       "Billmykart's admin website and tools are designed for ease-of-use and scalability, making it suitable for entrepreneurs from startups to enterprises aiming for professional e-commerce operations.",
     tech: ["TypeScript", "Angular", "Bootstrap", "Npm packages"],
@@ -141,6 +148,7 @@ export const projects = [
   {
     id: "bmk-docs",
     title: "Billmykart Documentation Website",
+      isMobile:false,
     description:
       "Comprehensive documentation website for Billmykart, providing detailed guides, tutorials, and references to help users effectively utilize the Billmykart platform and its features.",
     tech: ["Next.js", "TypeScript", "Tailwind CSS", "Framer Motion"],
@@ -156,6 +164,7 @@ export const projects = [
   {
     id: "edutica",
     title: "Edutica - Landing Page",
+      isMobile:false,
     description:
       "This project is a landing page for Edutica, a cutting-edge digital campus software ",
     tech: ["Next.js", "TypeScript", "Tailwind CSS", "Framer Motion"],
@@ -170,6 +179,103 @@ export const projects = [
       "/assets/projects/edutica 4.png",
     ],
   },
+    {
+        id: "food-ordering-app",
+        title: "Food Ordering App",
+        isMobile:true,
+        description:
+            "A full-featured React Native food ordering app built with Expo, inspired by a JSMastery tutorial and extended with custom features.",
+        tech: ["React Native", "Expo", "Zustand", "Stripe", "TypeScript", "AppWrite"],
+        thumbnail: "/assets/projects/food-4.jpg",
+        demoLink: "#",
+        fullDescription:
+            "This Food Ordering App was initially developed by following a JSMastery YouTube tutorial as a base project. After completing the guided sections, I went beyond the tutorial to finish the remaining UI screens using the provided Figma design, implementing the missing parts entirely on my own. The app uses Zustand for state management and includes authentication, a functional cart system, and Stripe test integration for payments. This project gave me hands-on experience with React Native, Expo, and integrating real-world features like secure checkout and state persistence.",
+        screenshots: [
+            "/assets/projects/food-1.jpg",
+            "/assets/projects/food-2.jpg",
+            "/assets/projects/food-3.jpg",
+            "/assets/projects/food-4.jpg",
+            "/assets/projects/food-5.jpg",
+            "/assets/projects/food-6.jpg",
+            "/assets/projects/food-7.jpg",
+            "/assets/projects/food-8.jpg",
+            "/assets/projects/food-9.jpg",
+            "/assets/projects/food-10.jpg",
+        ],
+    },
+    {
+        id: "movie-listing-app",
+        title: "Movie Listing App",
+        isMobile: true,
+        description:
+            "A React Native app built with Expo that lists and manages movies using TMDB API and Appwrite backend.",
+        tech: ["React Native", "Expo", "Appwrite", "TMDB API", "Context API"],
+        thumbnail: "/assets/projects/movie-1.jpg",
+        demoLink: "#",
+        fullDescription:
+            "This Movie Listing App was my first React Native project built while learning mobile development with Expo. The base concept was inspired by a tutorial from the JSMastery YouTube channel. Beyond the tutorial, I expanded the app by integrating Appwrite as the backend for database and authentication, and TMDB API for fetching real-time movie data. I also implemented Context API for state management, added user authentication, and built extra features like wishlist management and a profile page. This project helped me understand how to structure scalable React Native apps, handle API data, and manage global state effectively.",
+        screenshots: [
+            "/assets/projects/movie-1.jpg",
+            "/assets/projects/movie-2.jpg",
+            "/assets/projects/movie-3.jpg",
+            "/assets/projects/movie-4.jpg",
+            "/assets/projects/movie-6.jpg",
+            "/assets/projects/movie-7.jpg",
+            "/assets/projects/movie-8.jpg",
+            "/assets/projects/movie-9.jpg",
+        ],
+    },
+    {
+        id: "event-booking-app",
+        title: "Event Booking App",
+        isMobile: false,
+        description:
+            "A full-stack Next.js 16 web application for discovering and managing events with an integrated admin dashboard.",
+        tech: ["Next.js 16", "MongoDB", "Tailwind CSS", "TypeScript"],
+        thumbnail: "/assets/projects/event-1.png",
+        demoLink: "#",
+        fullDescription:
+            "This Event Booking App is a full-stack web application built with Next.js 16, designed for browsing and managing events. The base project was inspired by a tutorial from the JSMastery YouTube channel, which I later expanded upon with custom features. I implemented a dedicated admin section, accessible via authentication, where admins can view, add, and delete events. The app uses MongoDB for data storage and leverages Next.js’s built-in API routes for backend functionality. I also configured a proxy.js file to handle routing between admin and user pages and styled the entire app using Tailwind CSS. Developing this project helped me explore the new features and architectural improvements introduced in the latest version of Next.js while strengthening my full-stack development skills.",
+        screenshots: [
+            "/assets/projects/event-1.png",
+            "/assets/projects/event-2.png",
+            "/assets/projects/event-3.png",
+            "/assets/projects/event-4.png",
+            "/assets/projects/event-5.png",
+            "/assets/projects/event-6.png",
+        ],
+    },
+    {
+        id: "pocketview-app",
+        title: "PocketView - Expense Tracker",
+        isMobile: true,
+        description:
+            "A personal finance tracker built with React Native and Firebase, featuring dark/light themes, analytics, and category-based insights.",
+        tech: [
+            "React Native",
+            "Expo",
+            "Firebase",
+            "Zustand",
+            "NativeWind",
+            "TypeScript"
+        ],
+        thumbnail: "/assets/projects/pocketview-3.png",
+        demoLink: "#",
+        fullDescription:
+            "PocketView is an ongoing side project I’m building to learn and experiment with advanced React Native concepts while creating something practical. It’s a personal finance tracking app developed with Expo and React Native, where users can log and analyze their expenses with detailed category filtering and spending summaries. The app uses Firebase for authentication and real-time database management, and Zustand for state management. It supports both light and dark themes, implemented using NativeWind for seamless styling. The app includes screens for login/registration, dashboard overview, adding expenses, budget management, detailed reports, and user profile with settings. PocketView continues to evolve as I deepen my React Native skills and explore new features like chart visualizations and cloud sync.",
+        screenshots: [
+            "/assets/projects/pocketview-1.png",
+            "/assets/projects/pocketview-2.png",
+            "/assets/projects/pocketview-3.png",
+            "/assets/projects/pocketview-4.png",
+            "/assets/projects/pocketview-5.png",
+            "/assets/projects/pocketview-6.png",
+            "/assets/projects/pocketview-7.png",
+            "/assets/projects/pocketview-8.png",
+            "/assets/projects/pocketview-9.png",
+        ],
+    }
+
 ];
 
 const Projects = () => {
@@ -201,7 +307,7 @@ const Projects = () => {
                     <img
                       src={project.thumbnail}
                       alt={project.title}
-                      className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+                      className="w-full h-full object-contain bg-slate-300 group-hover:scale-105 transition-transform duration-300"
                     />
                   </div>
 

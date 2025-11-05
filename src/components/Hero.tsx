@@ -146,7 +146,7 @@ const Hero = () => {
                
               <p className="text-base sm:text-lg text-foreground/70 max-w-md">
                 Hi, I'm <span className="font-semibold">Bijin EV</span>, a
-                Frontend Developer with 2+ years of experience crafting
+                Frontend Developer with 2.5 years of experience crafting
                 high-performance, responsive web applications using Angular,
                 Next.js, and React. I focus on creating fast, accessible, and
                 visually engaging interfaces that deliver great user
@@ -192,7 +192,7 @@ const Hero = () => {
                 className="bg-gradient-primary w-full text-primary-foreground hover:opacity-90 shadow-glow group"
                 asChild
               >
-                <a href="/Bijin EV Resume.pdf" download="Bijin_EV_Resume.pdf">
+                <a href="/Bijin Resume.pdf" download="Bijin Resume.pdf">
                   Download CV
                   <Download className="ml-2 w-4 h-4 " />
                 </a>

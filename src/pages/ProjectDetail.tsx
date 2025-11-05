@@ -30,7 +30,7 @@ const ProjectDetail = () => {
   return (
     <div className="min-h-screen bg-background">
       <div className="container mx-auto px-4 py-12">
-        <Link to="/">
+        <Link to="/#projects">
           <Button variant="outline" className="mb-8">
             <ArrowLeft className="w-4 h-4 mr-2" />
             Back to Portfolio
@@ -79,7 +79,7 @@ const ProjectDetail = () => {
 
           <div className="space-y-6">
             <h2 className="text-2xl font-bold text-foreground">Screenshots</h2>
-            <div className="grid grid-cols-1 md:grid-cols-2  gap-6 max-w-6xl mx-auto">
+            <div className={`grid grid-cols-1   gap-6 max-w-6xl mx-auto ${project?.isMobile ? "md:grid-cols-3" : "md:grid-cols-2"}`}>
               {project.screenshots.map((screenshot, index) => (
                 <div
                   key={index}
