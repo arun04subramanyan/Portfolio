@@ -274,8 +274,39 @@ export const projects = [
             "/assets/projects/pocketview-8.png",
             "/assets/projects/pocketview-9.png",
         ],
+    },
+    {
+        id: "rentify-web-app",
+        title: "Rentify - Property Listing",
+        isMobile: false,
+        description:
+            "A property listing platform built with Next.js 16 and MongoDB, allowing users to browse homes and hosts to list properties.",
+        tech: [
+            "Next.js 16",
+            "MongoDB",
+            "Tailwind",
+            "Zustand",
+            "Typescript",
+            "Cloudinary"
+        ],
+        thumbnail: "/assets/projects/rentify-1.png",
+        demoLink: "https://rentify-web-app.vercel.app/",
+        fullDescription:
+            "Rentify is an ongoing side project I am building to master backend development using Next.js 16 and TypeScript. It is a real estate platform that utilizes Next.js API routes for backend logic and MongoDB for database management. The current build allows users to browse featured properties on the homepage and provides a 'Become a Host' functionality where authenticated users can list their own properties. As a learning initiative, the project is actively evolving; I am currently working on implementing a dedicated property listing page with advanced filters, adding more detailed property fields, and refining the overall user experience.",
+        screenshots: [
+            "/assets/projects/rentify-1.png",
+            "/assets/projects/rentify-2.png",
+            "/assets/projects/rentify-3.png",
+            "/assets/projects/rentify-4.png",
+            "/assets/projects/rentify-5.png",
+            "/assets/projects/rentify-6.png",
+            "/assets/projects/rentify-7.png",
+            "/assets/projects/rentify-8.png",
+            "/assets/projects/rentify-9.png",
+            "/assets/projects/rentify-10.png",
+            "/assets/projects/rentify-11.png",
+        ],
     }
-
 ];
 
 const Projects = () => {

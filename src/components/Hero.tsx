@@ -135,31 +135,31 @@ const Hero = () => {
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.6 }}
           >
-            <div className="space-y-4">
-              <h1 className="text-[34px] smtext-4xl md:text-6xl lg:text-7xl font-bold text-foreground leading-tight">
-                Crafting{" "}
-                <span className="bg-gradient-primary bg-clip-text text-transparent">
-                  Modern
-                </span>{" "}
-                Scalable Web Apps
-              </h1>
-               
-              <p className="text-base sm:text-lg text-foreground/70 max-w-md">
-                Hi, I'm <span className="font-semibold">Bijin EV</span>, a
-                Frontend Developer with 2.5 years of experience crafting
-                high-performance, responsive web applications using Angular,
-                Next.js, and React. I focus on creating fast, accessible, and
-                visually engaging interfaces that deliver great user
-                experiences.
-                <br />
-                I'm also currently learning{" "}
-                <span className="font-semibold">React Native</span> to build
-                cross-platform mobile applications, and excited to expand my
-                skills in mobile development.
-              </p>
-            </div>
+              <div className="space-y-4">
+                  <h1 className="text-[34px] sm:text-4xl md:text-6xl lg:text-7xl font-bold text-foreground leading-tight">
+                      Building{" "}
+                      <span className="bg-gradient-primary bg-clip-text text-transparent">
+      Modern & Scalable
+    </span>{" "}
+                      Digital Experiences
+                  </h1>
 
-            <div className="flex gap-3 sm:gap-4 ">
+                  <p className="text-base sm:text-lg text-foreground/70 max-w-md">
+                      I'm <span className="font-semibold">Bijin EV</span>, a Frontend / Full-Stack Developer
+                      with 2.5+ years of experience delivering high-performance web applications using
+                      <span className="font-semibold"> Next.js, React, and Angular</span>.
+                      I specialize in creating fast, accessible, and visually polished interfaces
+                      that solve real business problems.
+                      <br /><br />
+                      I’m currently expanding into mobile development with
+                      <span className="font-semibold"> React Native</span>, and actively building full-stack
+                      side projects to sharpen my skills. Passionate about clean architecture, modern UI, and
+                      building products that scale.
+                  </p>
+              </div>
+
+
+              <div className="flex gap-3 sm:gap-4 ">
               <Button
                 size="lg"
                 className="bg-gradient-primary px-5 sm:px-auto text-primary-foreground hover:opacity-90 shadow-glow"
@@ -297,7 +297,7 @@ const Hero = () => {
                   className="bg-gradient-primary text-primary-foreground hover:opacity-90 shadow-glow group"
                   asChild
                 >
-                  <a href="/Bijin EV Resume.pdf" download="Bijin_EV_Resume.pdf">
+                  <a href="/BIJIN EV Resume.pdf" download="BIJIN EV Resume.pdf">
                     Download CV
                     <Download className="ml-2 w-4 h-4 " />
                   </a>
