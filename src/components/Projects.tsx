@@ -377,6 +377,41 @@ export const projects = [
             "/assets/projects/rentify-10.png",
             "/assets/projects/rentify-11.png",
         ],
+    },
+    {
+        "id": "aethanalytica-website",
+        "title": "AethAnalytica - Corporate Platform",
+        "isMobile": false,
+        "description": "A high-performance corporate site for a Software Development firm, built with Next.js 15 (App Router), TypeScript, and Framer Motion.",
+        "tech": [
+            "Next.js 15",
+            "App Router",
+            "TypeScript",
+            "Tailwind CSS",
+            "Framer Motion",
+            "Nodemailer"
+        ],
+        "thumbnail": "/assets/projects/aeth-1.png",
+        "demoLink": "https://aethanalytica.com/",
+        "fullDescription": "I architected and developed the official website for AethAnalytica, a forward-thinking software development company specializing in custom digital solutions, Software Development, Digital Marketing and other specializations.To ensure the site was future-proof and highly performant, I utilized **Next.js 15** with the **App Router**, taking advantage of the latest React Server Components. The application is built entirely in **TypeScript** for robust type safety.\n\nThe UI features a clean, data-driven aesthetic implemented with **Tailwind CSS**, while **Framer Motion** powers the smooth page transitions and scroll animations.",
+        "screenshots": [
+            "/assets/projects/aeth-1.png",
+            "/assets/projects/aeth-2.png",
+            "/assets/projects/aeth-3.png",
+            "/assets/projects/aeth-4.png",
+            "/assets/projects/aeth-5.png",
+            "/assets/projects/aeth-6.png",
+            "/assets/projects/aeth-7.png",
+            "/assets/projects/aeth-8.png",
+            "/assets/projects/aeth-9.png",
+            "/assets/projects/aeth-10.png",
+            "/assets/projects/aeth-11.png",
+            "/assets/projects/aeth-12.png",
+            "/assets/projects/aeth-13.png",
+            "/assets/projects/aeth-14.png",
+            "/assets/projects/aeth-15.png",
+            "/assets/projects/aeth-16.png"
+        ]
     }
 ];
 
