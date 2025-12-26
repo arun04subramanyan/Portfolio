@@ -10,6 +10,7 @@ import { ExternalLink } from "lucide-react";
 import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
 
+// eslint-disable-next-line react-refresh/only-export-components
 export const projects = [
   {
     id: "billmykart",
@@ -71,6 +72,76 @@ export const projects = [
       "/assets/projects/gaya 6.png",
     ],
   },
+    {
+        "id": "resto-admin-dashboard",
+        "title": "Resto - SaaS Restaurant Admin Dashboard",
+        "isMobile": false,
+        "description": "A modern SaaS admin platform built with Next.js 16 and MongoDB, featuring OTP authentication via Resend, Recharts analytics, and comprehensive zone management.",
+        "tech": [
+            "Next.js 16",
+            "TypeScript",
+            "MongoDB (Mongoose)",
+            "Next.js API Routes",
+            "Resend (OTP Auth)",
+            "Cloudinary",
+            "Recharts",
+            "Zustand",
+            "Tailwind CSS"
+        ],
+        "thumbnail": "/assets/projects/resto-4.png",
+        "demoLink": "https://resto-storeadmin.vercel.app/",
+        "fullDescription": "Resto Admin is a comprehensive SaaS platform designed for managing multi-outlet restaurant operations, built on the cutting-edge **Next.js 16** framework. The application utilizes a robust serverless backend powered entirely by **Next.js API routes**, ensuring seamless data flow and scalability. Security is streamlined through a passwordless authentication system that leverages **Resend** for reliable, instant OTP delivery via email.\n\nThe platform handles rich media efficiently using **Cloudinary** for secure storage and optimization of store branding assets, such as logos and menu item images. A key feature of the dashboard is its analytics suite, powered by **Recharts**, which provides owners with visual insights into key performance metrics. \n\nOperational tools include a dynamic Hall and Table management system where admins can configure physical dining zones and track real-time occupancy. The system also features an automated generator for unique, branded QR codes linked to specific table IDs, enabling a frictionless digital menu experience for customers.",
+        "screenshots": [
+            "/assets/projects/resto-1.png",
+            "/assets/projects/resto-2.png",
+            "/assets/projects/resto-3.png",
+            "/assets/projects/resto-4.png",
+            "/assets/projects/resto-5.png",
+            "/assets/projects/resto-6.png",
+            "/assets/projects/resto-7.png",
+            "/assets/projects/resto-8.png",
+            "/assets/projects/resto-9.png",
+            "/assets/projects/resto-10.png",
+            "/assets/projects/resto-11.png",
+            "/assets/projects/resto-12.png",
+            "/assets/projects/resto-13.png",
+            "/assets/projects/resto-14.png",
+            "/assets/projects/resto-15.png",
+            "/assets/projects/resto-16.png",
+            "/assets/projects/resto-17.png",
+        ]
+    },
+    {
+        "id": "resto-customer-web",
+        "title": "Resto - Digital Menu & Ordering Web App",
+        "isMobile": true,
+        "description": "A mobile-first customer dining interface built with Next.js 16, allowing users to scan QR codes, browse dynamic menus, and place orders seamlessly.",
+        "tech": [
+            "Next.js 16",
+            "TypeScript",
+            "Tailwind CSS",
+            "Zustand",
+            "Framer Motion",
+            "PWA Capable"
+        ],
+        "thumbnail": "/assets/projects/food-web-4.png",
+        "demoLink": "https://food-booking-web.vercel.app/",
+        "fullDescription": "The Resto Customer Web App is the consumer-facing component of the Resto ecosystem, designed to deliver a frictionless dining experience. Built as a high-performance **Next.js 16** application, it functions as a digital concierge for restaurant guests. \n\nThe core journey begins with a QR code scan, which dynamically routes the user to a specific store, hall, and table context using URL parameter parsing. The app features a highly responsive, mobile-optimized interface styled with **Tailwind CSS**, ensuring fast load times even on mobile networks. \n\nState management is handled by **Zustand**, maintaining a persistent cart and dining session as users navigate through categories and items. **Framer Motion** is utilized extensively to create app-like page transitions and interaction feedback, making the web experience feel native. The app communicates directly with the Resto Admin backend APIs to fetch real-time menu availability and pricing.",
+        "screenshots": [
+            "/assets/projects/food-web-1.png",
+            "/assets/projects/food-web-2.png",
+            "/assets/projects/food-web-3.png",
+            "/assets/projects/food-web-4.png",
+            "/assets/projects/food-web-5.png",
+            "/assets/projects/food-web-6.png",
+            "/assets/projects/food-web-7.png",
+            "/assets/projects/food-web-8.png",
+            "/assets/projects/food-web-9.png",
+            "/assets/projects/food-web-10.png",
+            "/assets/projects/food-web-11.png",
+            "/assets/projects/food-web-12.png"
+        ]
+    },
   {
     id: "singularity",
     title: "Singularity – Web & App Development Company",
@@ -330,7 +401,7 @@ const Projects = () => {
                 initial={{ opacity: 0, y: 30 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
-                transition={{ duration: 0.5, delay: index * 0.1 }}
+                transition={{ duration: 0.5, delay: index * 0.05 }}
                 className="h-full"
               >
                 <Card className="bg-card border-border hover:border-primary transition-all shadow-card hover:shadow-glow group cursor-pointer h-full overflow-hidden flex flex-col">
