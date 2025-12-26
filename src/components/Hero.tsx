@@ -297,7 +297,7 @@ const Hero = () => {
                   className="bg-gradient-primary text-primary-foreground hover:opacity-90 shadow-glow group"
                   asChild
                 >
-                  <a href="/BIJIN EV Resume.pdf" download="BIJIN EV Resume.pdf">
+                  <a href="/BIJIN EV - RESUME.pdf" download="BIJIN EV - RESUME.pdf">
                     Download CV
                     <Download className="ml-2 w-4 h-4 " />
                   </a>
