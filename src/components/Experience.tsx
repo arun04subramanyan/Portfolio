@@ -19,7 +19,7 @@ const experiences = [
     skills: ["Angular", "Node.js", "MongoDB", "TypeScript", "UI/UX Design"]
   },
   {
-    title: "MERN Stack Intern",
+    title: "MERN/MEAN Stack Intern",
     company: "Luminar Technolab",
     period: "Oct 2022 - Apr 2023 | Kochi",
     description:
