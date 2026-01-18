@@ -44,7 +44,7 @@ const Hero = () => {
   return (
     <section
       id="hero"
-      className="relative sm:min-h-screen overflow-hidden bg-gradient-hero px-4 md:px-12 lg:px-20 py-8 sm:py-12"
+      className="relative sm:min-h-screen overflow-hidden px-4 md:px-12 lg:px-20 py-8 sm:py-12"
     >
       {/* Hero Content */}
       <div className="container px-3 sm:px-auto mx-auto  py-8 max-sm:pt-3 sm:py-12 md:py-20">
@@ -136,11 +136,11 @@ const Hero = () => {
             transition={{ duration: 0.6 }}
           >
               <div className="space-y-4">
-                  <h1 className="text-[34px] sm:text-4xl md:text-6xl lg:text-7xl font-bold text-foreground leading-tight">
+                  <h1 className="text-[34px] sm:text-4xl md:text-6xl font-bold text-foreground leading-tight">
                       Building{" "}
                       <span className="bg-gradient-primary bg-clip-text text-transparent">
-      Modern & Scalable
-    </span>{" "}
+                      Modern & Scalable
+                    </span>{" "}
                       Digital Experiences
                   </h1>
 
@@ -149,12 +149,9 @@ const Hero = () => {
                       with 2.5+ years of experience delivering high-performance web applications using
                       <span className="font-semibold"> Next.js, React, and Angular</span>.
                       I specialize in creating fast, accessible, and visually polished interfaces
-                      that solve real business problems.
-                      <br /><br />
-                      I’m currently expanding into mobile development with
-                      <span className="font-semibold"> React Native</span>, and actively building full-stack
-                      side projects to sharpen my skills. Passionate about clean architecture, modern UI, and
+                      that solve real business problems.Passionate about clean architecture, modern UI, and
                       building products that scale.
+                      <br />
                   </p>
               </div>
 

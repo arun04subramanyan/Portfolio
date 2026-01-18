@@ -9,9 +9,48 @@ import { Badge } from "@/components/ui/badge";
 import { ExternalLink } from "lucide-react";
 import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
+import {Button} from "@/components/ui/button.tsx";
 
 // eslint-disable-next-line react-refresh/only-export-components
 export const projects = [
+    {
+        "id": "apsara-store",
+        "title": "Apsara – Modern Apparel E-commerce",
+        "isMobile": false,
+        "description": "A high-performance full-stack e-commerce platform featuring server-side rendering, infinite scrolling, and a seamless shopping experience for premium apparel.",
+        "tech": [
+            "Next.js 16",
+            "TypeScript",
+            "Tailwind CSS",
+            "MongoDB",
+            "Zustand",
+            "Framer Motion",
+            "Server Actions",
+            "Stripe"
+        ],
+        "thumbnail": "/assets/projects/apsara1.png",
+        "demoLink": "https://apsara-omega.vercel.app/",
+        "fullDescription": "Apsara is a robust, full-stack e-commerce application engineered for speed and scalability using the latest Next.js 16 App Router architecture. It features a dynamic storefront with granular Suspense streaming and skeleton loading states to ensure immediate visual feedback. The platform includes a complex product management system supporting multiple variants (colors/sizes), infinite scrolling for catalogs, and a persistent cart and wishlist system powered by Zustand. The backend leverages Next.js Server Actions for secure, direct database mutations with MongoDB, handling user authentication, address management, and order processing without the need for a separate API layer. The UI is fully responsive, styled with Tailwind CSS, and enhanced with Framer Motion for premium interactions and integrated Stripe for secure Payments.",
+        "screenshots": [
+            "/assets/projects/apsara1.png",
+            "/assets/projects/apsara2.png",
+            "/assets/projects/apsara3.png",
+            "/assets/projects/apsara4.png",
+            "/assets/projects/apsara5.png",
+            "/assets/projects/apsara6.png",
+            "/assets/projects/apsara7.png",
+            "/assets/projects/apsara8.png",
+            "/assets/projects/apsara9.png",
+            "/assets/projects/apsara10.png",
+            "/assets/projects/apsara11.png",
+            "/assets/projects/apsara12.png",
+            "/assets/projects/apsara13.png",
+            "/assets/projects/apsara14.png",
+            "/assets/projects/apsara15.png",
+            "/assets/projects/apsara16.png",
+            "/assets/projects/apsara18.png",
+        ]
+    },
   {
     id: "billmykart",
     title: "Billmykart – Product Website",
@@ -90,7 +129,7 @@ export const projects = [
         ],
         "thumbnail": "/assets/projects/resto-4.png",
         "demoLink": "https://resto-storeadmin.vercel.app/",
-        "fullDescription": "Resto Admin is a comprehensive SaaS platform designed for managing multi-outlet restaurant operations, built on the cutting-edge **Next.js 16** framework. The application utilizes a robust serverless backend powered entirely by **Next.js API routes**, ensuring seamless data flow and scalability. Security is streamlined through a passwordless authentication system that leverages **Resend** for reliable, instant OTP delivery via email.\n\nThe platform handles rich media efficiently using **Cloudinary** for secure storage and optimization of store branding assets, such as logos and menu item images. A key feature of the dashboard is its analytics suite, powered by **Recharts**, which provides owners with visual insights into key performance metrics. \n\nOperational tools include a dynamic Hall and Table management system where admins can configure physical dining zones and track real-time occupancy. The system also features an automated generator for unique, branded QR codes linked to specific table IDs, enabling a frictionless digital menu experience for customers.",
+        "fullDescription": "Resto Admin is a comprehensive SaaS platform designed for managing multi-outlet restaurant operations, built on the cutting-edge Next.js 16 framework. The application utilizes a robust serverless backend powered entirely by Next.js API routes, ensuring seamless data flow and scalability. Security is streamlined through a passwordless authentication system that leverages Resend for reliable, instant OTP delivery via email.\n\nThe platform handles rich media efficiently using Cloudinary for secure storage and optimization of store branding assets, such as logos and menu item images. A key feature of the dashboard is its analytics suite, powered by Recharts, which provides owners with visual insights into key performance metrics. \n\nOperational tools include a dynamic Hall and Table management system where admins can configure physical dining zones and track real-time occupancy. The system also features an automated generator for unique, branded QR codes linked to specific table IDs, enabling a frictionless digital menu experience for customers.",
         "screenshots": [
             "/assets/projects/resto-1.png",
             "/assets/projects/resto-2.png",
@@ -126,7 +165,7 @@ export const projects = [
         ],
         "thumbnail": "/assets/projects/food-web-4.png",
         "demoLink": "https://food-booking-web.vercel.app/",
-        "fullDescription": "The Resto Customer Web App is the consumer-facing component of the Resto ecosystem, designed to deliver a frictionless dining experience. Built as a high-performance **Next.js 16** application, it functions as a digital concierge for restaurant guests. \n\nThe core journey begins with a QR code scan, which dynamically routes the user to a specific store, hall, and table context using URL parameter parsing. The app features a highly responsive, mobile-optimized interface styled with **Tailwind CSS**, ensuring fast load times even on mobile networks. \n\nState management is handled by **Zustand**, maintaining a persistent cart and dining session as users navigate through categories and items. **Framer Motion** is utilized extensively to create app-like page transitions and interaction feedback, making the web experience feel native. The app communicates directly with the Resto Admin backend APIs to fetch real-time menu availability and pricing.",
+        "fullDescription": "The Resto Customer Web App is the consumer-facing component of the Resto ecosystem, designed to deliver a frictionless dining experience. Built as a high-performance Next.js 16 application, it functions as a digital concierge for restaurant guests. \n\nThe core journey begins with a QR code scan, which dynamically routes the user to a specific store, hall, and table context using URL parameter parsing. The app features a highly responsive, mobile-optimized interface styled with Tailwind CSS, ensuring fast load times even on mobile networks. \n\nState management is handled by Zustand, maintaining a persistent cart and dining session as users navigate through categories and items. Framer Motion is utilized extensively to create app-like page transitions and interaction feedback, making the web experience feel native. The app communicates directly with the Resto Admin backend APIs to fetch real-time menu availability and pricing.",
         "screenshots": [
             "/assets/projects/food-web-1.png",
             "/assets/projects/food-web-2.png",
@@ -393,7 +432,7 @@ export const projects = [
         ],
         "thumbnail": "/assets/projects/aeth-1.png",
         "demoLink": "https://aethanalytica.com/",
-        "fullDescription": "I architected and developed the official website for AethAnalytica, a forward-thinking software development company specializing in custom digital solutions, Software Development, Digital Marketing and other specializations.To ensure the site was future-proof and highly performant, I utilized **Next.js 15** with the **App Router**, taking advantage of the latest React Server Components. The application is built entirely in **TypeScript** for robust type safety.\n\nThe UI features a clean, data-driven aesthetic implemented with **Tailwind CSS**, while **Framer Motion** powers the smooth page transitions and scroll animations.",
+        "fullDescription": "I architected and developed the official website for AethAnalytica, a forward-thinking software development company specializing in custom digital solutions, Software Development, Digital Marketing and other specializations.To ensure the site was future-proof and highly performant, I utilized Next.js 15 with the App Router, taking advantage of the latest React Server Components. The application is built entirely in TypeScript for robust type safety.\n\nThe UI features a clean, data-driven aesthetic implemented with Tailwind CSS, while Framer Motion powers the smooth page transitions and scroll animations.",
         "screenshots": [
             "/assets/projects/aeth-1.png",
             "/assets/projects/aeth-2.png",
@@ -411,6 +450,29 @@ export const projects = [
             "/assets/projects/aeth-14.png",
             "/assets/projects/aeth-15.png",
             "/assets/projects/aeth-16.png"
+        ]
+    },
+    {
+        "id": "passport-scanner-pro",
+        "title": "Passport Scanner Pro - Offline AI OCR",
+        "isMobile": false,
+        "description": "A secure, offline desktop application for automated passport data extraction, powered by local multimodal AI models (Qwen & Llama) within an Electron runtime.",
+        "tech": [
+            "Electron",
+            "React",
+            "TypeScript",
+            "Tailwind CSS",
+            "Ollama (Embedded)",
+            "Qwen 2.5 VL / Llama 3.2",
+            "ExcelJS",
+            "Crypto-JS"
+        ],
+        "thumbnail": "/assets/projects/passport-1.png",
+        "demoLink": "#",
+        "fullDescription": "I architected and developed Passport Scanner Pro, a privacy-centric desktop application designed to solve the challenge of extracting sensitive PII from passports without relying on cloud APIs. \n\nTo guarantee 100% data sovereignty, the app is built with Electron and React, featuring a bundled Ollama backend that runs multimodal AI models locally. I implemented a dynamic model switching system allowing users to choose between the lightweight Qwen 2.5 VL (3B) for speed on laptops or Llama 3.2 Vision for high-fidelity extraction on powerful workstations.\n\nThe application features a robust batch-processing workflow using React Dropzone, secure license key validation via Crypto-JS, and automated manifest generation using ExcelJS. The interface is styled with Tailwind CSS to provide a clean, native-feeling experience across both Windows and macOS.",
+        "screenshots": [
+            "/assets/projects/passport-1.png",
+            "/assets/projects/passport-2.png",
         ]
     }
 ];
@@ -440,12 +502,25 @@ const Projects = () => {
                 className="h-full"
               >
                 <Card className="bg-card border-border hover:border-primary transition-all shadow-card hover:shadow-glow group cursor-pointer h-full overflow-hidden flex flex-col">
-                  <div className="aspect-video overflow-hidden">
+                  <div className="aspect-video overflow-hidden relative">
                     <img
                       src={project.thumbnail}
                       alt={project.title}
+                      sizes={"80vw"}
                       className="w-full h-full object-contain bg-slate-300 group-hover:scale-105 transition-transform duration-300"
                     />
+                      {project.demoLink !== "#" && (
+                          <a
+                              href={project.demoLink}
+                              target="_blank"
+                              rel="noopener noreferrer"
+                              className="absolute z-10 top-3 right-3"
+                          >
+                              <Button className="bg-primary h-10 w-10 rounded-full hover:bg-primary/90 text-primary-foreground shadow-glow">
+                                  <ExternalLink className="w-4 h-4" />
+                              </Button>
+                          </a>
+                      )}
                   </div>
 
                   <CardHeader>
