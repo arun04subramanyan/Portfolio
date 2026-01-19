@@ -14,6 +14,37 @@ import {Button} from "@/components/ui/button.tsx";
 // eslint-disable-next-line react-refresh/only-export-components
 export const projects = [
     {
+        "id": "apsara-admin",
+        "title": "Apsara Admin – Enterprise Management Dashboard",
+        "isMobile": false,
+        "description": "A comprehensive back-office solution for managing the Apsara e-commerce ecosystem, featuring advanced data visualization, complex inventory management, and secure administrative controls.",
+        "tech": [
+            "Next.js 16",
+            "TypeScript",
+            "Tailwind CSS",
+            "MongoDB Aggregations",
+            "Server Actions",
+            "Chart.js",
+            "Cloudinary",
+        ],
+        "thumbnail": "/assets/projects/apsara-admin2.png",
+        "demoLink": "https://apsara-admin.vercel.app/",
+        "fullDescription": "The Apsara Admin Dashboard is a high-performance control center built with the Next.js 16 App Router, designed to streamline daily e-commerce operations and is responsive to use on mobile screens. It features a secure, middleware-protected authentication system using HttpOnly cookies. The dashboard provides real-time business intelligence via interactive Chart.js visualizations for revenue trends and inventory distribution. Key capabilities include a complex product management system that handles multi-dimensional variants (colors, sizes, images) and Cloudinary uploads, alongside an order processing workflow with server-side filtering and pagination. The UI is optimized for zero layout shift using extensive Skeleton loading states and leverages Server Actions for type-safe, direct-to-database mutations, ensuring rapid data consistency without client-side API bloat.",
+        "screenshots": [
+            "/assets/projects/apsara-admin1.png",
+            "/assets/projects/apsara-admin2.png",
+            "/assets/projects/apsara-admin3.png",
+            "/assets/projects/apsara-admin4.png",
+            "/assets/projects/apsara-admin5.png",
+            "/assets/projects/apsara-admin6.png",
+            "/assets/projects/apsara-admin7.png",
+            "/assets/projects/apsara-admin8.png",
+            "/assets/projects/apsara-admin9.png",
+            "/assets/projects/apsara-admin10.png",
+            "/assets/projects/apsara-admin11.png"
+        ]
+    },
+    {
         "id": "apsara-store",
         "title": "Apsara – Modern Apparel E-commerce",
         "isMobile": false,
@@ -53,7 +84,7 @@ export const projects = [
     },
   {
     id: "billmykart",
-    title: "Billmykart – Product Website",
+    title: "Billmykart – Company Website",
       isMobile:false,
     description:
       "Billmykart is an e-commerce platform that allows businesses and individuals to launch a professional online store quickly and easily.",
@@ -226,7 +257,7 @@ export const projects = [
       "E-commerce website that created with billmykart platform. It offers a seamless shopping experience with features like product browsing, cart management, secure checkout, and order tracking.",
     tech: ["TypeScript", "Angular", "Bootstrap", "Npm packages"],
     thumbnail: "/assets/projects/classix pwa.png",
-    demoLink: "https://dizfresh.com/",
+    demoLink: "https://billmykart.in/dizsol",
     fullDescription:
       "E-commerce website that created with billmykart platform. It offers a seamless shopping experience with features like product browsing, cart management, secure checkout, and order tracking.",
     screenshots: [
