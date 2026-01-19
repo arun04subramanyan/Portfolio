@@ -87,7 +87,7 @@ const About = () => {
                   <span className="font-semibold text-primary">
                     Frontend Developer
                   </span>{" "}
-                  with over 2.5 years of experience building dynamic and scalable
+                  with 3 years of experience building dynamic and scalable
                   web applications. My focus lies in creating intuitive,
                   high-performing user interfaces that combine clean design with
                   efficient code.

@@ -118,7 +118,7 @@ export const projects = [
   },
   {
     id: "gayathri-portfolio",
-    title: "Portfolio Website- Gayathri S",
+    title: "Portfolio Website- Gayathri Sreekumar",
       isMobile:false,
     description:
       "Gayathri Sreekumar is a personal stylist and nutritionist based in Bangalore, India, offering a wide range of personalized styling and image consulting services. This website showcases her expertise and services her works and achievements.",
@@ -251,7 +251,7 @@ export const projects = [
   },
   {
     id: "pwa-billmykart",
-    title: "Billmykart Customer App",
+    title: "Billmykart E-commerce Web app",
       isMobile:false,
     description:
       "E-commerce website that created with billmykart platform. It offers a seamless shopping experience with features like product browsing, cart management, secure checkout, and order tracking.",
@@ -269,7 +269,7 @@ export const projects = [
   },
   {
     id: "admin-billmykart-",
-    title: "Billmykart Admin App",
+    title: "Billmykart E-commerce Admin App",
       isMobile:false,
     description:
       "Billmykart's admin website and tools are designed for ease-of-use and scalability, making it suitable for entrepreneurs from startups to enterprises aiming for professional e-commerce operations.",
@@ -322,7 +322,7 @@ export const projects = [
   },
     {
         id: "food-ordering-app",
-        title: "Food Ordering App",
+        title: "Food Ordering App - React Native",
         isMobile:true,
         description:
             "A full-featured React Native food ordering app built with Expo, inspired by a JSMastery tutorial and extended with custom features.",
@@ -346,7 +346,7 @@ export const projects = [
     },
     {
         id: "movie-listing-app",
-        title: "Movie Listing App",
+        title: "Movie Listing App - React Native",
         isMobile: true,
         description:
             "A React Native app built with Expo that lists and manages movies using TMDB API and Appwrite backend.",
@@ -388,7 +388,7 @@ export const projects = [
     },
     {
         id: "pocketview-app",
-        title: "PocketView - Expense Tracker",
+        title: "PocketView - Expense Tracker - React Native App",
         isMobile: true,
         description:
             "A personal finance tracker built with React Native and Firebase, featuring dark/light themes, analytics, and category-based insights.",
