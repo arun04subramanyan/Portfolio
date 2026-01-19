@@ -146,7 +146,7 @@ const Hero = () => {
 
                   <p className="text-base sm:text-lg text-foreground/70 max-w-md">
                       I'm <span className="font-semibold">Bijin EV</span>, a Frontend / Full-Stack Developer
-                      with 2.5+ years of experience delivering high-performance web applications using
+                      with 3 years of experience delivering high-performance web applications using
                       <span className="font-semibold"> Next.js, React, and Angular</span>.
                       I specialize in creating fast, accessible, and visually polished interfaces
                       that solve real business problems.Passionate about clean architecture, modern UI, and
