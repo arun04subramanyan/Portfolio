@@ -83,41 +83,28 @@ const About = () => {
             >
               <div className="space-y-6">
                 <p className="text-base sm:text-lg text-foreground/90 leading-relaxed">
-                  I’m a passionate{" "}
-                  <span className="font-semibold text-primary">
-                    Frontend Developer
-                  </span>{" "}
-                  with 3 years of experience building dynamic and scalable
-                  web applications. My focus lies in creating intuitive,
-                  high-performing user interfaces that combine clean design with
-                  efficient code.
+                  I’m a UX Designer with 3 years of experience shaping digital
+                  products through research-driven design. I thrive on turning
+                  insights from users and stakeholders into clear, accessible
+                  interfaces that solve real problems and deliver measurable value.
                 </p>
                 <p className="text-base sm:text-lg text-foreground/90 leading-relaxed">
-                  I’ve worked with technologies like{" "}
-                  <span className="font-semibold text-primary">
-                    Angular, Next.js, and React{" "}
-                  </span>
-                  to develop e-commerce platforms, ERP dashboards, and admin
-                  panels. I specialize in responsive design, performance
-                  optimization, and SEO — ensuring every project not only looks
-                  great but performs exceptionally well.
+                  My projects span e-commerce platforms, enterprise dashboards,
+                  and service websites. I lead user interviews, create journey
+                  maps and wireframes, and build scalable design systems that
+                  support consistency across screens and devices.
                 </p>
                 <p className="text-base sm:text-lg text-foreground/90 leading-relaxed">
-                  I’m currently learning{" "}
-                  <span className="font-semibold text-primary">
-                    React Native using Expo
-                  </span>
-                  , and have already built a few mobile apps. I’m excited about
-                  pursuing a future in React Native development — aiming to
-                  create cross-platform experiences and continue expanding my
-                  skills in mobile development.
+                  I’m continually refining my process with usability testing,
+                  accessibility audits, and collaborative workshops. I believe
+                  great design is a team sport, and I aim to empower product
+                  teams with clarity, empathy, and focus.
                 </p>
                 <p className="text-base sm:text-lg text-foreground/90 leading-relaxed">
-                  Beyond coding, I enjoy exploring new frameworks, enhancing UX
-                  strategies, and contributing to projects that merge creativity
-                  with technology. My goal is to keep learning, improving, and
-                  delivering meaningful digital experiences that leave an
-                  impact.
+                  Outside of work, you'll find me sketching interfaces, studying
+                  interaction patterns, and staying current with design system
+                  practices. My mission is to craft digital experiences that
+                  users understand, enjoy, and return to.
                 </p>
               </div>
             </motion.div>

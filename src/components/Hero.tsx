@@ -63,14 +63,14 @@ const Hero = () => {
                     <div className="w-12 h-12 rounded-full bg-gradient-primary flex items-center justify-center flex-shrink-0">
                       {/* <User className="w-6 h-6 text-primary-foreground" /> */}
                       <img
-                        src="cv image.png"
+                        src="/imagearun.png"
                         alt="Profile"
                         className="w-full h-full object-cover rounded-full"
                       />
                     </div>
                     <div className="flex-1 text-left">
                       <h3 className="font-semibold text-foreground">
-                        Bijin EV
+                        Arun Subramanyan
                       </h3>
                       <p className="text-sm text-muted-foreground">
                         bijinev55@gmail.com
@@ -105,7 +105,7 @@ const Hero = () => {
                     <div className="flex items-center gap-3 text-sm">
                       <Linkedin className="w-4 h-4 text-primary flex-shrink-0" />
                       <a
-                        href="https://www.linkedin.com/in/bijin-vijayan/"
+                        href="https://www.linkedin.com/in/arun-subramanyan/"
                         className="text-foreground/70 hover:text-primary transition-colors"
                       >
                         linkedin.com/in/bijin-vijayan
@@ -137,20 +137,15 @@ const Hero = () => {
           >
               <div className="space-y-4">
                   <h1 className="text-[34px] sm:text-4xl md:text-6xl font-bold text-foreground leading-tight">
-                      Building{" "}
+                      Designing{" "}
                       <span className="bg-gradient-primary bg-clip-text text-transparent">
-                      Modern & Scalable
+                      Intuitive & Impactful
                     </span>{" "}
                       Digital Experiences
                   </h1>
 
                   <p className="text-base sm:text-lg text-foreground/70 max-w-md">
-                      I'm <span className="font-semibold">Bijin EV</span>, a Frontend / Full-Stack Developer
-                      with 3 years of experience delivering high-performance web applications using
-                      <span className="font-semibold"> Next.js, React, and Angular</span>.
-                      I specialize in creating fast, accessible, and visually polished interfaces
-                      that solve real business problems.Passionate about clean architecture, modern UI, and
-                      building products that scale.
+                      I'm <span className="font-semibold">Arun Subramanyan</span>, a UX Designer with 3 years of experience translating user research into intuitive digital products. I focus on crafting clear, empathetic interfaces through iterative prototyping and usability testing. My work blends interaction design, accessibility, and a strong product mindset to address real user problems and drive measurable impact.
                       <br />
                   </p>
               </div>
@@ -189,7 +184,7 @@ const Hero = () => {
                 className="bg-gradient-primary w-full text-primary-foreground hover:opacity-90 shadow-glow group"
                 asChild
               >
-                <a href="/Bijin Resume.pdf" download="Bijin Resume.pdf">
+                <a href="/aruncv.pdf" download="aruncv.pdf">
                   Download CV
                   <Download className="ml-2 w-4 h-4 " />
                 </a>
@@ -197,14 +192,14 @@ const Hero = () => {
             </motion.div>
 
             {/* Stats */}
-            {/* <div className="grid grid-cols-3 gap-8 pt-8">
+            <div className="grid grid-cols-3 gap-8 pt-8">
               {stats.map((stat, index) => (
                 <div key={index} className="space-y-1">
                   <div className="text-3xl md:text-4xl font-bold text-foreground">{stat.value}</div>
                   <div className="text-sm text-foreground/60">{stat.label}</div>
                 </div>
               ))}
-            </div> */}
+            </div>
           </motion.div>
 
           {/* Right Column - Profile Image (Hidden on Mobile) */}
@@ -260,7 +255,7 @@ const Hero = () => {
 
                 <div className="absolute inset-4 rounded-full overflow-hidden bg-background shadow-2xl">
                   <img
-                    src="cv image.png"
+                    src="/imagearun.png"
                     alt="Profile"
                     className="w-full h-full object-cover"
                   />
@@ -294,7 +289,7 @@ const Hero = () => {
                   className="bg-gradient-primary text-primary-foreground hover:opacity-90 shadow-glow group"
                   asChild
                 >
-                  <a href="/BIJIN EV - RESUME.pdf" download="BIJIN EV - RESUME.pdf">
+                  <a href="/aruncv.pdf" download="aruncv.pdf">
                     Download CV
                     <Download className="ml-2 w-4 h-4 " />
                   </a>

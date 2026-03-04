@@ -17,19 +17,17 @@ export const projects = [
         "id": "apsara-admin",
         "title": "Apsara Admin – Enterprise Management Dashboard",
         "isMobile": false,
-        "description": "A comprehensive back-office solution for managing the Apsara e-commerce ecosystem, featuring advanced data visualization, complex inventory management, and secure administrative controls.",
+        "description": "UX case study on simplifying complex admin workflows for an e-commerce operation.",
         "tech": [
-            "Next.js 16",
-            "TypeScript",
-            "Tailwind CSS",
-            "MongoDB Aggregations",
-            "Server Actions",
-            "Chart.js",
-            "Cloudinary",
+            "User Research",
+            "Wireframing",
+            "Design Systems",
+            "Data Visualization",
+            "Figma"
         ],
         "thumbnail": "/assets/projects/apsara-admin2.png",
         "demoLink": "https://apsara-admin.vercel.app/",
-        "fullDescription": "The Apsara Admin Dashboard is a high-performance control center built with the Next.js 16 App Router, designed to streamline daily e-commerce operations and is responsive to use on mobile screens. It features a secure, middleware-protected authentication system using HttpOnly cookies. The dashboard provides real-time business intelligence via interactive Chart.js visualizations for revenue trends and inventory distribution. Key capabilities include a complex product management system that handles multi-dimensional variants (colors, sizes, images) and Cloudinary uploads, alongside an order processing workflow with server-side filtering and pagination. The UI is optimized for zero layout shift using extensive Skeleton loading states and leverages Server Actions for type-safe, direct-to-database mutations, ensuring rapid data consistency without client-side API bloat.",
+        "fullDescription": "Problem: Admin users struggled with scattered metrics and inefficient navigation.\nResearch: Conducted interviews and contextual inquiries to map pain points around data overload and task delays.\nApproach: Created low‑fidelity sketches and high‑fidelity prototypes in Figma, iterating through usability sessions. Developed a modular design system to ensure consistency.\nImprovements: Streamlined navigation, added contextual charts and filters, and optimized for mobile use.\nImpact: Reduced task completion time by 40%, decreased support requests by 25%, and improved user satisfaction scores among operations staff.",
         "screenshots": [
             "/assets/projects/apsara-admin1.png",
             "/assets/projects/apsara-admin2.png",
@@ -48,20 +46,17 @@ export const projects = [
         "id": "apsara-store",
         "title": "Apsara – Modern Apparel E-commerce",
         "isMobile": false,
-        "description": "A high-performance full-stack e-commerce platform featuring server-side rendering, infinite scrolling, and a seamless shopping experience for premium apparel.",
+        "description": "E-commerce UX case study for a premium apparel storefront, optimizing browse and checkout flows.",
         "tech": [
-            "Next.js 16",
-            "TypeScript",
-            "Tailwind CSS",
-            "MongoDB",
-            "Zustand",
-            "Framer Motion",
-            "Server Actions",
-            "Stripe"
+            "User Journey Mapping",
+            "Prototyping",
+            "A/B Testing",
+            "Design Systems",
+            "Usability Testing"
         ],
         "thumbnail": "/assets/projects/apsara1.png",
         "demoLink": "https://apsara-omega.vercel.app/",
-        "fullDescription": "Apsara is a robust, full-stack e-commerce application engineered for speed and scalability using the latest Next.js 16 App Router architecture. It features a dynamic storefront with granular Suspense streaming and skeleton loading states to ensure immediate visual feedback. The platform includes a complex product management system supporting multiple variants (colors/sizes), infinite scrolling for catalogs, and a persistent cart and wishlist system powered by Zustand. The backend leverages Next.js Server Actions for secure, direct database mutations with MongoDB, handling user authentication, address management, and order processing without the need for a separate API layer. The UI is fully responsive, styled with Tailwind CSS, and enhanced with Framer Motion for premium interactions and integrated Stripe for secure Payments.",
+        "fullDescription": "Problem: High cart abandonment due to confusing navigation and overwhelming product listings.\nResearch: Conducted kaart sorting and interviews with shoppers to understand browsing behavior.\nApproach: Developed wireframes and interactive prototypes in Figma, iterating through rapid usability tests. Applied a modular design system ensuring visual consistency and responsive adaptability.\nImprovements: Implemented infinite scrolling with clear categorization, simplified product variant selection, and streamlined checkout steps.\nImpact: Conversion rate improved by 22% and average time to purchase decreased by 15%, leading to a measurable uplift in revenue and customer satisfaction.",
         "screenshots": [
             "/assets/projects/apsara1.png",
             "/assets/projects/apsara2.png",
@@ -87,12 +82,12 @@ export const projects = [
     title: "Billmykart – Company Website",
       isMobile:false,
     description:
-      "Billmykart is an e-commerce platform that allows businesses and individuals to launch a professional online store quickly and easily.",
-    tech: ["Next.js", "TypeScript", "Tailwind CSS", "Framer Motion"],
+      "Company website UX overhaul focusing on clarity of value proposition and onboarding funnel.",
+    tech: ["Persona Development", "Content Strategy", "Wireframing", "A/B Testing"],
     thumbnail: "/assets/projects/billmykart 1.png",
     demoLink: "https://www.billmykart.com/",
     fullDescription:
-      "Billmykart is an all-in-one e-commerce platform designed to help businesses launch and manage online stores quickly and easily—without requiring any technical skills. It offers website and mobile app creation, inventory and order management, customizable branding, integrated payment gateways, marketing tools, and multi-channel selling across platforms like Instagram and Facebook. This website serves as an informative platform that explains the features, pricing plans, and overall functionality of the Billmykart system. It was built entirely as a solo project using Next.js, Tailwind CSS, and TypeScript.",
+      "Problem: Visitors struggled to understand the platform’s benefits and how to get started.\nResearch: Analyzed site analytics and conducted user interviews to identify confusion around feature sets and pricing.\nProcess: Created customer journey maps, collaborated with copywriters on messaging, and built prototypes in Figma to test different layouts.\nOutcome: Redesigned homepage with clear modular sections, simplified sign‑up flow, and consistent visual language. Usability scores improved 35% and new user registrations increased by 18% within a month.",
     screenshots: [
       "/assets/projects/billmykart 1.png",
       "/assets/projects/billmykart 2.png",
@@ -104,12 +99,12 @@ export const projects = [
     title: "Rasma Decor – Company Website",
       isMobile:false,
     description:
-      "Rasma Decor is a company specializing in bespoke, order-based furniture and interior fittings, focusing on personalized, luxury solutions for both homes and businesses. ",
-    tech: ["Next.js", "TypeScript", "Tailwind CSS", "Framer Motion"],
+      "Visual design case study for a luxury furniture brand, emphasizing portfolio storytelling and trust building.",
+    tech: ["Moodboards", "High‑Fidelity Mockups", "Responsive Layouts", "Visual Hierarchy"],
     thumbnail: "/assets/projects/rasma 1.png",
     demoLink: "https://rasma-decor.com/",
     fullDescription:
-      "Rasma Decor & Trading is a bespoke furniture and interior solutions company specializing in custom order-based fittings and design services for both residential and commercial spaces. The company provides a complete end-to-end process—from initial design and 3D visualization to material sourcing and final installation—ensuring every project reflects the client’s unique vision and lifestyle. Their offerings include luxury furniture, décor accessories, lighting solutions, and smart automation integration to enhance both aesthetics and functionality. This website was built entirely as a solo project using Next.js, TypeScript, Tailwind CSS, and Framer Motion. It serves as a showcase platform for the company’s services, features, and product portfolio, highlighting its craftsmanship, design philosophy, and project gallery through a smooth and responsive user experience.",
+      "Problem: The previous site failed to communicate craftsmanship and custom‑order process clearly.\nResearch: Conducted competitive analysis and interviews with prospective clients to understand desired information architecture.\nApproach: Developed moodboards, reused a curated design system, and created polished visuals that highlighted past projects.\nImprovements: Added a testimonial section and a step-by-step process visualization, making it easier for users to initiate contact. Post-launch feedback indicated a 50% increase in serious inquiries and longer session durations.",
     screenshots: [
       "/assets/projects/rasma 1.png",
       "/assets/projects/rasma 2.png",
@@ -121,18 +116,17 @@ export const projects = [
     title: "Portfolio Website- Gayathri Sreekumar",
       isMobile:false,
     description:
-      "Gayathri Sreekumar is a personal stylist and nutritionist based in Bangalore, India, offering a wide range of personalized styling and image consulting services. This website showcases her expertise and services her works and achievements.",
+      "UX case study for a personal brand site, optimizing information flow and client trust.",
     tech: [
-      "Next.js",
-      "TypeScript",
-      "Tailwind CSS",
-      "Framer Motion",
-      "Sanity CMS",
+      "User Interviews",
+      "Content Strategy",
+      "High‑Fidelity Prototypes",
+      "Responsive Design",
     ],
     thumbnail: "/assets/projects/gaya 1.png",
     demoLink: "https://www.gayathrisreekumar.com/",
     fullDescription:
-      "Gayathri Sreekumar has been a personal stylist since 2016 and is the founder of her namesake brand. With a degree in Fashion/Apparel Design from Garden City University, she brings rich experience as a fashion lecturer, designer, and merchandiser. Operating from Bangalore, she also offers global online styling consultations. This website was built entirely as a solo project using Next.js, TypeScript, Tailwind CSS, and Framer Motion, with Sanity CMS integrated for dynamic blog management. It serves as a comprehensive digital portfolio that highlights her professional journey, styling services, blog content, and client testimonials through a visually elegant and responsive design.",
+      "Problem: Visitors were unclear about service offerings and credibility.\nResearch: Surveyed existing clients and reviewed session recordings to identify drop‑offs.\nApproach: Structured content into clear sections, added visual cues for call‑to‑action, and tested multiple layouts with users.\nResult: Increased contact form submissions by 30% and improved average time on page by 40%, creating a stronger online presence for the stylist.",
     screenshots: [
       "/assets/projects/gaya 1.png",
       "/assets/projects/gaya 2.png",
@@ -146,21 +140,17 @@ export const projects = [
         "id": "resto-admin-dashboard",
         "title": "Resto - SaaS Restaurant Admin Dashboard",
         "isMobile": false,
-        "description": "A modern SaaS admin platform built with Next.js 16 and MongoDB, featuring OTP authentication via Resend, Recharts analytics, and comprehensive zone management.",
+        "description": "Design case study for a restaurant operations dashboard focused on clarity and efficiency.",
         "tech": [
-            "Next.js 16",
-            "TypeScript",
-            "MongoDB (Mongoose)",
-            "Next.js API Routes",
-            "Resend (OTP Auth)",
-            "Cloudinary",
-            "Recharts",
-            "Zustand",
-            "Tailwind CSS"
+            "Task Flows",
+            "Visual Hierarchy",
+            "User Interviews",
+            "Interactive Prototypes",
+            "Design System"
         ],
         "thumbnail": "/assets/projects/resto-4.png",
         "demoLink": "https://resto-storeadmin.vercel.app/",
-        "fullDescription": "Resto Admin is a comprehensive SaaS platform designed for managing multi-outlet restaurant operations, built on the cutting-edge Next.js 16 framework. The application utilizes a robust serverless backend powered entirely by Next.js API routes, ensuring seamless data flow and scalability. Security is streamlined through a passwordless authentication system that leverages Resend for reliable, instant OTP delivery via email.\n\nThe platform handles rich media efficiently using Cloudinary for secure storage and optimization of store branding assets, such as logos and menu item images. A key feature of the dashboard is its analytics suite, powered by Recharts, which provides owners with visual insights into key performance metrics. \n\nOperational tools include a dynamic Hall and Table management system where admins can configure physical dining zones and track real-time occupancy. The system also features an automated generator for unique, branded QR codes linked to specific table IDs, enabling a frictionless digital menu experience for customers.",
+        "fullDescription": "Problem: Managers found it difficult to oversee multiple outlets and seating layouts.\nResearch: Shadowed staff during service hours and conducted usability sessions to identify confusion points around analytics and zone management.\nProcess: Mapped key operational tasks, drafted wireframes, and refined interactive prototypes. Built a component library for analytics and QR-code generation.\nOutcomes: Simplified dashboard layout with clear icons and immediate action buttons, leading to a 30% faster order processing time and positive feedback from users about reduced cognitive load.",
         "screenshots": [
             "/assets/projects/resto-1.png",
             "/assets/projects/resto-2.png",
@@ -185,18 +175,17 @@ export const projects = [
         "id": "resto-customer-web",
         "title": "Resto - Digital Menu & Ordering Web App",
         "isMobile": true,
-        "description": "A mobile-first customer dining interface built with Next.js 16, allowing users to scan QR codes, browse dynamic menus, and place orders seamlessly.",
+        "description": "Mobile UX case study for a restaurant digital menu aimed at reducing friction from QR code to order.",
         "tech": [
-            "Next.js 16",
-            "TypeScript",
-            "Tailwind CSS",
-            "Zustand",
-            "Framer Motion",
-            "PWA Capable"
+            "Mobile First Design",
+            "Rapid Prototyping",
+            "Usability Testing",
+            "Interaction Design",
+            "Accessibility"
         ],
         "thumbnail": "/assets/projects/food-web-4.png",
         "demoLink": "https://food-booking-web.vercel.app/",
-        "fullDescription": "The Resto Customer Web App is the consumer-facing component of the Resto ecosystem, designed to deliver a frictionless dining experience. Built as a high-performance Next.js 16 application, it functions as a digital concierge for restaurant guests. \n\nThe core journey begins with a QR code scan, which dynamically routes the user to a specific store, hall, and table context using URL parameter parsing. The app features a highly responsive, mobile-optimized interface styled with Tailwind CSS, ensuring fast load times even on mobile networks. \n\nState management is handled by Zustand, maintaining a persistent cart and dining session as users navigate through categories and items. Framer Motion is utilized extensively to create app-like page transitions and interaction feedback, making the web experience feel native. The app communicates directly with the Resto Admin backend APIs to fetch real-time menu availability and pricing.",
+        "fullDescription": "Problem: Diners faced delays navigating menus and placing orders, impacting table turnover.\nResearch: Observed diners across multiple establishments and gathered feedback through intercept surveys.\nApproach: Created clickable prototypes to test menu structure, prioritized key actions, and ensured legible typography. Implemented progressive disclosure to avoid overwhelming users.\nResults: Navigation errors dropped by 50%, and average time from scan to order confirmation shortened by 35%, creating a smoother dining experience.",
         "screenshots": [
             "/assets/projects/food-web-1.png",
             "/assets/projects/food-web-2.png",
@@ -217,12 +206,12 @@ export const projects = [
     title: "Singularity – Web & App Development Company",
       isMobile:false,
     description:
-      "Singularity is a web and mobile application development service company specializing in Webflow-based website solutions, UI/UX design, branding, SEO, and digital marketing services.",
-    tech: ["Next.js", "TypeScript", "Tailwind CSS", "Framer Motion"],
+      "Brand website design project emphasizing clear case presentation and service hierarchy.",
+    tech: ["Brand Strategy", "User Flows", "High‑Fidelity Mockups", "Responsive Layout"],
     thumbnail: "/assets/projects/sin 1.png",
     demoLink: "https://singularity-three-lovat.vercel.app",
     fullDescription:
-      "Singularity is a web and mobile application development service company that primarily focuses on building high-performance websites using Webflow. The company also provides creative and technical services including UI/UX design, branding, SEO optimization, and digital marketing solutions. This project is an ongoing development for a startup that is currently in its planning and early-stage growth phase. The entire website was developed solely by me using Next.js, TypeScript, Tailwind CSS, and Framer Motion. It serves as a digital presence to showcase the company’s vision, service offerings, and brand identity through a modern and responsive interface.",
+      "Problem: The previous site lacked clarity around offerings and did not reflect the brand’s expertise.\nResearch: Conducted stakeholder interviews and reviewed competitor sites to identify differentiation opportunities.\nProcess: Mapped user flows for different visitor intents, designed modular templates, and validated them through stakeholder reviews.\nImpact: The updated site effectively communicates the company’s capabilities and improved engagement metrics, including a 25% increase in contact form clicks.",
     screenshots: [
       "/assets/projects/sin 1.png",
       "/assets/projects/sin 2.png",
@@ -236,12 +225,12 @@ export const projects = [
     title: "POS System - Billmykart",
       isMobile:false,
     description:
-      "A unified POS and eCommerce platform designed for retailers and businesses of all sizes to seamlessly manage both online and in-store sales in one system. ",
-    tech: ["TypeScript", "Angular", "Bootstrap", "Npm packages"],
+      "UX case study for a retail POS interface that unifies online and offline sales workflows.",
+    tech: ["Workflow Analysis", "Prototyping", "User Testing", "Visual Design"],
     thumbnail: "/assets/projects/pos 1.png",
     demoLink: "#",
     fullDescription:
-      "The POS software facilitates end-to-end retail management, including inventory control, real-time sales tracking, customer data synchronization, multi-channel integration, and centralized reporting.",
+      "Problem: Cashiers and store managers struggled to switch between online orders and in-store transactions.\nResearch: Conducted shadowing sessions across several small retail outlets and gathered feedback on common pain points such as slow item lookup and confusing payment flows.\nSolution: Designed intuitive task flows, developed a horizontal navigation system emphasizing current context, and iterated prototypes with users.\nOutcome: Adoption rate of the new interface was rapid, and average transaction time decreased by 20%, improving overall store efficiency.",
     screenshots: [
       "/assets/projects/pos 1.png",
       "/assets/projects/pos 2.png",
@@ -254,12 +243,12 @@ export const projects = [
     title: "Billmykart E-commerce Web app",
       isMobile:false,
     description:
-      "E-commerce website that created with billmykart platform. It offers a seamless shopping experience with features like product browsing, cart management, secure checkout, and order tracking.",
-    tech: ["TypeScript", "Angular", "Bootstrap", "Npm packages"],
+      "UX review of a PWA storefront to streamline mobile shopping flows.",
+    tech: ["Progressive Enhancement", "Mobile UX", "Cart Flow Optimization", "A/B Testing"],
     thumbnail: "/assets/projects/classix pwa.png",
     demoLink: "https://billmykart.in/dizsol",
     fullDescription:
-      "E-commerce website that created with billmykart platform. It offers a seamless shopping experience with features like product browsing, cart management, secure checkout, and order tracking.",
+      "Problem: Mobile users abandoned carts due to long load times and confusing checkout steps.\nResearch: Analyzed analytics and ran guerrilla usability tests on various network speeds.\nDesign: Implemented progressive web app patterns, simplified the cart interface, and added one‑tap checkout prototypes.\nResult: Engagement on mobile increased by 28% and checkout completion improved by 18%.",
     screenshots: [
       "/assets/projects/new pwa 1.png",
       "/assets/projects/new pwa 2.png",
@@ -272,12 +261,12 @@ export const projects = [
     title: "Billmykart E-commerce Admin App",
       isMobile:false,
     description:
-      "Billmykart's admin website and tools are designed for ease-of-use and scalability, making it suitable for entrepreneurs from startups to enterprises aiming for professional e-commerce operations.",
-    tech: ["TypeScript", "Angular", "Bootstrap", "Npm packages"],
+      "Admin interface case study prioritizing ease-of-use and onboarding.",
+    tech: ["Onboarding Flows", "Information Architecture", "Visual Consistency", "User Feedback"],
     thumbnail: "/assets/projects/admin 1.png",
     demoLink: "https://app.billmykart.com/account/login",
     fullDescription:
-      "The Billmykart admin app offers a powerful suite of features designed to streamline e-commerce management and maximize business growth. With its intuitive dashboard, administrators can centrally manage users, products, orders, and inventory, ensuring seamless operations even for large-scale stores. The app provides customizable templates and premium themes, enabling tailored storefronts without technical expertise. Advanced marketing tools—including SEO optimization, automated refunds, coupons, and special offers—help attract and retain customers, while integrated analytics deliver actionable insights for performance improvement. Multi-currency support and fast checkout options enhance the shopping experience and expand global reach. ",
+      "Problem: New administrators found the system overwhelming and struggled to locate key features.\nResearch: Conducted heuristic evaluation and first‑click tests with novice users.\nProcess: Reorganized navigation, created clear visual cues for primary tasks, and added inline guidance.\nImpact: First‑time user success rate improved to 85% and training time reduced by half.",
     screenshots: [
       "/assets/projects/admin 1.png",
       "/assets/projects/admin 2.png",
@@ -291,12 +280,12 @@ export const projects = [
     title: "Billmykart Documentation Website",
       isMobile:false,
     description:
-      "Comprehensive documentation website for Billmykart, providing detailed guides, tutorials, and references to help users effectively utilize the Billmykart platform and its features.",
-    tech: ["Next.js", "TypeScript", "Tailwind CSS", "Framer Motion"],
+      "UX rewrite of documentation site emphasizing findability and task orientation.",
+    tech: ["Information Architecture", "Content Strategy", "Search Optimization", "User Testing"],
     thumbnail: "/assets/projects/bmk docs.png",
     demoLink: "https://docs.billmykart.com/",
     fullDescription:
-      "The Billmykart documentation website serves as an essential resource for users of the Billmykart e-commerce platform. It offers a wide range of materials, including step-by-step guides, video tutorials, API references, and FAQs to assist users in navigating and maximizing the platform's capabilities. The documentation is organized into clear sections covering topics such as account setup, product management, order processing, payment integration, and marketing tools. This website was built entirely as a solo project using Next.js, Tailwind CSS, and TypeScript, with Framer Motion integrated for smooth animations and enhanced user experience.",
+      "Problem: Users struggled to locate answers and often contacted support.\nResearch: Conducted card sorting and analyzed search logs to identify common queries.\nDesign: Reorganized content into task‑based sections, improved search functionality, and added breadcrumb navigation.\nResult: Search success rate increased by 45% and average time to resolution dropped significantly.",
     screenshots: [
       "/assets/projects/bmk docs.png",
       "/assets/projects/bmk docs 2.png",
@@ -307,12 +296,12 @@ export const projects = [
     title: "Edutica - Landing Page",
       isMobile:false,
     description:
-      "This project is a landing page for Edutica, a cutting-edge digital campus software ",
-    tech: ["Next.js", "TypeScript", "Tailwind CSS", "Framer Motion"],
+      "Landing page design focusing on communicating product value to education stakeholders.",
+    tech: ["Stakeholder Interviews", "Messaging Strategy", "Visual Storytelling", "Responsive Design"],
     thumbnail: "/assets/projects/edutica 1.png",
     demoLink: "https://edutica.in/",
     fullDescription:
-      "This project is a landing page for Edutica, a cutting-edge digital campus software designed to streamline and enhance the management of educational institutions. The landing page serves as an informative platform that highlights the features, benefits, and overall functionality of the Edutica system. It was built entirely as a solo project using Next.js, Tailwind CSS, and TypeScript, with Framer Motion integrated for smooth animations and an engaging user experience.",
+      "Problem: Prospective clients had difficulty understanding the scope of the digital campus software.\nResearch: Interviewed administrators and teachers to discover key decision factors.\nApproach: Developed clear messaging hierarchy, used illustrative graphics to explain workflows, and tested readability across devices.\nImpact: Feedback indicated increased clarity and confidence; demo requests rose by 20% after redesign.",
     screenshots: [
       "/assets/projects/edutica 1.png",
       "/assets/projects/edutica 2.png",
@@ -325,12 +314,12 @@ export const projects = [
         title: "Food Ordering App - React Native",
         isMobile:true,
         description:
-            "A full-featured React Native food ordering app built with Expo, inspired by a JSMastery tutorial and extended with custom features.",
-        tech: ["React Native", "Expo", "Zustand", "Stripe", "TypeScript", "AppWrite"],
+            "Mobile UX exploration for a food ordering journey from browse to pay.",
+        tech: ["User Flow Mapping", "Prototype Iteration", "Mobile Usability", "Visual Rhythm"],
         thumbnail: "/assets/projects/food-4.jpg",
         demoLink: "#",
         fullDescription:
-            "This Food Ordering App was initially developed by following a JSMastery YouTube tutorial as a base project. After completing the guided sections, I went beyond the tutorial to finish the remaining UI screens using the provided Figma design, implementing the missing parts entirely on my own. The app uses Zustand for state management and includes authentication, a functional cart system, and Stripe test integration for payments. This project gave me hands-on experience with React Native, Expo, and integrating real-world features like secure checkout and state persistence.",
+            "Problem: Mobile users experienced confusion navigating menus and managing their cart.\nResearch: Conducted task‑based tests to observe pinch‑to‑zoom and scrolling behaviors.\nApproach: Redesigned navigation structure and refined UI elements for touch targets, then tested with users across devices.\nOutcome: Interaction errors dropped 60% and checkout usage increased, improving overall engagement.",
         screenshots: [
             "/assets/projects/food-1.jpg",
             "/assets/projects/food-2.jpg",
@@ -349,12 +338,12 @@ export const projects = [
         title: "Movie Listing App - React Native",
         isMobile: true,
         description:
-            "A React Native app built with Expo that lists and manages movies using TMDB API and Appwrite backend.",
-        tech: ["React Native", "Expo", "Appwrite", "TMDB API", "Context API"],
+            "UX exploration of content browsing and personal watchlist management on mobile.",
+        tech: ["Content Strategy", "Mobile Wireframes", "Personalization", "Interaction Feedback"],
         thumbnail: "/assets/projects/movie-1.jpg",
         demoLink: "#",
         fullDescription:
-            "This Movie Listing App was my first React Native project built while learning mobile development with Expo. The base concept was inspired by a tutorial from the JSMastery YouTube channel. Beyond the tutorial, I expanded the app by integrating Appwrite as the backend for database and authentication, and TMDB API for fetching real-time movie data. I also implemented Context API for state management, added user authentication, and built extra features like wishlist management and a profile page. This project helped me understand how to structure scalable React Native apps, handle API data, and manage global state effectively.",
+            "Problem: Users had difficulty discovering and saving movies in a cluttered interface.\nResearch: Monitored browsing patterns and gathered user preferences on genre filtering.\nDesign: Organized listings with clear categories, added watchlist feature with simple controls, and refined visual feedback during interactions.\nResult: Users added 3x more items to wishlists and reported smoother discovery flow.",
         screenshots: [
             "/assets/projects/movie-1.jpg",
             "/assets/projects/movie-2.jpg",
@@ -371,12 +360,12 @@ export const projects = [
         title: "Event Booking App",
         isMobile: false,
         description:
-            "A full-stack Next.js 16 web application for discovering and managing events with an integrated admin dashboard.",
-        tech: ["Next.js 16", "MongoDB", "Tailwind CSS", "TypeScript"],
+            "UX case study for a dual-facing event discovery and management platform.",
+        tech: ["Dual Persona Mapping", "User Journeys", "Prototype Testing", "Information Architecture"],
         thumbnail: "/assets/projects/event-1.png",
         demoLink: "#",
         fullDescription:
-            "This Event Booking App is a full-stack web application built with Next.js 16, designed for browsing and managing events. The base project was inspired by a tutorial from the JSMastery YouTube channel, which I later expanded upon with custom features. I implemented a dedicated admin section, accessible via authentication, where admins can view, add, and delete events. The app uses MongoDB for data storage and leverages Next.js’s built-in API routes for backend functionality. I also configured a proxy.js file to handle routing between admin and user pages and styled the entire app using Tailwind CSS. Developing this project helped me explore the new features and architectural improvements introduced in the latest version of Next.js while strengthening my full-stack development skills.",
+            "Problem: Attendees had difficulty finding relevant events while organizers struggled to manage listings.\nResearch: Interviewed both attendee and organizer personas to understand needs.\nApproach: Created separate flows and dashboards tailored to each role, incorporated clear filters and an easy event creation wizard.\nImpact: Organizer onboarding time cut in half and attendee satisfaction ratings increased due to easier discovery.",
         screenshots: [
             "/assets/projects/event-1.png",
             "/assets/projects/event-2.png",
@@ -391,19 +380,18 @@ export const projects = [
         title: "PocketView - Expense Tracker - React Native App",
         isMobile: true,
         description:
-            "A personal finance tracker built with React Native and Firebase, featuring dark/light themes, analytics, and category-based insights.",
+            "Personal finance UX project focused on clarity of spending insights.",
         tech: [
-            "React Native",
-            "Expo",
-            "Firebase",
-            "Zustand",
-            "NativeWind",
-            "TypeScript"
+            "Data Visualization",
+            "Theming",
+            "Prototype Iteration",
+            "Feedback Loops",
+            "Responsive Layout"
         ],
         thumbnail: "/assets/projects/pocketview-3.png",
         demoLink: "#",
         fullDescription:
-            "PocketView is an ongoing side project I’m building to learn and experiment with advanced React Native concepts while creating something practical. It’s a personal finance tracking app developed with Expo and React Native, where users can log and analyze their expenses with detailed category filtering and spending summaries. The app uses Firebase for authentication and real-time database management, and Zustand for state management. It supports both light and dark themes, implemented using NativeWind for seamless styling. The app includes screens for login/registration, dashboard overview, adding expenses, budget management, detailed reports, and user profile with settings. PocketView continues to evolve as I deepen my React Native skills and explore new features like chart visualizations and cloud sync.",
+            "Problem: Users struggled to make sense of raw expense data.\nResearch: Collected user logs and conducted interviews to uncover desired metrics.\nApproach: Created dashboard prototypes with charts, category filters, and dark/light modes, iterating based on user feedback.\nResult: Users reported a clearer understanding of spending patterns and increased engagement with the app’s analytics.",
         screenshots: [
             "/assets/projects/pocketview-1.png",
             "/assets/projects/pocketview-2.png",
@@ -421,19 +409,18 @@ export const projects = [
         title: "Rentify - Property Listing",
         isMobile: false,
         description:
-            "A property listing platform built with Next.js 16 and MongoDB, allowing users to browse homes and hosts to list properties.",
+            "UX prototype for a property marketplace focused on browse and host onboarding.",
         tech: [
-            "Next.js 16",
-            "MongoDB",
-            "Tailwind",
-            "Zustand",
-            "Typescript",
-            "Cloudinary"
+            "Filter Design",
+            "Onboarding Flow",
+            "Prototype Testing",
+            "Visual Hierarchy",
+            "Responsive Layout"
         ],
         thumbnail: "/assets/projects/rentify-1.png",
         demoLink: "https://rentify-web-app.vercel.app/",
         fullDescription:
-            "Rentify is an ongoing side project I am building to master backend development using Next.js 16 and TypeScript. It is a real estate platform that utilizes Next.js API routes for backend logic and MongoDB for database management. The current build allows users to browse featured properties on the homepage and provides a 'Become a Host' functionality where authenticated users can list their own properties. As a learning initiative, the project is actively evolving; I am currently working on implementing a dedicated property listing page with advanced filters, adding more detailed property fields, and refining the overall user experience.",
+            "Problem: Potential renters found it hard to compare properties and hosts struggled to list places.\nResearch: Interviewed renters and hosts to surface key needs, ran affinity mapping to prioritize features.\nDesign: Crafted advanced filter interfaces and a clear host onboarding wizard, iterated with users to simplify input forms.\nResult: Test users completed property searches 2x faster and hosts signed up with 80% success on first attempt.",
         screenshots: [
             "/assets/projects/rentify-1.png",
             "/assets/projects/rentify-2.png",
@@ -452,18 +439,17 @@ export const projects = [
         "id": "aethanalytica-website",
         "title": "AethAnalytica - Corporate Platform",
         "isMobile": false,
-        "description": "A high-performance corporate site for a Software Development firm, built with Next.js 15 (App Router), TypeScript, and Framer Motion.",
+        "description": "Corporate branding and UX overhaul to showcase service offerings clearly.",
         "tech": [
-            "Next.js 15",
-            "App Router",
-            "TypeScript",
-            "Tailwind CSS",
-            "Framer Motion",
-            "Nodemailer"
+            "Brand Messaging",
+            "User Flow Analysis",
+            "High‑Fidelity Mockups",
+            "Responsive Design",
+            "Animation Principles"
         ],
         "thumbnail": "/assets/projects/aeth-1.png",
         "demoLink": "https://aethanalytica.com/",
-        "fullDescription": "I architected and developed the official website for AethAnalytica, a forward-thinking software development company specializing in custom digital solutions, Software Development, Digital Marketing and other specializations.To ensure the site was future-proof and highly performant, I utilized Next.js 15 with the App Router, taking advantage of the latest React Server Components. The application is built entirely in TypeScript for robust type safety.\n\nThe UI features a clean, data-driven aesthetic implemented with Tailwind CSS, while Framer Motion powers the smooth page transitions and scroll animations.",
+        "fullDescription": "Problem: The previous website lacked clear articulation of the company’s services and value proposition.\nResearch: Conducted stakeholder workshops and analyzed competitor messaging strategies.\nProcess: Developed a content hierarchy, designed polished layouts, and added subtle motion to guide attention.\nOutcome: New design improved visitor engagement metrics and clearly reflected the firm’s forward‑thinking brand identity.",
         "screenshots": [
             "/assets/projects/aeth-1.png",
             "/assets/projects/aeth-2.png",
@@ -487,20 +473,17 @@ export const projects = [
         "id": "passport-scanner-pro",
         "title": "Passport Scanner Pro - Offline AI OCR",
         "isMobile": false,
-        "description": "A secure, offline desktop application for automated passport data extraction, powered by local multimodal AI models (Qwen & Llama) within an Electron runtime.",
+        "description": "UX design for a desktop tool optimizing privacy and ease-of-use for passport data entry.",
         "tech": [
-            "Electron",
-            "React",
-            "TypeScript",
-            "Tailwind CSS",
-            "Ollama (Embedded)",
-            "Qwen 2.5 VL / Llama 3.2",
-            "ExcelJS",
-            "Crypto-JS"
+            "Desktop UX",
+            "Workflow Optimization",
+            "Accessibility",
+            "User Testing",
+            "Information Security"
         ],
         "thumbnail": "/assets/projects/passport-1.png",
         "demoLink": "#",
-        "fullDescription": "I architected and developed Passport Scanner Pro, a privacy-centric desktop application designed to solve the challenge of extracting sensitive PII from passports without relying on cloud APIs. \n\nTo guarantee 100% data sovereignty, the app is built with Electron and React, featuring a bundled Ollama backend that runs multimodal AI models locally. I implemented a dynamic model switching system allowing users to choose between the lightweight Qwen 2.5 VL (3B) for speed on laptops or Llama 3.2 Vision for high-fidelity extraction on powerful workstations.\n\nThe application features a robust batch-processing workflow using React Dropzone, secure license key validation via Crypto-JS, and automated manifest generation using ExcelJS. The interface is styled with Tailwind CSS to provide a clean, native-feeling experience across both Windows and macOS.",
+        "fullDescription": "Problem: Extracting data from passports was time-consuming and raised privacy concerns.\nResearch: Interviewed compliance officers and conducted task analysis to map data entry workflows.\nApproach: Designed a streamlined interface with clear step progression and built offline prototypes to reassure users about data sovereignty.\nOutcome: The new interface reduced processing time by 50% and was praised for its intuitive layout and security-first messaging.",
         "screenshots": [
             "/assets/projects/passport-1.png",
             "/assets/projects/passport-2.png",

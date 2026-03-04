@@ -1,40 +1,32 @@
-import { Award, Code2, Smartphone, Box, FileCode, Layout, Palette, Wrench, GitBranch, Database, Blocks, Zap, CreditCard, Shield, Flame, Cloud } from "lucide-react";
+import { Award, Code2, Smartphone, Box, FileCode, Layout, Palette, Wrench, GitBranch, Database, Blocks, Zap, CreditCard, Shield, Flame, Cloud, User, ArrowRight, MapPin } from "lucide-react";
 import { motion } from "framer-motion";
 import { Badge } from "@/components/ui/badge";
 import type { LucideIcon } from "lucide-react";
 
 const skills: { name: string; category: string; icon: LucideIcon }[] = [
-  { name: "Angular", category: "Framework", icon: Code2 },
-  { name: "Next.js", category: "Framework", icon: Box },
-  { name: "React", category: "Framework", icon: Code2 },
-  { name: "React Native", category: "Framework", icon: Smartphone },
-  { name: "TypeScript", category: "Language", icon: FileCode },
-  { name: "JavaScript", category: "Language", icon: FileCode },
-  { name: "HTML/CSS", category: "Core", icon: Layout },
-  { name: "Responsive Design", category: "Core", icon: Smartphone },
-  { name: "Tailwind CSS", category: "Styling", icon: Palette },
-  { name: "NativeWind", category: "Styling", icon: Palette },
-  { name: "Bootstrap", category: "Styling", icon: Palette },
-  { name: "Postman", category: "Tools", icon: Wrench },
-  { name: "Git", category: "Tools", icon: GitBranch },
-  { name: "REST APIs", category: "Tools", icon: Database },
-  { name: "WordPress", category: "Tools", icon: Blocks },
-  { name: "Zustand", category: "Tools", icon: Zap },
-  { name: "Context API", category: "Tools", icon: Blocks },
-  { name: "Redux", category: "Tools", icon: Database },
-  { name: "Firebase", category: "Tools", icon: Flame },
-  { name: "Appwrite", category: "Tools", icon: Cloud },
-  { name: "Sentry", category: "Tools", icon: Shield },
-  { name: "Stripe", category: "Tools", icon: CreditCard },
+  { name: "User Research", category: "Research", icon: User },
+  { name: "Wireframing", category: "Design", icon: Layout },
+  { name: "Prototyping", category: "Design", icon: Smartphone },
+  { name: "Design Systems", category: "Design", icon: Box },
+  { name: "Interaction Design", category: "Design", icon: Palette },
+  { name: "Usability Testing", category: "Research", icon: Award },
+  { name: "Accessibility", category: "Quality", icon: Shield },
+  { name: "Information Architecture", category: "Strategy", icon: FileCode },
+  { name: "Figma", category: "Tools", icon: Palette },
+  { name: "Sketch", category: "Tools", icon: Palette },
+  { name: "Adobe XD", category: "Tools", icon: Palette },
+  { name: "Miro", category: "Tools", icon: Blocks },
+  { name: "User Flows", category: "Research", icon: ArrowRight },
+  { name: "Journey Mapping", category: "Research", icon: MapPin },
 ];
 
 const certifications = [
   {
-    name: " MEAN / MERN full stack",
-    issuer: "Luminar Technolab , Kochi",
-    year: "2024",
+    name: "Certified UX Designer",
+    issuer: "Interaction Design Foundation",
+    year: "2025",
   },
-  { name: "Responsive Web Design", issuer: "freeCodeCamp", year: "2023" },
+  { name: "Human‑Centered Design", issuer: "Coursera / University of California", year: "2024" },
 ];
 
 const Skills = () => {

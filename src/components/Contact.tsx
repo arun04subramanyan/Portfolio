@@ -22,7 +22,7 @@ const Contact = () => {
           viewport={{ once: true }}
           transition={{ duration: 0.5, delay: 0.2 }}
         >
-          I'm always open to discussing new opportunities, collaborations, or just having a chat about frontend development.
+          I'm always open to discussing new opportunities, collaborations, or just having a chat about UX design.
         </motion.p>
         
         <motion.div 
@@ -35,7 +35,7 @@ const Contact = () => {
           <Button 
             size="lg"
             className="bg-primary hover:bg-primary/90 text-primary-foreground shadow-glow"
-            onClick={() => window.open('https://www.linkedin.com/in/bijin-vijayan/', '_blank')}
+            onClick={() => window.open('https://www.linkedin.com/in/arun-subramanyan-192388285/', '_blank')}
           >
             <Linkedin className="w-5 h-5 mr-2" />
             Connect on LinkedIn
@@ -44,7 +44,7 @@ const Contact = () => {
             size="lg"
             variant="outline"
             className="border-primary text-primary hover:bg-primary/10"
-            onClick={() => window.location.href = 'mailto:bijinev55@gmail.com'}
+            onClick={() => window.location.href = 'mailto:arun04subramanyan@gmail.com'}
           >
             <Mail className="w-5 h-5 mr-2" />
             Send Email
