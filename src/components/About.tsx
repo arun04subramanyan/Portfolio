@@ -65,7 +65,7 @@ const About = () => {
           viewport={{ once: true }}
           transition={{ duration: 0.5 }}
         >
-          About Me
+          About Mee
         </motion.h2>
 
         <div className="max-w-5xl mx-auto">
@@ -95,9 +95,7 @@ const About = () => {
                   support consistency across screens and devices.
                 </p>
                 <p className="text-base sm:text-lg text-foreground/90 leading-relaxed">
-                  I’m continually refining my process with usability testing,
-                  accessibility audits, and collaborative workshops. I believe
-                  great design is a team sport, and I aim to empower product
+                  hahahhaa , and I aim to empower product
                   teams with clarity, empathy, and focus.
                 </p>
                 <p className="text-base sm:text-lg text-foreground/90 leading-relaxed">
