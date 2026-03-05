@@ -30,9 +30,9 @@ const Hero = () => {
   };
 
   const stats = [
-    { value: "650+", label: "Projects Done" },
-    { value: "99%", label: "Happy Client" },
-    { value: "240+", label: "Fine Artworks" },
+    { value: "6+", label: "Years Experience" },
+    { value: "3+", label: "Design Systems Built" },
+    { value: "1M+", label: "Users Impacted" },
   ];
 
   const floatingIcons = [
@@ -73,7 +73,7 @@ const Hero = () => {
                         Arun Subramanyan
                       </h3>
                       <p className="text-sm text-muted-foreground">
-                        bijinev55@gmail.com
+                        arun04subramanyan@gmail.com
                       </p>
                     </div>
                     <ChevronDown
@@ -89,17 +89,17 @@ const Hero = () => {
                     <div className="flex items-center gap-3 text-sm">
                       <Mail className="w-4 h-4 text-primary flex-shrink-0" />
                       <span className="text-foreground/70">
-                        bijinev55@gmail.com
+                        arun04subramanyan@gmail.com
                       </span>
                     </div>
                     <div className="flex items-center gap-3 text-sm">
                       <Phone className="w-4 h-4 text-primary flex-shrink-0" />
-                      <span className="text-foreground/70">+91 9048769548</span>
+                      <span className="text-foreground/70">+91 8075518911</span>
                     </div>
                     <div className="flex items-center gap-3 text-sm">
                       <MapPin className="w-4 h-4 text-primary flex-shrink-0" />
                       <span className="text-foreground/70">
-                        Nilambur, Kerala, India
+                        Bangalore,Karnataka, India
                       </span>
                     </div>
                     <div className="flex items-center gap-3 text-sm">
@@ -108,7 +108,7 @@ const Hero = () => {
                         href="https://www.linkedin.com/in/arun-subramanyan/"
                         className="text-foreground/70 hover:text-primary transition-colors"
                       >
-                        linkedin.com/in/bijin-vijayan
+                        https://www.linkedin.com/in/arun-subramanyan/
                       </a>
                     </div>
                     <div className="flex items-center gap-3 text-sm">
@@ -145,7 +145,7 @@ const Hero = () => {
                   </h1>
 
                   <p className="text-base sm:text-lg text-foreground/70 max-w-md">
-                      I'm <span className="font-semibold">Arun Subramanyan</span>, a UX Designer with 3 years of experience translating user research into intuitive digital products. I focus on crafting clear, empathetic interfaces through iterative prototyping and usability testing. My work blends interaction design, accessibility, and a strong product mindset to address real user problems and drive measurable impact.
+                      I'm <span className="font-semibold">Arun Subramanyan</span>, Results-driven Senior UI/UX Designer with <span className="font-semibold">6+ years</span>of experience delivering scalable digital products across enterprise and fintech domains. Skilled in leading cross-functional initiatives and leveraging AI-powered design tools to drive innovation. Possesses foundational knowledge of HTML and React, enabling seamless collaboration from concept to implementation.
                       <br />
                   </p>
               </div>

@@ -2,22 +2,23 @@ import { Briefcase } from "lucide-react";
 import { motion } from "framer-motion";
 
 const experiences = [
+   {
+    title: "Senior UX Designer",
+    company: "Lighthouse Asia Pacific Pvt Ltd",
+    period: "April 2025 - Present | Bangalore",
+    description:
+      "At Lighthouse, I designed enterprise dashboards and workflows, using AI tools for product ideation and rapid design exploration while collaborating closely with cross-functional teams.",
+    skills: ["Workflow Mapping", "Wireframing", "User Testing", "Visual Design", "Stakeholder Collaboration", "AI-Powered Design"]
+  },
   {
-    title: "UX Designer",
+    title: "UI/UX Designer",
     company: "Aeth Analytica",
     period: "Apr 2024 - Sep 2025 | UL Cyberpark, Calicut",
     description:
       "Led user research and interface redesign for the BillMyKart e-commerce suite. Conducted stakeholder workshops, defined personas, and created high‑fidelity prototypes that reduced checkout friction. Established a component-based design system and validated flows through usability testing, resulting in a 30% uplift in task completion and happier merchants.",
     skills: ["User Research", "Prototyping", "Design Systems", "Usability Testing", "Information Architecture"]
   },
-  {
-    title: "Product UX Designer",
-    company: "Objective Tech",
-    period: "Jan 2024 - Apr 2024 | Nilambur",
-    description:
-      "Designed the UX for an ERP admin panel for EminenceTel (UK), focusing on clarity and efficiency for back-office users. Mapped workflows, created interactive prototypes, and ran iterative testing sessions with real users. Delivered a clean, scalable UI kit that streamlined feature development and cut support tickets by 20%.",
-    skills: ["Workflow Mapping", "Wireframing", "User Testing", "Visual Design", "Stakeholder Collaboration"]
-  },
+
   {
     title: "UX Design Intern",
     company: "Luminar Technolab",

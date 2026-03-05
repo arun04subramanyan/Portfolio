@@ -60,11 +60,7 @@ const Contact = () => {
           </Button>
         </motion.div>
         
-        {/* <div className="mt-16 pt-8 border-t border-border">
-          <p className="text-muted-foreground">
-            © 2024 Frontend Engineer Portfolio. Built with React & Tailwind CSS.
-          </p>
-        </div> */}
+      
       </div>
     </section>
   );

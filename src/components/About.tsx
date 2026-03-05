@@ -65,7 +65,7 @@ const About = () => {
           viewport={{ once: true }}
           transition={{ duration: 0.5 }}
         >
-          About Mee
+          About Me
         </motion.h2>
 
         <div className="max-w-5xl mx-auto">
@@ -83,20 +83,17 @@ const About = () => {
             >
               <div className="space-y-6">
                 <p className="text-base sm:text-lg text-foreground/90 leading-relaxed">
-                  I’m a UX Designer with 3 years of experience shaping digital
-                  products through research-driven design. I thrive on turning
-                  insights from users and stakeholders into clear, accessible
-                  interfaces that solve real problems and deliver measurable value.
+                  Results-driven Senior UI/UX Designer and emerging Design Lead with 
+                  6+ years of experience driving design strategy across enterprise, 
+                  fintech, legal tech, and EdTech products. I have a proven ability to lead cross-functional initiatives, 
+                   align stakeholders, and translate complex requirements into scalable, 
+                   user-centered systems that balance business goals with user needs.
                 </p>
+              
                 <p className="text-base sm:text-lg text-foreground/90 leading-relaxed">
-                  My projects span e-commerce platforms, enterprise dashboards,
-                  and service websites. I lead user interviews, create journey
-                  maps and wireframes, and build scalable design systems that
-                  support consistency across screens and devices.
-                </p>
-                <p className="text-base sm:text-lg text-foreground/90 leading-relaxed">
-                  hahahhaa , and I aim to empower product
-                  teams with clarity, empathy, and focus.
+                  I am passionate about building high-performing design teams, 
+                  fostering collaboration, and shaping product vision to deliver 
+                  meaningful impact at scale.
                 </p>
                 <p className="text-base sm:text-lg text-foreground/90 leading-relaxed">
                   Outside of work, you'll find me sketching interfaces, studying
