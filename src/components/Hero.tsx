@@ -249,7 +249,7 @@ const Hero = () => {
                     r="240"
                     fill="none"
                     stroke="url(#borderGradient)"
-                    strokeWidth="8"
+                    strokeWidth="2"
                   />
                 </svg>
 
