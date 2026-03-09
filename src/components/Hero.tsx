@@ -17,10 +17,11 @@ import {
   MapPin,
   Phone,
   Linkedin,
-  Github,
 } from "lucide-react";
 import { motion } from "framer-motion";
 import { useState } from "react";
+import Behance from "@/components/icons/Behance";
+
 
 const Hero = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -111,12 +112,12 @@ const Hero = () => {
                       </a>
                     </div>
                     <div className="flex items-center gap-3 text-sm">
-                      <Github className="w-4 h-4 text-primary flex-shrink-0" />
+                      <Behance className="w-4 h-4 text-primary flex-shrink-0" />
                       <a
-                        href="https://github.com/BijinVijayan"
+                        href="https://www.behance.net/arunsubramanyan"
                         className="text-foreground/70 hover:text-primary transition-colors"
                       >
-                        github.com/BijinVijayan
+                        behance.net/arunsubramanyan
                       </a>
                     </div>
                   </div>
