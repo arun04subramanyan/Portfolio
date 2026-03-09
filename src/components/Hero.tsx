@@ -59,7 +59,7 @@ const Hero = () => {
           <Collapsible open={isOpen} onOpenChange={setIsOpen}>
             <Card className="border-foreground/10">
               <CardContent className="p-4">
-                <CollapsibleTrigger className="w-full">
+                <CollapsibleTrigger className="w-full group">
                   <div className="flex items-center gap-4">
                     <div className="w-12 h-12 rounded-full bg-gradient-primary flex items-center justify-center flex-shrink-0">
                       {/* <User className="w-6 h-6 text-primary-foreground" /> */}
@@ -74,11 +74,11 @@ const Hero = () => {
                         Arun Subramanyan
                       </h3>
                       <p className="text-sm text-muted-foreground">
-                        arun04subramanyan@gmail.com
+                        Sr.UX Designer
                       </p>
                     </div>
                     <ChevronDown
-                      className={`w-5 h-5 text-foreground/60 transition-transform ${isOpen ? "rotate-180" : ""
+                      className={`ml-auto w-5 h-5 text-foreground/60 transform transition-transform duration-300 ${isOpen ? "rotate-180" : ""
                         }`}
                     />
                   </div>
