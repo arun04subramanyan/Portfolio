@@ -31,7 +31,7 @@ const Hero = () => {
 
   const stats = [
     { value: "6+", label: "Years Experience" },
-    { value: "3+", label: "Design Systems Built" },
+    { value: "4+", label: "Design Systems Built" },
     { value: "1M+", label: "Users Impacted" },
   ];
 
@@ -77,9 +77,8 @@ const Hero = () => {
                       </p>
                     </div>
                     <ChevronDown
-                      className={`w-5 h-5 text-foreground/60 transition-transform ${
-                        isOpen ? "rotate-180" : ""
-                      }`}
+                      className={`w-5 h-5 text-foreground/60 transition-transform ${isOpen ? "rotate-180" : ""
+                        }`}
                     />
                   </div>
                 </CollapsibleTrigger>
@@ -135,23 +134,23 @@ const Hero = () => {
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.6 }}
           >
-              <div className="space-y-4">
-                  <h1 className="text-[34px] sm:text-4xl md:text-6xl font-bold text-foreground leading-tight">
-                      Designing{" "}
-                      <span className="bg-gradient-primary bg-clip-text text-transparent">
-                      Intuitive & Impactful
-                    </span>{" "}
-                      Digital Experiences
-                  </h1>
+            <div className="space-y-4">
+              <h1 className="text-[34px] sm:text-4xl md:text-6xl font-bold text-foreground leading-tight">
+                Designing{" "}
+                <span className="bg-gradient-primary bg-clip-text text-transparent">
+                  Intuitive & Impactful
+                </span>{" "}
+                Digital Experiences
+              </h1>
 
-                  <p className="text-base sm:text-lg text-foreground/70 max-w-md">
-                      I'm <span className="font-semibold">Arun Subramanyan</span>, Results-driven Senior UI/UX Designer with <span className="font-semibold">6+ years</span>of experience delivering scalable digital products across enterprise and fintech domains. Skilled in leading cross-functional initiatives and leveraging AI-powered design tools to drive innovation. Possesses foundational knowledge of HTML and React, enabling seamless collaboration from concept to implementation.
-                      <br />
-                  </p>
-              </div>
+              <p className="text-base sm:text-lg text-foreground/70 max-w-md">
+                I'm <span className="font-semibold">Arun Subramanyan</span>, Results-driven Senior UI/UX Designer with <span className="font-semibold">6+ years</span>of experience delivering scalable digital products across enterprise and fintech domains. Skilled in leading cross-functional initiatives and leveraging AI-powered design tools to drive innovation. Possesses foundational knowledge of HTML and React, enabling seamless collaboration from concept to implementation.
+                <br />
+              </p>
+            </div>
 
 
-              <div className="flex gap-3 sm:gap-4 ">
+            <div className="flex gap-3 sm:gap-4 ">
               <Button
                 size="lg"
                 className="bg-gradient-primary px-5 sm:px-auto text-primary-foreground hover:opacity-90 shadow-glow"
