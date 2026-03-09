@@ -61,7 +61,7 @@ const Hero = () => {
               <CardContent className="p-4">
                 <CollapsibleTrigger className="w-full group">
                   <div className="flex items-center gap-4">
-                    <div className="w-12 h-12 rounded-full bg-gradient-primary flex items-center justify-center flex-shrink-0">
+                    <div className="w-10 h-10 rounded-full bg-gradient-primary flex items-center justify-center flex-shrink-0">
                       {/* <User className="w-6 h-6 text-primary-foreground" /> */}
                       <img
                         src="/arunimagenew.jpeg"
@@ -272,7 +272,7 @@ const Hero = () => {
                   transition={{ duration: 0.5, delay: 0.4 + index * 0.1 }}
                   whileHover={{ scale: 1.1, rotate: 5 }}
                 >
-                  <Icon className="w-8 h-8 text-primary" />
+                  <Icon className="w-6 h-6 text-primary" />
                 </motion.div>
               ))}
 

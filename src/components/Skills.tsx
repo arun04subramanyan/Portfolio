@@ -1,23 +1,39 @@
-import { Award, Code2, Smartphone, Box, FileCode, Layout, Palette, Wrench, GitBranch, Database, Blocks, Zap, CreditCard, Shield, Flame, Cloud, User, ArrowRight, MapPin } from "lucide-react";
 import { motion } from "framer-motion";
 import { Badge } from "@/components/ui/badge";
-import type { LucideIcon } from "lucide-react";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import {
+  faUserCheck,
+  faLayerGroup,
+  faMobileAlt,
+  faCubes,
+  faBezierCurve,
+  faFlask,
+  faUniversalAccess,
+  faSitemap,
+  faRobot,
+  faCode,
+  faMagic,
+  faRoute,
+  faAward
+} from "@fortawesome/free-solid-svg-icons";
+import { faFigma, faSketch } from "@fortawesome/free-brands-svg-icons";
+import type { IconDefinition } from "@fortawesome/fontawesome-svg-core";
 
-const skills: { name: string; category: string; icon: LucideIcon }[] = [
-  { name: "User Research", category: "Research", icon: User },
-  { name: "Wireframing", category: "Design", icon: Layout },
-  { name: "Prototyping", category: "Design", icon: Smartphone },
-  { name: "Design Systems", category: "Design", icon: Box },
-  { name: "Interaction Design", category: "Design", icon: Palette },
-  { name: "Usability Testing", category: "Research", icon: Award },
-  { name: "Accessibility", category: "Quality", icon: Shield },
-  { name: "Information Architecture", category: "Strategy", icon: FileCode },
-  { name: "Figma", category: "Tools", icon: Palette },
-  { name: "Sketch", category: "Tools", icon: Palette },
-  { name: "Adobe XD", category: "Tools", icon: Palette },
-  { name: "Miro", category: "Tools", icon: Blocks },
-  { name: "User Flows", category: "Research", icon: ArrowRight },
-  { name: "Journey Mapping", category: "Research", icon: MapPin },
+const skills: { name: string; category: string; icon: IconDefinition }[] = [
+  { name: "User Research", category: "Research", icon: faUserCheck },
+  { name: "Wireframing", category: "Design", icon: faLayerGroup },
+  { name: "Prototyping", category: "Design", icon: faMobileAlt },
+  { name: "Design Systems", category: "Design", icon: faCubes },
+  { name: "Interaction Design", category: "Design", icon: faBezierCurve },
+  { name: "Usability Testing", category: "Research", icon: faFlask },
+  { name: "Accessibility", category: "Quality", icon: faUniversalAccess },
+  { name: "Information Architecture", category: "Strategy", icon: faSitemap },
+  { name: "Figma", category: "Tools", icon: faFigma },
+  { name: "Sketch", category: "Tools", icon: faSketch },
+  { name: "Claude", category: "Tools", icon: faRobot },
+  { name: "V0.Dev", category: "Tools", icon: faCode },
+  { name: "Figma Make", category: "Research", icon: faMagic },
+  { name: "Journey Mapping", category: "Research", icon: faRoute },
 ];
 
 const certifications = [
@@ -68,7 +84,7 @@ const Skills = () => {
               >
                 <div className="bg-card border border-border rounded-full px-6 py-3 transition-all duration-300 hover:border-primary hover:shadow-glow group">
                   <div className="flex items-center gap-2">
-                    <skill.icon className="w-4 h-4 text-primary group-hover:scale-110 transition-transform" />
+                    <FontAwesomeIcon icon={skill.icon} className="w-4 h-4 text-primary group-hover:scale-110 transition-transform" />
                     <span className="text-sm font-medium text-foreground group-hover:text-primary transition-colors">
                       {skill.name}
                     </span>
@@ -89,7 +105,7 @@ const Skills = () => {
             transition={{ duration: 0.5 }}
           >
             <div className="inline-flex items-center gap-2 mb-4">
-              <Award className="w-6 h-6 text-primary" />
+              <FontAwesomeIcon icon={faAward} className="w-6 h-6 text-primary" />
               <h3 className="text-3xl font-bold text-foreground">
                 Certifications
               </h3>
@@ -112,7 +128,7 @@ const Skills = () => {
               >
                 <div className="flex items-start gap-3">
                   <div className="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center flex-shrink-0 group-hover:bg-primary/20 transition-colors">
-                    <Award className="w-6 h-6 text-primary" />
+                    <FontAwesomeIcon icon={faAward} className="w-6 h-6 text-primary" />
                   </div>
                   <div className="flex-1 min-w-0">
                     <h4 className="font-semibold text-foreground mb-1 group-hover:text-primary transition-colors">
