@@ -64,7 +64,7 @@ const Hero = () => {
                     <div className="w-12 h-12 rounded-full bg-gradient-primary flex items-center justify-center flex-shrink-0">
                       {/* <User className="w-6 h-6 text-primary-foreground" /> */}
                       <img
-                        src="/imagearun.png"
+                        src="/arunimagenew.jpeg"
                         alt="Profile"
                         className="w-full h-full object-cover rounded-full"
                       />
@@ -108,7 +108,7 @@ const Hero = () => {
                         href="https://www.linkedin.com/in/arun-subramanyan/"
                         className="text-foreground/70 hover:text-primary transition-colors"
                       >
-                        https://www.linkedin.com/in/arun-subramanyan/
+                        https://www.linkedin.com/in/arun-subramanyan-192388285/
                       </a>
                     </div>
                     <div className="flex items-center gap-3 text-sm">
@@ -255,7 +255,7 @@ const Hero = () => {
 
                 <div className="absolute inset-4 rounded-full overflow-hidden bg-background shadow-2xl">
                   <img
-                    src="/imagearun.png"
+                    src="/arunimagenew.jpeg"
                     alt="Profile"
                     className="w-full h-full object-cover"
                   />
