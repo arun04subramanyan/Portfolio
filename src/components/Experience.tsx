@@ -2,7 +2,7 @@ import { Briefcase } from "lucide-react";
 import { motion } from "framer-motion";
 
 const experiences = [
-   {
+  {
     title: "Senior UX Designer",
     company: "Lighthouse Asia Pacific Pvt Ltd",
     period: "April 2025 - Present | Bangalore",
@@ -13,16 +13,16 @@ const experiences = [
   {
     title: "UI/UX Designer",
     company: "Aeth Analytica",
-    period: "Apr 2024 - Sep 2025 | UL Cyberpark, Calicut",
+    period: "Oct 2023 - Nov 2024 | UL Cyberpark, Calicut",
     description:
       "Led user research and interface redesign for the BillMyKart e-commerce suite. Conducted stakeholder workshops, defined personas, and created high‑fidelity prototypes that reduced checkout friction. Established a component-based design system and validated flows through usability testing, resulting in a 30% uplift in task completion and happier merchants.",
     skills: ["User Research", "Prototyping", "Design Systems", "Usability Testing", "Information Architecture"]
   },
 
   {
-    title: "UX Design Intern",
-    company: "Luminar Technolab",
-    period: "Oct 2022 - Apr 2023 | Kochi",
+    title: "UI/UX Designer",
+    company: "StudySoup",
+    period: "Jun 2019 - Sep 2023 | US Based",
     description:
       "Supported multiple product teams by conducting user interviews, drafting wireframes, and refining UI components. Gained foundational experience in interaction design and usability principles through hands-on projects and mentor feedback.",
     skills: ["Wireframing", "User Interviews", "Interaction Design", "Accessibility", "Design Thinking"]
