@@ -14,7 +14,12 @@ export default {
     },
     extend: {
       fontFamily: {
-        sans: ['"DM Sans"', 'system-ui', 'sans-serif'],
+        sans: ['"Open Sans"', 'system-ui', 'sans-serif'],
+      },
+      fontWeight: {
+        normal: '400',
+        semibold: '600',
+        bold: '700',
       },
       colors: {
         border: "hsl(var(--border))",
