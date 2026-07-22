@@ -144,7 +144,7 @@ const Hero = () => {
                 Digital Experiences
               </h1>
 
-              <p className="text-base sm:text-lg text-foreground/70 max-w-md">
+              <p className="text-base sm:text-lg text-foreground/70 max-w-md font-normal">
                 I'm <span className="font-semibold">Arun Subramanyan</span>, Results-driven Senior Product Designer with <span className="font-semibold">6+ years</span>of experience delivering scalable digital products across enterprise and fintech domains. Skilled in leading cross-functional initiatives and leveraging AI-powered design tools to drive innovation. Possesses foundational knowledge of HTML and React, enabling seamless collaboration from concept to implementation.
                 <br />
               </p>
