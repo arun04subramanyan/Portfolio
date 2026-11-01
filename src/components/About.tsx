@@ -82,24 +82,20 @@ const About = () => {
               transition={{ duration: 0.6, delay: 0.2 }}
             >
               <div className="space-y-6">
-                <p className="text-base sm:text-lg text-foreground/90 leading-relaxed">
-                  Results-driven Senior UI/UX Designer and emerging Design Lead with 
-                  6+ years of experience driving design strategy across enterprise, 
-                  fintech, legal tech, and EdTech products. I have a proven ability to lead cross-functional initiatives, 
-                   align stakeholders, and translate complex requirements into scalable, 
-                   user-centered systems that balance business goals with user needs.
+                <p className="text-base sm:text-lg text-foreground/90 leading-relaxed font-light">
+                  I&apos;m a <span className="font-normal">Senior Product Designer and emerging Design Leader with <span className="font-semibold">7+ years</span> of experience</span> shaping digital products across enterprise, fintech, legal tech and EdTech. I bring together product strategy, design thinking and technical understanding to turn complex challenges into scalable, user-centred solutions.
                 </p>
-              
-                <p className="text-base sm:text-lg text-foreground/90 leading-relaxed">
-                  I am passionate about building high-performing design teams, 
-                  fostering collaboration, and shaping product vision to deliver 
-                  meaningful impact at scale.
+
+                <p className="text-base sm:text-lg text-foreground/90 leading-relaxed font-light">
+                  I take ownership of the design process from discovery and defining product direction to execution and delivery. I enjoy driving design decisions, aligning cross-functional teams, mentoring designers and building design systems that create consistency and accelerate product development.
                 </p>
-                <p className="text-base sm:text-lg text-foreground/90 leading-relaxed">
-                  Outside of work, you'll find me sketching interfaces, studying
-                  interaction patterns, and staying current with design system
-                  practices. My mission is to craft digital experiences that
-                  users understand, enjoy, and return to.
+
+                <p className="text-base sm:text-lg text-foreground/90 leading-relaxed font-light">
+                  I&apos;m particularly interested in the intersection of <span className="font-normal">AI, product innovation and user experience</span>, exploring new ways to improve how products are designed, built and experienced.
+                </p>
+
+                <p className="text-base sm:text-lg text-foreground/90 leading-relaxed font-light">
+                  Beyond delivering great interfaces, my focus is on creating design impact, strengthening design culture and building products that deliver lasting value to both users and businesses.
                 </p>
               </div>
             </motion.div>

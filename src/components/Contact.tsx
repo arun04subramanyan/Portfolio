@@ -17,7 +17,7 @@ const Contact = () => {
           Let's Connect
         </motion.h2>
         <motion.p
-          className="text-base sm:text-xl text-muted-foreground mb-12 max-w-2xl mx-auto"
+          className="text-base sm:text-xl text-muted-foreground mb-12 max-w-2xl mx-auto font-light"
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
           viewport={{ once: true }}
