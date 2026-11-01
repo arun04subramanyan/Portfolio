@@ -9,7 +9,8 @@ import { Badge } from "@/components/ui/badge";
 import { ExternalLink } from "lucide-react";
 import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
-import {Button} from "@/components/ui/button.tsx";
+import { Button } from "@/components/ui/button.tsx";
+import { useEffect, useState } from "react";
 
 // eslint-disable-next-line react-refresh/only-export-components
 export const projects = [
@@ -491,7 +492,51 @@ export const projects = [
     }
 ];
 
+const featuredProjectIds = [
+  "billmykart",
+  "gayathri-portfolio",
+  "aethanalytica-website",
+  "resto-customer-web",
+];
+
+const orderedProjects = [
+  ...featuredProjectIds
+    .map((id) => projects.find((project) => project.id === id))
+    .filter((project): project is (typeof projects)[number] => Boolean(project)),
+  ...projects.filter((project) => !featuredProjectIds.includes(project.id)),
+];
+
+const getInitialVisibleCount = () => {
+  if (typeof window === "undefined") return 4;
+
+  if (window.innerWidth >= 1024) return 6;
+  if (window.innerWidth >= 768) return 4;
+  return 4;
+};
+
 const Projects = () => {
+  const [isExpanded, setIsExpanded] = useState(false);
+  const [visibleCount, setVisibleCount] = useState(getInitialVisibleCount);
+
+  useEffect(() => {
+    const updateVisibleCount = () => {
+      const nextCount = getInitialVisibleCount();
+      setVisibleCount((current) => {
+        if (!isExpanded && current !== nextCount) {
+          return nextCount;
+        }
+        return current;
+      });
+    };
+
+    updateVisibleCount();
+    window.addEventListener("resize", updateVisibleCount);
+    return () => window.removeEventListener("resize", updateVisibleCount);
+  }, [isExpanded]);
+
+  const visibleProjects = isExpanded ? orderedProjects : orderedProjects.slice(0, visibleCount);
+  const hasMoreProjects = orderedProjects.length > visibleProjects.length;
+
   return (
     <section id="projects" className="py-10 sm:py-20 bg-background">
       <div className="container mx-auto px-4">
@@ -505,9 +550,9 @@ const Projects = () => {
           Featured Projects
         </motion.h2>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3  gap-6 max-w-6xl mx-auto">
-          {projects.map((project, index) => (
-            <Link key={index} to={`/project/${project.id}`}>
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-6xl mx-auto">
+          {visibleProjects.map((project, index) => (
+            <Link key={project.id} to={`/project/${project.id}`}>
               <motion.div
                 initial={{ opacity: 0, y: 30 }}
                 whileInView={{ opacity: 1, y: 0 }}
@@ -523,18 +568,18 @@ const Projects = () => {
                       sizes={"80vw"}
                       className="w-full h-full object-contain bg-slate-300 group-hover:scale-105 transition-transform duration-300"
                     />
-                      {project.demoLink !== "#" && (
-                          <a
-                              href={project.demoLink}
-                              target="_blank"
-                              rel="noopener noreferrer"
-                              className="absolute z-10 top-3 right-3"
-                          >
-                              <Button className="bg-primary h-10 w-10 rounded-full hover:bg-primary/90 text-primary-foreground shadow-glow">
-                                  <ExternalLink className="w-4 h-4" />
-                              </Button>
-                          </a>
-                      )}
+                    {project.demoLink !== "#" && (
+                      <a
+                        href={project.demoLink}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="absolute z-10 top-3 right-3"
+                      >
+                        <Button className="bg-primary h-10 w-10 rounded-full hover:bg-primary/90 text-primary-foreground shadow-glow">
+                          <ExternalLink className="w-4 h-4" />
+                        </Button>
+                      </a>
+                    )}
                   </div>
 
                   <CardHeader>
@@ -546,12 +591,11 @@ const Projects = () => {
                     </CardDescription>
                   </CardHeader>
 
-                  {/* Push this section to bottom */}
                   <CardContent className="mt-auto">
                     <div className="flex flex-wrap gap-2">
                       {project.tech.map((tech, i) => (
                         <Badge
-                          key={i}
+                          key={`${project.id}-${tech}-${i}`}
                           variant="secondary"
                           className="bg-secondary text-secondary-foreground"
                         >
@@ -565,6 +609,18 @@ const Projects = () => {
             </Link>
           ))}
         </div>
+
+        {!isExpanded && hasMoreProjects && (
+          <div className="mt-8 flex justify-center">
+            <Button
+              variant="outline"
+              onClick={() => setIsExpanded(true)}
+              className="border-border bg-background text-foreground hover:bg-foreground/5"
+            >
+              Load More
+            </Button>
+          </div>
+        )}
       </div>
     </section>
   );

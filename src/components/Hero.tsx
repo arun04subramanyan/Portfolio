@@ -31,7 +31,7 @@ const Hero = () => {
   };
 
   const stats = [
-    { value: "6+", label: "Years Experience" },
+    { value: "7+", label: "Years Experience" },
     { value: "4+", label: "Design Systems Built" },
     { value: "1M+", label: "Users Impacted" },
   ];
@@ -184,7 +184,7 @@ const Hero = () => {
                 className="bg-gradient-primary w-full text-primary-foreground hover:opacity-90 shadow-glow group"
                 asChild
               >
-                <a href="/aruncv.pdf" download="aruncv.pdf">
+                <a href="/Arun_Nov_2026.pdf" download="Arun_Nov_2026.pdf">
                   Download CV
                   <Download className="ml-2 w-4 h-4 " />
                 </a>
@@ -289,7 +289,7 @@ const Hero = () => {
                   className="bg-gradient-primary text-primary-foreground hover:opacity-90 shadow-glow group"
                   asChild
                 >
-                  <a href="/aruncv.pdf" download="aruncv.pdf">
+                  <a href="/Arun_Nov_2026.pdf" download="Arun_Nov_2026.pdf">
                     Download CV
                     <Download className="ml-2 w-4 h-4 " />
                   </a>
