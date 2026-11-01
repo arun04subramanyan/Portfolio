@@ -105,7 +105,7 @@ const Hero = () => {
                     <div className="flex items-center gap-3 text-sm">
                       <Linkedin className="w-4 h-4 text-primary flex-shrink-0" />
                       <a
-                        href="https://www.linkedin.com/in/arun-subramanyan/"
+                        href="https://www.linkedin.com/in/arun-subramanyan-192388285/"
                         className="text-foreground/70 hover:text-primary transition-colors"
                       >
                         https://www.linkedin.com/in/arun-subramanyan-192388285/
@@ -140,7 +140,7 @@ const Hero = () => {
                 <span className="block text-[22px] sm:text-[28px] md:text-[34px] text-foreground">
                   Hello, I&apos;m
                 </span>
-                <span className="mt-1 block bg-gradient-primary bg-clip-text text-transparent text-[34px] sm:text-[42px] md:text-[60px]">
+                <span className="mt-1 block bg-gradient-name bg-clip-text text-transparent text-[34px] sm:text-[42px] md:text-[60px]">
                   Arun Subramanyan
                 </span>
               </h1>
@@ -231,14 +231,14 @@ const Hero = () => {
                       <stop
                         offset="0%"
                         style={{
-                          stopColor: "hsl(72 45% 32%)",
+                          stopColor: "#68762D",
                           stopOpacity: 1,
                         }}
                       />
                       <stop
                         offset="100%"
                         style={{
-                          stopColor: "hsl(80 35% 45%)",
+                          stopColor: "#809B4B",
                           stopOpacity: 1,
                         }}
                       />

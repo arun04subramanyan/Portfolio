@@ -2,110 +2,112 @@
 @tailwind components;
 @tailwind utilities;
 
-/* Definition of the design system. All colors, gradients, fonts, etc should be defined here. 
-All colors MUST be HSL.
+/* Definition of the design system. All colors, gradients, fonts, etc should be defined here.
+Theme colors use hexadecimal values.
 */
 
 @layer base {
   :root {
-    --background: 0 0% 97%;
-    --foreground: 96 18% 15%;
+    --background: #F7F7F7;
+    --foreground: #252D1F;
 
-    --card: 0 0% 100%;
-    --card-foreground: 96 18% 15%;
+    --card: #FFFFFF;
+    --card-foreground: #252D1F;
 
-    --popover: 0 0% 100%;
-    --popover-foreground: 96 18% 15%;
+    --popover: #FFFFFF;
+    --popover-foreground: #252D1F;
 
-    --primary: 72 45% 32%;
-    --primary-hover: 76 43% 40%;
-    --primary-foreground: 0 0% 100%;
+    --primary: #68762D;
+    --primary-hover: #7A923A;
+    --primary-foreground: #FFFFFF;
 
-    --secondary: 72 24% 94%;
-    --secondary-foreground: 96 18% 15%;
+    --secondary: #F2F3EC;
+    --secondary-foreground: #252D1F;
 
-    --muted: 72 24% 94%;
-    --muted-foreground: 96 12% 34%;
+    --muted: #F2F3EC;
+    --muted-foreground: #55614C;
 
-    --accent: 72 24% 94%;
-    --accent-foreground: 96 18% 15%;
+    --accent: #F2F3EC;
+    --accent-foreground: #252D1F;
 
-    --destructive: 0 84% 60%;
-    --destructive-foreground: 0 0% 100%;
+    --destructive: #EF4343;
+    --destructive-foreground: #FFFFFF;
 
-    --border: 72 22% 86%;
-    --input: 72 22% 86%;
-    --ring: 72 45% 32%;
+    --border: #E0E3D3;
+    --input: #E0E3D3;
+    --ring: #68762D;
 
     --radius: 0.75rem;
 
     /* Custom gradients */
-    --gradient-primary: linear-gradient(135deg, hsl(72 45% 32%), hsl(80 35% 45%));
-    --gradient-accent: linear-gradient(135deg, hsl(72 24% 96%), hsl(72 18% 92%));
-    --gradient-hero: linear-gradient(180deg, hsl(72 30% 97%), hsl(72 20% 94%));
+    --gradient-primary: linear-gradient(135deg, #68762D, #809B4B);
+    --gradient-name: linear-gradient(120deg, #6C7E26, #6D9334, #6C842A);
+    --gradient-accent: linear-gradient(135deg, #F6F7F2, #EDEEE7);
+    --gradient-hero: linear-gradient(180deg, #F9FAF5, #F2F3ED);
 
     /* Shadows */
-    --shadow-glow: 0 0 30px hsl(72 45% 32% / 0.18);
-    --shadow-card: 0 4px 12px hsl(72 22% 70% / 0.12);
+    --shadow-glow: 0 0 30px #68762D2E;
+    --shadow-card: 0 4px 12px #B8C09E1F;
 
     /* Animations */
     --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
 
-    --sidebar-background: 0 0% 97%;
-    --sidebar-foreground: 96 18% 15%;
-    --sidebar-primary: 96 18% 15%;
-    --sidebar-primary-foreground: 0 0% 100%;
-    --sidebar-accent: 72 24% 94%;
-    --sidebar-accent-foreground: 96 18% 15%;
-    --sidebar-border: 72 22% 86%;
-    --sidebar-ring: 72 45% 32%;
+    --sidebar-background: #F7F7F7;
+    --sidebar-foreground: #252D1F;
+    --sidebar-primary: #252D1F;
+    --sidebar-primary-foreground: #FFFFFF;
+    --sidebar-accent: #F2F3EC;
+    --sidebar-accent-foreground: #252D1F;
+    --sidebar-border: #E0E3D3;
+    --sidebar-ring: #68762D;
   }
 
   .dark {
-    --background: 0 0% 7.1%;
-    --foreground: 0 0% 98%;
+    --background: #121212;
+    --foreground: #FAFAFA;
 
-    --card: 220 18% 14%;
-    --card-foreground: 0 0% 98%;
+    --card: #1D222A;
+    --card-foreground: #FAFAFA;
 
-    --popover: 220 18% 14%;
-    --popover-foreground: 0 0% 98%;
+    --popover: #1D222A;
+    --popover-foreground: #FAFAFA;
 
-    --primary: 72 45% 32%;
-    --primary-hover: 76 43% 40%;
-    --primary-foreground: 0 0% 100%;
+    --primary: #68762D;
+    --primary-hover: #7A923A;
+    --primary-foreground: #FFFFFF;
 
-    --secondary: 220 18% 18%;
-    --secondary-foreground: 0 0% 98%;
+    --secondary: #262B36;
+    --secondary-foreground: #FAFAFA;
 
-    --muted: 220 18% 18%;
-    --muted-foreground: 72 12% 78%;
+    --muted: #262B36;
+    --muted-foreground: #CBCEC0;
 
-    --accent: 220 18% 18%;
-    --accent-foreground: 0 0% 98%;
+    --accent: #262B36;
+    --accent-foreground: #FAFAFA;
 
-    --destructive: 0 84% 60%;
-    --destructive-foreground: 0 0% 100%;
+    --destructive: #EF4343;
+    --destructive-foreground: #FFFFFF;
 
-    --border: 220 18% 22%;
-    --input: 220 18% 22%;
-    --ring: 72 45% 32%;
+    --border: #2E3542;
+    --input: #2E3542;
+    --ring: #68762D;
 
-    --gradient-primary: linear-gradient(135deg, hsl(72 45% 32%), hsl(80 35% 45%));
-    --gradient-accent: linear-gradient(135deg, hsl(220 18% 18%), hsl(220 18% 22%));
-    --gradient-hero: linear-gradient(180deg, hsl(0 0% 7%), hsl(220 18% 12%));
+    --gradient-primary: linear-gradient(135deg, #68762D, #809B4B);
+    --gradient-name: linear-gradient(120deg, #B0C757, #B1D27F, #B0CD60);
+    --gradient-accent: linear-gradient(135deg, #262B36, #2E3542);
+    --gradient-hero: linear-gradient(180deg, #121212, #191D24);
 
-    --shadow-glow: 0 0 30px hsl(72 45% 32% / 0.22);
-    --shadow-card: 0 4px 12px hsl(0 0% 0% / 0.3);
+    --shadow-glow: 0 0 30px #68762D38;
+    --shadow-card: 0 4px 12px #0000004D;
 
-    --sidebar-background: 0 0% 7.1%;
-    --sidebar-foreground: 0 0% 98%;
-    --sidebar-primary: 0 0% 98%;
-    --sidebar-primary-foreground: 0 0% 7.1%;
-    --sidebar-accent: 220 18% 18%;
-    --sidebar-accent-foreground: 0 0% 98%;
-    --sidebar-border: 220 18% 22%;
-    --sidebar-ring: 72 45% 32%;
+    --sidebar-background: #121212;
+    --sidebar-foreground: #FAFAFA;
+    --sidebar-primary: #FAFAFA;
+    --sidebar-primary-foreground: #121212;
+    --sidebar-accent: #262B36;
+    --sidebar-accent-foreground: #FAFAFA;
+    --sidebar-border: #2E3542;
+    --sidebar-ring: #68762D;
   }
 }
 
@@ -134,27 +136,31 @@ All colors MUST be HSL.
   .hover\:bg-primary\/90:hover,
   .bg-primary:hover,
   .bg-gradient-primary:hover {
-    background-color: hsl(var(--primary-hover)) !important;
+    background-color: var(--primary-hover) !important;
   }
 
   .hover\:text-primary:hover,
   .text-primary:hover,
   .group:hover .group-hover\:text-primary,
   .group:hover .group-hover\:border-primary {
-    color: hsl(var(--primary-hover)) !important;
+    color: var(--primary-hover) !important;
   }
 
   .hover\:border-primary:hover,
   .border-primary:hover,
   .group:hover .group-hover\:border-primary {
-    border-color: hsl(var(--primary-hover)) !important;
+    border-color: var(--primary-hover) !important;
   }
 
   .hover\:bg-primary\/10:hover {
-    background-color: hsl(var(--primary-hover) / 0.12) !important;
+    background-color: #7A923A1F !important;
   }
 
   .bg-gradient-primary {
     background-image: var(--gradient-primary);
+  }
+
+  .bg-gradient-name {
+    background-image: var(--gradient-name);
   }
 }
