@@ -64,7 +64,7 @@ const Hero = () => {
                     <div className="w-10 h-10 rounded-full bg-gradient-primary flex items-center justify-center flex-shrink-0">
                       {/* <User className="w-6 h-6 text-primary-foreground" /> */}
                       <img
-                        src="/arunimagenew.jpeg"
+                        src="/newimage.png"
                         alt="Profile"
                         className="w-full h-full object-cover rounded-full"
                       />
@@ -127,7 +127,7 @@ const Hero = () => {
           </Collapsible>
         </motion.div>
 
-        <div className="grid md:grid-cols-2 gap-12 items-center">
+        <div className="grid md:grid-cols-2 gap-12 items-end">
           {/* Left Column - Text Content */}
           <motion.div
             className="space-y-8"
@@ -136,16 +136,17 @@ const Hero = () => {
             transition={{ duration: 0.6 }}
           >
             <div className="space-y-4">
-              <h1 className="text-[34px] sm:text-4xl md:text-6xl font-bold text-foreground leading-tight">
-                Designing{" "}
-                <span className="bg-gradient-primary bg-clip-text text-transparent">
-                  Intuitive & Impactful
-                </span>{" "}
-                Digital Experiences
+              <h1 className="font-bold leading-tight text-foreground">
+                <span className="block text-[22px] sm:text-[28px] md:text-[34px] text-foreground">
+                  Hello, I&apos;m
+                </span>
+                <span className="mt-1 block bg-gradient-primary bg-clip-text text-transparent text-[34px] sm:text-[42px] md:text-[60px]">
+                  Arun Subramanyan
+                </span>
               </h1>
 
-              <p className="text-base sm:text-lg text-foreground/70 max-w-md font-normal">
-                I'm <span className="font-semibold">Arun Subramanyan</span>, Results-driven Senior Product Designer with <span className="font-semibold">6+ years</span>of experience delivering scalable digital products across enterprise and fintech domains. Skilled in leading cross-functional initiatives and leveraging AI-powered design tools to drive innovation. Possesses foundational knowledge of HTML and React, enabling seamless collaboration from concept to implementation.
+              <p className="text-base sm:text-lg text-foreground/70 max-w-md font-light">
+                Designing products with purpose, shaping experiences with clarity and driving impact through thoughtful design leadership. With <span className="font-semibold">7+ years</span> of experience, I bring together product strategy, user experience and technology to solve complex challenges, guide design decisions and build scalable digital solutions.
                 <br />
               </p>
             </div>
@@ -192,9 +193,9 @@ const Hero = () => {
             </motion.div>
 
             {/* Stats */}
-            <div className="grid grid-cols-3 gap-8 pt-8">
+            <div className="grid grid-cols-3 gap-8 pt-8 pb-4">
               {stats.map((stat, index) => (
-                <div key={index} className="space-y-1">
+                <div key={index} className="space-y-1 self-end">
                   <div className="text-3xl md:text-4xl font-bold text-foreground">{stat.value}</div>
                   <div className="text-sm text-foreground/60">{stat.label}</div>
                 </div>
@@ -230,14 +231,14 @@ const Hero = () => {
                       <stop
                         offset="0%"
                         style={{
-                          stopColor: "hsl(271 91% 65%)",
+                          stopColor: "hsl(72 45% 32%)",
                           stopOpacity: 1,
                         }}
                       />
                       <stop
                         offset="100%"
                         style={{
-                          stopColor: "hsl(217 91% 60%)",
+                          stopColor: "hsl(80 35% 45%)",
                           stopOpacity: 1,
                         }}
                       />
@@ -255,7 +256,7 @@ const Hero = () => {
 
                 <div className="absolute inset-4 rounded-full overflow-hidden bg-background shadow-2xl">
                   <img
-                    src="/arunimagenew.jpeg"
+                    src="/newimage.png"
                     alt="Profile"
                     className="w-full h-full object-cover"
                   />
@@ -266,13 +267,13 @@ const Hero = () => {
               {floatingIcons.map(({ Icon, className }, index) => (
                 <motion.div
                   key={index}
-                  className={`absolute ${className} w-16 h-16 bg-background rounded-2xl shadow-lg flex items-center justify-center`}
+                  className={`absolute ${className} w-10 h-10 sm:w-12 sm:h-12 bg-background rounded-lg shadow-lg flex items-center justify-center`}
                   initial={{ opacity: 0, y: 20 }}
                   animate={{ opacity: 1, y: 0 }}
                   transition={{ duration: 0.5, delay: 0.4 + index * 0.1 }}
-                  whileHover={{ scale: 1.1, rotate: 5 }}
+                  whileHover={{ scale: 1.08, rotate: 5 }}
                 >
-                  <Icon className="w-6 h-6 text-primary" />
+                  <Icon className="w-3.5 h-3.5 sm:w-4 sm:h-4 text-primary" />
                 </motion.div>
               ))}
 

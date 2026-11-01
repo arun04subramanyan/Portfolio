@@ -72,7 +72,7 @@ const ProjectDetail = () => {
             <h2 className="text-2xl font-bold text-foreground mb-4">
               About This Project
             </h2>
-            <p className="text-base sm:text-lg text-foreground/80 leading-relaxed">
+            <p className="text-base sm:text-lg text-foreground/80 leading-relaxed font-light">
               {project.fullDescription}
             </p>
           </Card>

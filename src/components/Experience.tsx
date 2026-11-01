@@ -6,8 +6,11 @@ const experiences = [
     title: "Senior UX Designer",
     company: "Lighthouse Asia Pacific Pvt Ltd",
     period: "April 2025 - Present | Bangalore",
-    description:
-      "At Lighthouse, I designed enterprise dashboards and workflows, using AI tools for product ideation and rapid design exploration while collaborating closely with cross-functional teams.",
+    description: (
+      <>
+        At <strong>Lighthouse Global</strong> (<a href="https://www.lighthouseglobal.com/" target="_blank" rel="noreferrer" className="text-primary hover:underline">lighthouseglobal.com</a>), I work as a Senior UX Designer, focusing on AI-powered legal technology and enterprise eDiscovery products. I simplify complex workflows into cohesive product experiences, design intelligent features for Lighthouse IQ, and manage end-to-end UX from research and wireframing to prototyping and developer handoff. I also contribute to the Polaris design system and leverage AI tools like Figma Make, Claude and v0 to accelerate design and delivery.
+      </>
+    ),
     skills: ["Workflow Mapping", "Wireframing", "User Testing", "Visual Design", "Stakeholder Collaboration", "AI-Powered Design"]
   },
   {
@@ -62,7 +65,7 @@ const Experience = () => {
                   <h3 className="text-xl font-semibold text-foreground mb-1">
                     {exp.title}
                   </h3>
-                  <p className="text-primary mb-2">{exp.company}</p>
+                  <p className="mb-2 font-medium text-[#4d5f2d] dark:text-[#b4c56c]">{exp.company}</p>
                   <p className="text-sm text-muted-foreground mb-3">{exp.period}</p>
                   <p className="text-foreground/90 mb-4">{exp.description}</p>
                   <div className="flex flex-wrap gap-2">
